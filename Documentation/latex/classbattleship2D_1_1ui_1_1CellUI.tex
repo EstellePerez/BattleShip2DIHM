@@ -1,0 +1,283 @@
+\hypertarget{classbattleship2D_1_1ui_1_1CellUI}{\section{battleship2\-D.\-ui.\-Cell\-U\-I Class Reference}
+\label{classbattleship2D_1_1ui_1_1CellUI}\index{battleship2\-D.\-ui.\-Cell\-U\-I@{battleship2\-D.\-ui.\-Cell\-U\-I}}
+}
+
+
+U\-I associated with a Cell\-Type.  
+
+
+
+
+Inheritance diagram for battleship2\-D.\-ui.\-Cell\-U\-I\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=192pt]{classbattleship2D_1_1ui_1_1CellUI__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for battleship2\-D.\-ui.\-Cell\-U\-I\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbattleship2D_1_1ui_1_1CellUI__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classbattleship2D_1_1ui_1_1CellUI_ac4554c21f5994228aa9d90c16a13ad01}{Cell\-U\-I} (\hyperlink{classbattleship2D_1_1model_1_1CellModel}{Cell\-Model} \hyperlink{classbattleship2D_1_1ui_1_1CellUI_ae8ba5dba09afebc304ec693a37950cfb}{cell\-Model}, Boolean is\-Bound)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+void \hyperlink{classbattleship2D_1_1ui_1_1CellUI_a4b4ab9aec58484c4dd36e30e063e059a}{update\-After\-Missile} ()
+\begin{DoxyCompactList}\small\item\em Updates the type of the related Cell\-Model with regard to its current state. \end{DoxyCompactList}\item 
+void \hyperlink{classbattleship2D_1_1ui_1_1CellUI_a9919284fa47292e41aa7856751af2b2a}{add\-Property\-Change\-Listener} (Property\-Change\-Listener property\-Change\-Listener)
+\item 
+void \hyperlink{classbattleship2D_1_1ui_1_1CellUI_a4bc5f31aad68826675104652b1869827}{remove\-Property\-Change\-Listener} (Property\-Change\-Listener property\-Change\-Listener)
+\item 
+\hyperlink{classbattleship2D_1_1model_1_1CellModel}{Cell\-Model} \hyperlink{classbattleship2D_1_1ui_1_1CellUI_a2cdaba86d1055ed6dfde80b09deedb4e}{get\-Cell\-Model} ()
+\item 
+\hyperlink{enumbattleship2D_1_1model_1_1CellType}{Cell\-Type} \hyperlink{classbattleship2D_1_1ui_1_1CellUI_a8eed8495b17ef5246f657637022c65b0}{get\-Last\-Hit} ()
+\item 
+boolean \hyperlink{classbattleship2D_1_1ui_1_1CellUI_ad465fe1a971a0e9090a5b8ed5eadb918}{is\-Last\-Hit\-A\-Ship} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classbattleship2D_1_1ui_1_1CellUI_ab7005bcc71788dd2614e02ddab9f52ce}{layout\-Children} ()
+\begin{DoxyCompactList}\small\item\em Makes the child region highlight cover the whole layout of the cell. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classbattleship2D_1_1ui_1_1CellUI_aabf93a2e99692f4f89e49ded145d55e0}{manage\-Mouse\-Events} ()
+\begin{DoxyCompactList}\small\item\em Mouse events management. \end{DoxyCompactList}\item 
+void \hyperlink{classbattleship2D_1_1ui_1_1CellUI_a94efde670e08833d3cc1ee119c24588d}{bind\-Cell\-Model\-Color} ()
+\begin{DoxyCompactList}\small\item\em Actually bind this with the color of its related cell. \end{DoxyCompactList}\item 
+void \hyperlink{classbattleship2D_1_1ui_1_1CellUI_a8309e9cfa7ebb4b8c62254f152a24561}{set\-Highlight} ()
+\begin{DoxyCompactList}\small\item\em Cell is highlighted when the mouse is hovering on. \end{DoxyCompactList}\item 
+void \hyperlink{classbattleship2D_1_1ui_1_1CellUI_a58244e6fa1932bf6f427c73a515d524f}{set\-Style} (Boolean is\-Bound)
+\begin{DoxyCompactList}\small\item\em The style depends on the bound cell model. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+final \hyperlink{classbattleship2D_1_1model_1_1CellModel}{Cell\-Model} \hyperlink{classbattleship2D_1_1ui_1_1CellUI_ae8ba5dba09afebc304ec693a37950cfb}{cell\-Model}
+\begin{DoxyCompactList}\small\item\em Related cell model. \end{DoxyCompactList}\item 
+Simple\-String\-Property \hyperlink{classbattleship2D_1_1ui_1_1CellUI_a503b29c1a9fb26fb983caebf772c8c90}{cell\-Model\-Color\-Property} = null
+\begin{DoxyCompactList}\small\item\em Cell color depends on the related cell model. \end{DoxyCompactList}\item 
+Region \hyperlink{classbattleship2D_1_1ui_1_1CellUI_a8740932a3854223098d31cf94b09f82c}{highlight}
+\begin{DoxyCompactList}\small\item\em Appearance attributes. \end{DoxyCompactList}\item 
+Fade\-Transition \hyperlink{classbattleship2D_1_1ui_1_1CellUI_a5abb394f8190a79f8cb0d6b352af6333}{highlight\-Transition}
+\item 
+\hyperlink{enumbattleship2D_1_1model_1_1CellType}{Cell\-Type} \hyperlink{classbattleship2D_1_1ui_1_1CellUI_a90990b04506f285810963675dfa2c668}{last\-Hit} = \hyperlink{enumbattleship2D_1_1model_1_1CellType_a8d4deb923c1df4cd4148f298e4adfdfb}{Cell\-Type.\-U\-N\-K\-N\-O\-W\-N}
+\begin{DoxyCompactList}\small\item\em Type of the last ship which has been hit by a missile. \end{DoxyCompactList}\item 
+final Property\-Change\-Support \hyperlink{classbattleship2D_1_1ui_1_1CellUI_af26c7ea10eff42c4a67c9395454e4e9a}{pcs\-Listeners} = new Property\-Change\-Support(this)
+\begin{DoxyCompactList}\small\item\em Listeners management. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final String \hyperlink{classbattleship2D_1_1ui_1_1CellUI_a1f8674dbc8815be409813c8d097a110b}{style\-Prefix} = \char`\"{}-\/fx-\/border-\/width\-: 1; -\/fx-\/border-\/color\-: dodgerblue; -\/fx-\/background-\/radius\-: 10em; -\/fx-\/background-\/insets\-: 1; -\/fx-\/background-\/size\-:cover; \char`\"{}
+\begin{DoxyCompactList}\small\item\em (part of) style. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+U\-I associated with a Cell\-Type. 
+
+\begin{DoxyAuthor}{Author}
+xaviator 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classbattleship2D_1_1ui_1_1CellUI_ac4554c21f5994228aa9d90c16a13ad01}{\index{battleship2\-D\-::ui\-::\-Cell\-U\-I@{battleship2\-D\-::ui\-::\-Cell\-U\-I}!Cell\-U\-I@{Cell\-U\-I}}
+\index{Cell\-U\-I@{Cell\-U\-I}!battleship2D::ui::CellUI@{battleship2\-D\-::ui\-::\-Cell\-U\-I}}
+\subsubsection[{Cell\-U\-I}]{\setlength{\rightskip}{0pt plus 5cm}battleship2\-D.\-ui.\-Cell\-U\-I.\-Cell\-U\-I (
+\begin{DoxyParamCaption}
+\item[{{\bf Cell\-Model}}]{cell\-Model, }
+\item[{Boolean}]{is\-Bound}
+\end{DoxyParamCaption}
+)}}\label{classbattleship2D_1_1ui_1_1CellUI_ac4554c21f5994228aa9d90c16a13ad01}
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em is\-Bound} & -\/ determines whether this \hyperlink{classbattleship2D_1_1ui_1_1CellUI}{Cell\-U\-I}'s style is bound to cell model's \\
+\hline
+{\em cell\-Model} & -\/ related cell \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classbattleship2D_1_1ui_1_1CellUI_a9919284fa47292e41aa7856751af2b2a}{\index{battleship2\-D\-::ui\-::\-Cell\-U\-I@{battleship2\-D\-::ui\-::\-Cell\-U\-I}!add\-Property\-Change\-Listener@{add\-Property\-Change\-Listener}}
+\index{add\-Property\-Change\-Listener@{add\-Property\-Change\-Listener}!battleship2D::ui::CellUI@{battleship2\-D\-::ui\-::\-Cell\-U\-I}}
+\subsubsection[{add\-Property\-Change\-Listener}]{\setlength{\rightskip}{0pt plus 5cm}void battleship2\-D.\-ui.\-Cell\-U\-I.\-add\-Property\-Change\-Listener (
+\begin{DoxyParamCaption}
+\item[{Property\-Change\-Listener}]{property\-Change\-Listener}
+\end{DoxyParamCaption}
+)}}\label{classbattleship2D_1_1ui_1_1CellUI_a9919284fa47292e41aa7856751af2b2a}
+\hypertarget{classbattleship2D_1_1ui_1_1CellUI_a94efde670e08833d3cc1ee119c24588d}{\index{battleship2\-D\-::ui\-::\-Cell\-U\-I@{battleship2\-D\-::ui\-::\-Cell\-U\-I}!bind\-Cell\-Model\-Color@{bind\-Cell\-Model\-Color}}
+\index{bind\-Cell\-Model\-Color@{bind\-Cell\-Model\-Color}!battleship2D::ui::CellUI@{battleship2\-D\-::ui\-::\-Cell\-U\-I}}
+\subsubsection[{bind\-Cell\-Model\-Color}]{\setlength{\rightskip}{0pt plus 5cm}void battleship2\-D.\-ui.\-Cell\-U\-I.\-bind\-Cell\-Model\-Color (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classbattleship2D_1_1ui_1_1CellUI_a94efde670e08833d3cc1ee119c24588d}
+
+
+Actually bind this with the color of its related cell. 
+
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classbattleship2D_1_1ui_1_1CellUI_a58244e6fa1932bf6f427c73a515d524f}{set\-Style()} 
+\end{DoxySeeAlso}
+\hypertarget{classbattleship2D_1_1ui_1_1CellUI_a2cdaba86d1055ed6dfde80b09deedb4e}{\index{battleship2\-D\-::ui\-::\-Cell\-U\-I@{battleship2\-D\-::ui\-::\-Cell\-U\-I}!get\-Cell\-Model@{get\-Cell\-Model}}
+\index{get\-Cell\-Model@{get\-Cell\-Model}!battleship2D::ui::CellUI@{battleship2\-D\-::ui\-::\-Cell\-U\-I}}
+\subsubsection[{get\-Cell\-Model}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cell\-Model} battleship2\-D.\-ui.\-Cell\-U\-I.\-get\-Cell\-Model (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classbattleship2D_1_1ui_1_1CellUI_a2cdaba86d1055ed6dfde80b09deedb4e}
+\hypertarget{classbattleship2D_1_1ui_1_1CellUI_a8eed8495b17ef5246f657637022c65b0}{\index{battleship2\-D\-::ui\-::\-Cell\-U\-I@{battleship2\-D\-::ui\-::\-Cell\-U\-I}!get\-Last\-Hit@{get\-Last\-Hit}}
+\index{get\-Last\-Hit@{get\-Last\-Hit}!battleship2D::ui::CellUI@{battleship2\-D\-::ui\-::\-Cell\-U\-I}}
+\subsubsection[{get\-Last\-Hit}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cell\-Type} battleship2\-D.\-ui.\-Cell\-U\-I.\-get\-Last\-Hit (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classbattleship2D_1_1ui_1_1CellUI_a8eed8495b17ef5246f657637022c65b0}
+\hypertarget{classbattleship2D_1_1ui_1_1CellUI_ad465fe1a971a0e9090a5b8ed5eadb918}{\index{battleship2\-D\-::ui\-::\-Cell\-U\-I@{battleship2\-D\-::ui\-::\-Cell\-U\-I}!is\-Last\-Hit\-A\-Ship@{is\-Last\-Hit\-A\-Ship}}
+\index{is\-Last\-Hit\-A\-Ship@{is\-Last\-Hit\-A\-Ship}!battleship2D::ui::CellUI@{battleship2\-D\-::ui\-::\-Cell\-U\-I}}
+\subsubsection[{is\-Last\-Hit\-A\-Ship}]{\setlength{\rightskip}{0pt plus 5cm}boolean battleship2\-D.\-ui.\-Cell\-U\-I.\-is\-Last\-Hit\-A\-Ship (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classbattleship2D_1_1ui_1_1CellUI_ad465fe1a971a0e9090a5b8ed5eadb918}
+\hypertarget{classbattleship2D_1_1ui_1_1CellUI_ab7005bcc71788dd2614e02ddab9f52ce}{\index{battleship2\-D\-::ui\-::\-Cell\-U\-I@{battleship2\-D\-::ui\-::\-Cell\-U\-I}!layout\-Children@{layout\-Children}}
+\index{layout\-Children@{layout\-Children}!battleship2D::ui::CellUI@{battleship2\-D\-::ui\-::\-Cell\-U\-I}}
+\subsubsection[{layout\-Children}]{\setlength{\rightskip}{0pt plus 5cm}void battleship2\-D.\-ui.\-Cell\-U\-I.\-layout\-Children (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classbattleship2D_1_1ui_1_1CellUI_ab7005bcc71788dd2614e02ddab9f52ce}
+
+
+Makes the child region highlight cover the whole layout of the cell. 
+
+\hypertarget{classbattleship2D_1_1ui_1_1CellUI_aabf93a2e99692f4f89e49ded145d55e0}{\index{battleship2\-D\-::ui\-::\-Cell\-U\-I@{battleship2\-D\-::ui\-::\-Cell\-U\-I}!manage\-Mouse\-Events@{manage\-Mouse\-Events}}
+\index{manage\-Mouse\-Events@{manage\-Mouse\-Events}!battleship2D::ui::CellUI@{battleship2\-D\-::ui\-::\-Cell\-U\-I}}
+\subsubsection[{manage\-Mouse\-Events}]{\setlength{\rightskip}{0pt plus 5cm}void battleship2\-D.\-ui.\-Cell\-U\-I.\-manage\-Mouse\-Events (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classbattleship2D_1_1ui_1_1CellUI_aabf93a2e99692f4f89e49ded145d55e0}
+
+
+Mouse events management. 
+
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classbattleship2D_1_1ui_1_1CellUI_ac4554c21f5994228aa9d90c16a13ad01}{Cell\-U\-I()} 
+\end{DoxySeeAlso}
+\hypertarget{classbattleship2D_1_1ui_1_1CellUI_a4bc5f31aad68826675104652b1869827}{\index{battleship2\-D\-::ui\-::\-Cell\-U\-I@{battleship2\-D\-::ui\-::\-Cell\-U\-I}!remove\-Property\-Change\-Listener@{remove\-Property\-Change\-Listener}}
+\index{remove\-Property\-Change\-Listener@{remove\-Property\-Change\-Listener}!battleship2D::ui::CellUI@{battleship2\-D\-::ui\-::\-Cell\-U\-I}}
+\subsubsection[{remove\-Property\-Change\-Listener}]{\setlength{\rightskip}{0pt plus 5cm}void battleship2\-D.\-ui.\-Cell\-U\-I.\-remove\-Property\-Change\-Listener (
+\begin{DoxyParamCaption}
+\item[{Property\-Change\-Listener}]{property\-Change\-Listener}
+\end{DoxyParamCaption}
+)}}\label{classbattleship2D_1_1ui_1_1CellUI_a4bc5f31aad68826675104652b1869827}
+\hypertarget{classbattleship2D_1_1ui_1_1CellUI_a8309e9cfa7ebb4b8c62254f152a24561}{\index{battleship2\-D\-::ui\-::\-Cell\-U\-I@{battleship2\-D\-::ui\-::\-Cell\-U\-I}!set\-Highlight@{set\-Highlight}}
+\index{set\-Highlight@{set\-Highlight}!battleship2D::ui::CellUI@{battleship2\-D\-::ui\-::\-Cell\-U\-I}}
+\subsubsection[{set\-Highlight}]{\setlength{\rightskip}{0pt plus 5cm}void battleship2\-D.\-ui.\-Cell\-U\-I.\-set\-Highlight (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classbattleship2D_1_1ui_1_1CellUI_a8309e9cfa7ebb4b8c62254f152a24561}
+
+
+Cell is highlighted when the mouse is hovering on. 
+
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classbattleship2D_1_1ui_1_1CellUI_ac4554c21f5994228aa9d90c16a13ad01}{Cell\-U\-I()} 
+\end{DoxySeeAlso}
+\hypertarget{classbattleship2D_1_1ui_1_1CellUI_a58244e6fa1932bf6f427c73a515d524f}{\index{battleship2\-D\-::ui\-::\-Cell\-U\-I@{battleship2\-D\-::ui\-::\-Cell\-U\-I}!set\-Style@{set\-Style}}
+\index{set\-Style@{set\-Style}!battleship2D::ui::CellUI@{battleship2\-D\-::ui\-::\-Cell\-U\-I}}
+\subsubsection[{set\-Style}]{\setlength{\rightskip}{0pt plus 5cm}void battleship2\-D.\-ui.\-Cell\-U\-I.\-set\-Style (
+\begin{DoxyParamCaption}
+\item[{Boolean}]{is\-Bound}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classbattleship2D_1_1ui_1_1CellUI_a58244e6fa1932bf6f427c73a515d524f}
+
+
+The style depends on the bound cell model. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em is\-Bound} & -\/ determines whether this \hyperlink{classbattleship2D_1_1ui_1_1CellUI}{Cell\-U\-I}'s style is bound to cell model's \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classbattleship2D_1_1ui_1_1CellUI_ac4554c21f5994228aa9d90c16a13ad01}{Cell\-U\-I()} 
+\end{DoxySeeAlso}
+\hypertarget{classbattleship2D_1_1ui_1_1CellUI_a4b4ab9aec58484c4dd36e30e063e059a}{\index{battleship2\-D\-::ui\-::\-Cell\-U\-I@{battleship2\-D\-::ui\-::\-Cell\-U\-I}!update\-After\-Missile@{update\-After\-Missile}}
+\index{update\-After\-Missile@{update\-After\-Missile}!battleship2D::ui::CellUI@{battleship2\-D\-::ui\-::\-Cell\-U\-I}}
+\subsubsection[{update\-After\-Missile}]{\setlength{\rightskip}{0pt plus 5cm}void battleship2\-D.\-ui.\-Cell\-U\-I.\-update\-After\-Missile (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classbattleship2D_1_1ui_1_1CellUI_a4b4ab9aec58484c4dd36e30e063e059a}
+
+
+Updates the type of the related Cell\-Model with regard to its current state. 
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classbattleship2D_1_1ui_1_1CellUI_ae8ba5dba09afebc304ec693a37950cfb}{\index{battleship2\-D\-::ui\-::\-Cell\-U\-I@{battleship2\-D\-::ui\-::\-Cell\-U\-I}!cell\-Model@{cell\-Model}}
+\index{cell\-Model@{cell\-Model}!battleship2D::ui::CellUI@{battleship2\-D\-::ui\-::\-Cell\-U\-I}}
+\subsubsection[{cell\-Model}]{\setlength{\rightskip}{0pt plus 5cm}final {\bf Cell\-Model} battleship2\-D.\-ui.\-Cell\-U\-I.\-cell\-Model\hspace{0.3cm}{\ttfamily [private]}}}\label{classbattleship2D_1_1ui_1_1CellUI_ae8ba5dba09afebc304ec693a37950cfb}
+
+
+Related cell model. 
+
+\hypertarget{classbattleship2D_1_1ui_1_1CellUI_a503b29c1a9fb26fb983caebf772c8c90}{\index{battleship2\-D\-::ui\-::\-Cell\-U\-I@{battleship2\-D\-::ui\-::\-Cell\-U\-I}!cell\-Model\-Color\-Property@{cell\-Model\-Color\-Property}}
+\index{cell\-Model\-Color\-Property@{cell\-Model\-Color\-Property}!battleship2D::ui::CellUI@{battleship2\-D\-::ui\-::\-Cell\-U\-I}}
+\subsubsection[{cell\-Model\-Color\-Property}]{\setlength{\rightskip}{0pt plus 5cm}Simple\-String\-Property battleship2\-D.\-ui.\-Cell\-U\-I.\-cell\-Model\-Color\-Property = null\hspace{0.3cm}{\ttfamily [private]}}}\label{classbattleship2D_1_1ui_1_1CellUI_a503b29c1a9fb26fb983caebf772c8c90}
+
+
+Cell color depends on the related cell model. 
+
+\hypertarget{classbattleship2D_1_1ui_1_1CellUI_a8740932a3854223098d31cf94b09f82c}{\index{battleship2\-D\-::ui\-::\-Cell\-U\-I@{battleship2\-D\-::ui\-::\-Cell\-U\-I}!highlight@{highlight}}
+\index{highlight@{highlight}!battleship2D::ui::CellUI@{battleship2\-D\-::ui\-::\-Cell\-U\-I}}
+\subsubsection[{highlight}]{\setlength{\rightskip}{0pt plus 5cm}Region battleship2\-D.\-ui.\-Cell\-U\-I.\-highlight\hspace{0.3cm}{\ttfamily [private]}}}\label{classbattleship2D_1_1ui_1_1CellUI_a8740932a3854223098d31cf94b09f82c}
+
+
+Appearance attributes. 
+
+\hypertarget{classbattleship2D_1_1ui_1_1CellUI_a5abb394f8190a79f8cb0d6b352af6333}{\index{battleship2\-D\-::ui\-::\-Cell\-U\-I@{battleship2\-D\-::ui\-::\-Cell\-U\-I}!highlight\-Transition@{highlight\-Transition}}
+\index{highlight\-Transition@{highlight\-Transition}!battleship2D::ui::CellUI@{battleship2\-D\-::ui\-::\-Cell\-U\-I}}
+\subsubsection[{highlight\-Transition}]{\setlength{\rightskip}{0pt plus 5cm}Fade\-Transition battleship2\-D.\-ui.\-Cell\-U\-I.\-highlight\-Transition\hspace{0.3cm}{\ttfamily [private]}}}\label{classbattleship2D_1_1ui_1_1CellUI_a5abb394f8190a79f8cb0d6b352af6333}
+\hypertarget{classbattleship2D_1_1ui_1_1CellUI_a90990b04506f285810963675dfa2c668}{\index{battleship2\-D\-::ui\-::\-Cell\-U\-I@{battleship2\-D\-::ui\-::\-Cell\-U\-I}!last\-Hit@{last\-Hit}}
+\index{last\-Hit@{last\-Hit}!battleship2D::ui::CellUI@{battleship2\-D\-::ui\-::\-Cell\-U\-I}}
+\subsubsection[{last\-Hit}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cell\-Type} battleship2\-D.\-ui.\-Cell\-U\-I.\-last\-Hit = {\bf Cell\-Type.\-U\-N\-K\-N\-O\-W\-N}\hspace{0.3cm}{\ttfamily [private]}}}\label{classbattleship2D_1_1ui_1_1CellUI_a90990b04506f285810963675dfa2c668}
+
+
+Type of the last ship which has been hit by a missile. 
+
+\hypertarget{classbattleship2D_1_1ui_1_1CellUI_af26c7ea10eff42c4a67c9395454e4e9a}{\index{battleship2\-D\-::ui\-::\-Cell\-U\-I@{battleship2\-D\-::ui\-::\-Cell\-U\-I}!pcs\-Listeners@{pcs\-Listeners}}
+\index{pcs\-Listeners@{pcs\-Listeners}!battleship2D::ui::CellUI@{battleship2\-D\-::ui\-::\-Cell\-U\-I}}
+\subsubsection[{pcs\-Listeners}]{\setlength{\rightskip}{0pt plus 5cm}final Property\-Change\-Support battleship2\-D.\-ui.\-Cell\-U\-I.\-pcs\-Listeners = new Property\-Change\-Support(this)\hspace{0.3cm}{\ttfamily [private]}}}\label{classbattleship2D_1_1ui_1_1CellUI_af26c7ea10eff42c4a67c9395454e4e9a}
+
+
+Listeners management. 
+
+\hypertarget{classbattleship2D_1_1ui_1_1CellUI_a1f8674dbc8815be409813c8d097a110b}{\index{battleship2\-D\-::ui\-::\-Cell\-U\-I@{battleship2\-D\-::ui\-::\-Cell\-U\-I}!style\-Prefix@{style\-Prefix}}
+\index{style\-Prefix@{style\-Prefix}!battleship2D::ui::CellUI@{battleship2\-D\-::ui\-::\-Cell\-U\-I}}
+\subsubsection[{style\-Prefix}]{\setlength{\rightskip}{0pt plus 5cm}final String battleship2\-D.\-ui.\-Cell\-U\-I.\-style\-Prefix = \char`\"{}-\/fx-\/border-\/width\-: 1; -\/fx-\/border-\/color\-: dodgerblue; -\/fx-\/background-\/radius\-: 10em; -\/fx-\/background-\/insets\-: 1; -\/fx-\/background-\/size\-:cover; \char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{classbattleship2D_1_1ui_1_1CellUI_a1f8674dbc8815be409813c8d097a110b}
+
+
+(part of) style. 
+
+The style is updated with regards to the related cell model. 
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/home/xaviator/\-Enseignements/2015-\/2016/\-S\-F\-A/\-M1-\/\-Info/\-I\-H\-M/\-Battle\-Ship2\-D\-\_\-students/battleship2\-D/ui/\hyperlink{CellUI_8java}{Cell\-U\-I.\-java}\end{DoxyCompactItemize}

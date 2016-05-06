@@ -1,0 +1,20 @@
+var searchData=
+[
+  ['setcelltype',['setCellType',['../classbattleship2D_1_1model_1_1CellModel.html#aa4b33ed17badf1b1058d554c23d324bc',1,'battleship2D::model::CellModel']]],
+  ['setcolumn',['setColumn',['../classbattleship2D_1_1model_1_1Coord2D.html#a9152c6f9e7d7600483d4b36c89acefce',1,'battleship2D::model::Coord2D']]],
+  ['setid',['setId',['../classbattleship2D_1_1model_1_1CellModel.html#ad3cf39763eb70d7ee5f4efa1553a5268',1,'battleship2D::model::CellModel']]],
+  ['setrow',['setRow',['../classbattleship2D_1_1model_1_1Coord2D.html#a0be3424c423bd438cdcceae7b829353c',1,'battleship2D::model::Coord2D']]],
+  ['ship',['Ship',['../classbattleship2D_1_1model_1_1Ship.html#a87eba7afe7524d43b60439a5fd269009',1,'battleship2D::model::Ship']]],
+  ['ship',['Ship',['../classbattleship2D_1_1model_1_1Ship.html',1,'battleship2D::model']]],
+  ['ship_2ejava',['Ship.java',['../Ship_8java.html',1,'']]],
+  ['ships',['ships',['../classbattleship2D_1_1model_1_1Fleet.html#a969e704ee79c18874d9dddcf98401014',1,'battleship2D::model::Fleet']]],
+  ['shiptype',['ShipType',['../enumbattleship2D_1_1model_1_1ShipType.html',1,'battleship2D::model']]],
+  ['shiptype',['ShipType',['../enumbattleship2D_1_1model_1_1ShipType.html#af75a4ecff25c2d6fd086c0f9e443d8ab',1,'battleship2D.model.ShipType.ShipType()'],['../classbattleship2D_1_1model_1_1Ship.html#a9291fcd44b67561c908b6c7e47dc844f',1,'battleship2D.model.Ship.shipType()']]],
+  ['shiptype_2ejava',['ShipType.java',['../ShipType_8java.html',1,'']]],
+  ['shiptypetocelltype',['shipTypeToCellType',['../enumbattleship2D_1_1model_1_1CellType.html#a5d3b8fd30d9afa7a8505074b87850719',1,'battleship2D::model::CellType']]],
+  ['size',['size',['../classbattleship2D_1_1model_1_1Ship.html#a8c1f963c60a57e54b2600e9ee3a5aef6',1,'battleship2D::model::Ship']]],
+  ['skilllevel',['SkillLevel',['../enumbattleship2D_1_1model_1_1SkillLevel.html',1,'battleship2D::model']]],
+  ['skilllevel_2ejava',['SkillLevel.java',['../SkillLevel_8java.html',1,'']]],
+  ['south',['SOUTH',['../enumbattleship2D_1_1model_1_1Direction.html#ae3b60a67e1c1c9005c6abee5ef5dde95',1,'battleship2D::model::Direction']]],
+  ['submarine',['SUBMARINE',['../enumbattleship2D_1_1model_1_1CellType.html#af0cd87a32526f247a9347043d4c57a6e',1,'battleship2D.model.CellType.SUBMARINE()'],['../enumbattleship2D_1_1model_1_1ShipType.html#a6a4a2e419cb22ff18555e82539251a9d',1,'battleship2D.model.ShipType.SUBMARINE()']]]
+];

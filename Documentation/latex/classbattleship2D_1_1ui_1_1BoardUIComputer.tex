@@ -1,0 +1,519 @@
+\hypertarget{classbattleship2D_1_1ui_1_1BoardUIComputer}{\section{battleship2\-D.\-ui.\-Board\-U\-I\-Computer Class Reference}
+\label{classbattleship2D_1_1ui_1_1BoardUIComputer}\index{battleship2\-D.\-ui.\-Board\-U\-I\-Computer@{battleship2\-D.\-ui.\-Board\-U\-I\-Computer}}
+}
+
+
+\hyperlink{classbattleship2D_1_1ui_1_1BoardUI}{Board\-U\-I} dedicated to computer side.  
+
+
+
+
+Inheritance diagram for battleship2\-D.\-ui.\-Board\-U\-I\-Computer\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=244pt]{classbattleship2D_1_1ui_1_1BoardUIComputer__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for battleship2\-D.\-ui.\-Board\-U\-I\-Computer\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbattleship2D_1_1ui_1_1BoardUIComputer__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classbattleship2D_1_1ui_1_1BoardUIComputer_a5ac5d7134ce3b7e68a3aee583e6c1f9c}{Board\-U\-I\-Computer} (String \hyperlink{classbattleship2D_1_1ui_1_1BoardUI_a7ad8f5d72803137c6ea6bde92a667c03}{name}, \hyperlink{classbattleship2D_1_1model_1_1BoardModel}{Board\-Model} \hyperlink{classbattleship2D_1_1ui_1_1BoardUI_a6c61b16484c780fb58e68bc8fb1494e6}{board\-Model}, Boolean is\-Bound, \hyperlink{enumbattleship2D_1_1model_1_1SkillLevel}{Skill\-Level} \hyperlink{classbattleship2D_1_1ui_1_1BoardUIComputer_a1c8d0fc4e6fd8ae9402dc45bee0fde2b}{skill\-Level})
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\hyperlink{classbattleship2D_1_1model_1_1Coord2D}{Coord2\-D} \hyperlink{classbattleship2D_1_1ui_1_1BoardUIComputer_a01e137603a1dfeb17df93168a0235146}{find\-Missile\-Destination\-Cell} ()
+\begin{DoxyCompactList}\small\item\em Computes the location of the player cell targeted by a missile The method to find this cell depends on the computer skill level. \end{DoxyCompactList}\item 
+void \hyperlink{classbattleship2D_1_1ui_1_1BoardUIComputer_ac08e09696adf3c76c1cdfe5fb9010a36}{place\-Ships\-On\-Board\-At\-Random} ()
+\begin{DoxyCompactList}\small\item\em Automatically places a whole fleet of ships on this board, at random locations. \end{DoxyCompactList}\item 
+void \hyperlink{classbattleship2D_1_1ui_1_1BoardUIComputer_a564ca53a00bfee32ae6d7dafc01e2efb}{update\-Info\-About\-Adverse\-Destroyed\-Ship} (String ship\-Description)
+\begin{DoxyCompactList}\small\item\em Each time an adverse (player) ship has been destroyed, the number of target ships decreases. \end{DoxyCompactList}\item 
+\hyperlink{classbattleship2D_1_1model_1_1CellModel}{Cell\-Model} \hyperlink{classbattleship2D_1_1ui_1_1BoardUIComputer_a102d4a76a46a6a6f8f3f0e827930a9a5}{get\-Last\-Cell\-Targeted} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classbattleship2D_1_1ui_1_1BoardUIComputer_ab01227e9e77399e740e47aa21cd6e176}{init\-Specific\-Cell\-U\-I\-Listener} (Property\-Change\-Event property\-Change\-Event)
+\begin{DoxyCompactList}\small\item\em Manages notification sent by Cell\-U\-Is. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Array\-List$<$ \hyperlink{classbattleship2D_1_1model_1_1CellModel}{Cell\-Model} $>$ \hyperlink{classbattleship2D_1_1ui_1_1BoardUIComputer_a051698ce5b45371a4e3d5f53177df6e8}{collect\-Candidates\-For\-Future\-Target} (int size)
+\begin{DoxyCompactList}\small\item\em Create and fill a set of cells amongst which the next missile future target will be selected, in the medium skill level. \end{DoxyCompactList}\item 
+Array\-List$<$ \hyperlink{classbattleship2D_1_1model_1_1CellModel}{Cell\-Model} $>$ \hyperlink{classbattleship2D_1_1ui_1_1BoardUIComputer_a884ba29c155fc322f4235b93276f2a23}{find\-Adjacent\-Cells} (\hyperlink{classbattleship2D_1_1model_1_1CellModel}{Cell\-Model} cell\-Model)
+\begin{DoxyCompactList}\small\item\em Fill a set with cells adjacent (along cardinal directions) to a specific cell. \end{DoxyCompactList}\item 
+\hyperlink{classbattleship2D_1_1model_1_1Coord2D}{Coord2\-D} \hyperlink{classbattleship2D_1_1ui_1_1BoardUIComputer_a2ee5a1022a4e4f7c017c730e43e0a5ea}{find\-Missile\-Destination\-Cell\-Beginner} ()
+\begin{DoxyCompactList}\small\item\em Computes the location of the player cell targeted by a missile The computation is done at beginner level\-: The computer only searches for a random location which has not already been visited. \end{DoxyCompactList}\item 
+\hyperlink{classbattleship2D_1_1model_1_1Coord2D}{Coord2\-D} \hyperlink{classbattleship2D_1_1ui_1_1BoardUIComputer_a2291bd3adb54e7414eb484d28fdec820}{find\-Missile\-Destination\-Cell\-Expert} ()
+\begin{DoxyCompactList}\small\item\em Computes the location of the player cell targeted by a missile The computation is done at expert level\-: once a ship has been hit, the next missile is targeted to an adjacent cell to increase the odds to hit another part of a ship. \end{DoxyCompactList}\item 
+\hyperlink{classbattleship2D_1_1model_1_1Coord2D}{Coord2\-D} \hyperlink{classbattleship2D_1_1ui_1_1BoardUIComputer_abc8377b572ab0b53866609189e9c81a5}{find\-Missile\-Destination\-Cell\-Medium} ()
+\begin{DoxyCompactList}\small\item\em Computes the location of the player cell targeted by a missile The computation is done at medium level\-: this method searches for a zone in the player board, in which the ship with the greatest size ($>$1) that has not been already destroyed, could lie. \end{DoxyCompactList}\item 
+\hyperlink{classbattleship2D_1_1model_1_1Coord2D}{Coord2\-D} \hyperlink{classbattleship2D_1_1ui_1_1BoardUIComputer_ae895f4892488717da8d778264c963cb3}{find\-Missile\-Destination\-From\-Future\-Targets} ()
+\begin{DoxyCompactList}\small\item\em Select the future missile target. \end{DoxyCompactList}\item 
+\hyperlink{classbattleship2D_1_1model_1_1CellModel}{Cell\-Model} \hyperlink{classbattleship2D_1_1ui_1_1BoardUIComputer_aae69c40ffb435b086ccb725670840619}{find\-Opposite\-Adjacent\-Cell} (\hyperlink{classbattleship2D_1_1model_1_1CellModel}{Cell\-Model} cell\-Model, Array\-List$<$ \hyperlink{classbattleship2D_1_1model_1_1CellModel}{Cell\-Model} $>$ adjacent\-Cells)
+\begin{DoxyCompactList}\small\item\em In order to increase the odds to find a cell belonging to the lat ship hit, the set adjacent\-Cells of cells adjacent to the one representing the ship is provided, together with cell\-Model, which represents also a ship (cell\-Model is an element of adjacent\-Cells). \end{DoxyCompactList}\item 
+int \hyperlink{classbattleship2D_1_1ui_1_1BoardUIComputer_abd860959bf0e63c9bbf089a96d1e38b4}{find\-Size\-Of\-The\-Biggest\-Ship\-Not\-Destroyed} ()
+\begin{DoxyCompactList}\small\item\em Search for the size of the biggest adverse ship that has not been already destroyed. \end{DoxyCompactList}\item 
+void \hyperlink{classbattleship2D_1_1ui_1_1BoardUIComputer_af7b50be2e65d26ec9548625ff79bd671}{init\-Adverse\-Ship\-Information} ()
+\begin{DoxyCompactList}\small\item\em Initialize adverse\-Ship\-Information We assume that the adverse fleet is composed of the same ships as the computer's fleet. \end{DoxyCompactList}\item 
+boolean \hyperlink{classbattleship2D_1_1ui_1_1BoardUIComputer_a6f52a41b7ac76ca87f14f14e9c03860a}{Is\-Cell\-Center\-Of\-Unknown\-Span} (\hyperlink{classbattleship2D_1_1model_1_1CellModel}{Cell\-Model} cell\-Model, int size)
+\begin{DoxyCompactList}\small\item\em Determines whether a Cell\-Model is at the center of a \char`\"{}size\char`\"{}-\/lenth span of U\-N\-K\-N\-O\-W\-N cells Noting C the coordinate (either row or column) of cell\-Model, spans are defined as follows\-: \end{DoxyCompactList}\item 
+boolean \hyperlink{classbattleship2D_1_1ui_1_1BoardUIComputer_a4f83a91ccb9c8ea87e66e413f0d85e70}{is\-Cell\-Center\-Of\-Unknown\-Span\-Along\-One\-Direction} (\hyperlink{classbattleship2D_1_1model_1_1CellModel}{Cell\-Model} cell\-Model, \hyperlink{enumbattleship2D_1_1model_1_1Direction}{Direction} direction, int span\-Length)
+\begin{DoxyCompactList}\small\item\em Determines whether a span along one direction is made of U\-N\-K\-N\-O\-W\-N cells. \end{DoxyCompactList}\item 
+\hyperlink{enumbattleship2D_1_1model_1_1Direction}{Direction} \hyperlink{classbattleship2D_1_1ui_1_1BoardUIComputer_ab022a170309c399025e12739cdd58617}{random\-Direction} ()
+\item 
+\hyperlink{classbattleship2D_1_1model_1_1CellModel}{Cell\-Model} \hyperlink{classbattleship2D_1_1ui_1_1BoardUIComputer_a10da37bcc8fb42cf582ad6903441b722}{select\-And\-Remove\-Future\-Target} ()
+\item 
+void \hyperlink{classbattleship2D_1_1ui_1_1BoardUIComputer_ae89828da98cd56e91741bb91a191931d}{update\-Score\-Of\-Future\-Target} (\hyperlink{classbattleship2D_1_1model_1_1CellModel}{Cell\-Model} cell\-Model)
+\begin{DoxyCompactList}\small\item\em Add a Cell\-Model as a future target or increases it score if it is already a future target $\ast$. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+final Hash\-Map$<$ String, Integer $>$ \hyperlink{classbattleship2D_1_1ui_1_1BoardUIComputer_adf7a02abc86da93e185ff514c12e9265}{adverse\-Ship\-Information}
+\begin{DoxyCompactList}\small\item\em Store adverse ship information to improve the performance of future targets search Each string represents the ship's name, associated with its size as an Integer. \end{DoxyCompactList}\item 
+final Hash\-Map$<$ \hyperlink{classbattleship2D_1_1model_1_1CellModel}{Cell\-Model}, Integer $>$ \hyperlink{classbattleship2D_1_1ui_1_1BoardUIComputer_a1290864469f2ab3ba675119d1ac709f4}{future\-Targets}
+\begin{DoxyCompactList}\small\item\em Store a selection of cells for future targets Each Cell\-Model is associated with an Integer representing its score for selection as the next actual target. \end{DoxyCompactList}\item 
+\hyperlink{classbattleship2D_1_1model_1_1CellModel}{Cell\-Model} \hyperlink{classbattleship2D_1_1ui_1_1BoardUIComputer_a0d4adb0bce02dfe3629b361edbb58ce0}{last\-Cell\-Targeted}
+\begin{DoxyCompactList}\small\item\em Store a copy the last targeted cell in the player board. \end{DoxyCompactList}\item 
+final \hyperlink{classbattleship2D_1_1model_1_1BoardModel}{Board\-Model} \hyperlink{classbattleship2D_1_1ui_1_1BoardUIComputer_a732fb169b5de8459716765e2196e0a13}{player\-Board\-Model\-Copy}
+\begin{DoxyCompactList}\small\item\em Store moves played against the player. \end{DoxyCompactList}\item 
+final \hyperlink{enumbattleship2D_1_1model_1_1SkillLevel}{Skill\-Level} \hyperlink{classbattleship2D_1_1ui_1_1BoardUIComputer_a1c8d0fc4e6fd8ae9402dc45bee0fde2b}{skill\-Level}
+\begin{DoxyCompactList}\small\item\em Skill level for the computer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\hyperlink{classbattleship2D_1_1ui_1_1BoardUI}{Board\-U\-I} dedicated to computer side. 
+
+\begin{DoxyAuthor}{Author}
+xaviator 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classbattleship2D_1_1ui_1_1BoardUIComputer_a5ac5d7134ce3b7e68a3aee583e6c1f9c}{\index{battleship2\-D\-::ui\-::\-Board\-U\-I\-Computer@{battleship2\-D\-::ui\-::\-Board\-U\-I\-Computer}!Board\-U\-I\-Computer@{Board\-U\-I\-Computer}}
+\index{Board\-U\-I\-Computer@{Board\-U\-I\-Computer}!battleship2D::ui::BoardUIComputer@{battleship2\-D\-::ui\-::\-Board\-U\-I\-Computer}}
+\subsubsection[{Board\-U\-I\-Computer}]{\setlength{\rightskip}{0pt plus 5cm}battleship2\-D.\-ui.\-Board\-U\-I\-Computer.\-Board\-U\-I\-Computer (
+\begin{DoxyParamCaption}
+\item[{String}]{name, }
+\item[{{\bf Board\-Model}}]{board\-Model, }
+\item[{Boolean}]{is\-Bound, }
+\item[{{\bf Skill\-Level}}]{skill\-Level}
+\end{DoxyParamCaption}
+)}}\label{classbattleship2D_1_1ui_1_1BoardUIComputer_a5ac5d7134ce3b7e68a3aee583e6c1f9c}
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & -\/ This board's name \\
+\hline
+{\em board\-Model} & -\/ related model \\
+\hline
+{\em is\-Bound} & -\/ determines whether \hyperlink{classbattleship2D_1_1ui_1_1CellUI}{Cell\-U\-I}'s styles are bound to cell models' \\
+\hline
+{\em skill\-Level} & -\/ level associated with the computer \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classbattleship2D_1_1ui_1_1BoardUIComputer_a051698ce5b45371a4e3d5f53177df6e8}{\index{battleship2\-D\-::ui\-::\-Board\-U\-I\-Computer@{battleship2\-D\-::ui\-::\-Board\-U\-I\-Computer}!collect\-Candidates\-For\-Future\-Target@{collect\-Candidates\-For\-Future\-Target}}
+\index{collect\-Candidates\-For\-Future\-Target@{collect\-Candidates\-For\-Future\-Target}!battleship2D::ui::BoardUIComputer@{battleship2\-D\-::ui\-::\-Board\-U\-I\-Computer}}
+\subsubsection[{collect\-Candidates\-For\-Future\-Target}]{\setlength{\rightskip}{0pt plus 5cm}Array\-List$<${\bf Cell\-Model}$>$ battleship2\-D.\-ui.\-Board\-U\-I\-Computer.\-collect\-Candidates\-For\-Future\-Target (
+\begin{DoxyParamCaption}
+\item[{int}]{size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classbattleship2D_1_1ui_1_1BoardUIComputer_a051698ce5b45371a4e3d5f53177df6e8}
+
+
+Create and fill a set of cells amongst which the next missile future target will be selected, in the medium skill level. 
+
+A cell is inserted in the set if it is at the center of a span (horizontal and/or vertical) of U\-N\-K\-N\-O\-W\-N cells 
+\begin{DoxyParams}{Parameters}
+{\em size} & -\/ size of the span \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+size $>$ 1 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Returns}
+the set of cells 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classbattleship2D_1_1ui_1_1BoardUIComputer_abc8377b572ab0b53866609189e9c81a5}{find\-Missile\-Destination\-Cell\-Medium()} 
+\end{DoxySeeAlso}
+\hypertarget{classbattleship2D_1_1ui_1_1BoardUIComputer_a884ba29c155fc322f4235b93276f2a23}{\index{battleship2\-D\-::ui\-::\-Board\-U\-I\-Computer@{battleship2\-D\-::ui\-::\-Board\-U\-I\-Computer}!find\-Adjacent\-Cells@{find\-Adjacent\-Cells}}
+\index{find\-Adjacent\-Cells@{find\-Adjacent\-Cells}!battleship2D::ui::BoardUIComputer@{battleship2\-D\-::ui\-::\-Board\-U\-I\-Computer}}
+\subsubsection[{find\-Adjacent\-Cells}]{\setlength{\rightskip}{0pt plus 5cm}Array\-List$<${\bf Cell\-Model}$>$ battleship2\-D.\-ui.\-Board\-U\-I\-Computer.\-find\-Adjacent\-Cells (
+\begin{DoxyParamCaption}
+\item[{{\bf Cell\-Model}}]{cell\-Model}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classbattleship2D_1_1ui_1_1BoardUIComputer_a884ba29c155fc322f4235b93276f2a23}
+
+
+Fill a set with cells adjacent (along cardinal directions) to a specific cell. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cell\-Model} & -\/ cell centering adjacent cells \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the set of adjacent cells 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classbattleship2D_1_1ui_1_1BoardUIComputer_a2291bd3adb54e7414eb484d28fdec820}{find\-Missile\-Destination\-Cell\-Expert()} 
+\end{DoxySeeAlso}
+\hypertarget{classbattleship2D_1_1ui_1_1BoardUIComputer_a01e137603a1dfeb17df93168a0235146}{\index{battleship2\-D\-::ui\-::\-Board\-U\-I\-Computer@{battleship2\-D\-::ui\-::\-Board\-U\-I\-Computer}!find\-Missile\-Destination\-Cell@{find\-Missile\-Destination\-Cell}}
+\index{find\-Missile\-Destination\-Cell@{find\-Missile\-Destination\-Cell}!battleship2D::ui::BoardUIComputer@{battleship2\-D\-::ui\-::\-Board\-U\-I\-Computer}}
+\subsubsection[{find\-Missile\-Destination\-Cell}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Coord2\-D} battleship2\-D.\-ui.\-Board\-U\-I\-Computer.\-find\-Missile\-Destination\-Cell (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classbattleship2D_1_1ui_1_1BoardUIComputer_a01e137603a1dfeb17df93168a0235146}
+
+
+Computes the location of the player cell targeted by a missile The method to find this cell depends on the computer skill level. 
+
+\begin{DoxyReturn}{Returns}
+-\/ thecell coordinates 
+\end{DoxyReturn}
+\hypertarget{classbattleship2D_1_1ui_1_1BoardUIComputer_a2ee5a1022a4e4f7c017c730e43e0a5ea}{\index{battleship2\-D\-::ui\-::\-Board\-U\-I\-Computer@{battleship2\-D\-::ui\-::\-Board\-U\-I\-Computer}!find\-Missile\-Destination\-Cell\-Beginner@{find\-Missile\-Destination\-Cell\-Beginner}}
+\index{find\-Missile\-Destination\-Cell\-Beginner@{find\-Missile\-Destination\-Cell\-Beginner}!battleship2D::ui::BoardUIComputer@{battleship2\-D\-::ui\-::\-Board\-U\-I\-Computer}}
+\subsubsection[{find\-Missile\-Destination\-Cell\-Beginner}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Coord2\-D} battleship2\-D.\-ui.\-Board\-U\-I\-Computer.\-find\-Missile\-Destination\-Cell\-Beginner (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classbattleship2D_1_1ui_1_1BoardUIComputer_a2ee5a1022a4e4f7c017c730e43e0a5ea}
+
+
+Computes the location of the player cell targeted by a missile The computation is done at beginner level\-: The computer only searches for a random location which has not already been visited. 
+
+\begin{DoxyReturn}{Returns}
+-\/ the cell coordinates of the next cell to target 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classbattleship2D_1_1ui_1_1BoardUIComputer_a01e137603a1dfeb17df93168a0235146}{find\-Missile\-Destination\-Cell()} 
+\end{DoxySeeAlso}
+\hypertarget{classbattleship2D_1_1ui_1_1BoardUIComputer_a2291bd3adb54e7414eb484d28fdec820}{\index{battleship2\-D\-::ui\-::\-Board\-U\-I\-Computer@{battleship2\-D\-::ui\-::\-Board\-U\-I\-Computer}!find\-Missile\-Destination\-Cell\-Expert@{find\-Missile\-Destination\-Cell\-Expert}}
+\index{find\-Missile\-Destination\-Cell\-Expert@{find\-Missile\-Destination\-Cell\-Expert}!battleship2D::ui::BoardUIComputer@{battleship2\-D\-::ui\-::\-Board\-U\-I\-Computer}}
+\subsubsection[{find\-Missile\-Destination\-Cell\-Expert}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Coord2\-D} battleship2\-D.\-ui.\-Board\-U\-I\-Computer.\-find\-Missile\-Destination\-Cell\-Expert (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classbattleship2D_1_1ui_1_1BoardUIComputer_a2291bd3adb54e7414eb484d28fdec820}
+
+
+Computes the location of the player cell targeted by a missile The computation is done at expert level\-: once a ship has been hit, the next missile is targeted to an adjacent cell to increase the odds to hit another part of a ship. 
+
+\begin{DoxyReturn}{Returns}
+-\/ the cell coordinates of the next cell to target 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classbattleship2D_1_1ui_1_1BoardUIComputer_a01e137603a1dfeb17df93168a0235146}{find\-Missile\-Destination\-Cell()} 
+\end{DoxySeeAlso}
+\hypertarget{classbattleship2D_1_1ui_1_1BoardUIComputer_abc8377b572ab0b53866609189e9c81a5}{\index{battleship2\-D\-::ui\-::\-Board\-U\-I\-Computer@{battleship2\-D\-::ui\-::\-Board\-U\-I\-Computer}!find\-Missile\-Destination\-Cell\-Medium@{find\-Missile\-Destination\-Cell\-Medium}}
+\index{find\-Missile\-Destination\-Cell\-Medium@{find\-Missile\-Destination\-Cell\-Medium}!battleship2D::ui::BoardUIComputer@{battleship2\-D\-::ui\-::\-Board\-U\-I\-Computer}}
+\subsubsection[{find\-Missile\-Destination\-Cell\-Medium}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Coord2\-D} battleship2\-D.\-ui.\-Board\-U\-I\-Computer.\-find\-Missile\-Destination\-Cell\-Medium (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classbattleship2D_1_1ui_1_1BoardUIComputer_abc8377b572ab0b53866609189e9c81a5}
+
+
+Computes the location of the player cell targeted by a missile The computation is done at medium level\-: this method searches for a zone in the player board, in which the ship with the greatest size ($>$1) that has not been already destroyed, could lie. 
+
+Note\-: this method could be optimized since every time a missile is going to be launched, the whole copy board is scanned for collecting every cell representing an interesting zone. Since only a relatively small part of the board is modified after each missile launch, it might be better to modify incrementally the collection of zones, instead of recreating a collection each time. But the code would be complexified, we prefer to use the \char`\"{}brute-\/force\char`\"{} solution.
+
+\begin{DoxyReturn}{Returns}
+-\/ the cell coordinates of the next cell to target 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classbattleship2D_1_1ui_1_1BoardUIComputer_a01e137603a1dfeb17df93168a0235146}{find\-Missile\-Destination\-Cell()} 
+\end{DoxySeeAlso}
+\hypertarget{classbattleship2D_1_1ui_1_1BoardUIComputer_ae895f4892488717da8d778264c963cb3}{\index{battleship2\-D\-::ui\-::\-Board\-U\-I\-Computer@{battleship2\-D\-::ui\-::\-Board\-U\-I\-Computer}!find\-Missile\-Destination\-From\-Future\-Targets@{find\-Missile\-Destination\-From\-Future\-Targets}}
+\index{find\-Missile\-Destination\-From\-Future\-Targets@{find\-Missile\-Destination\-From\-Future\-Targets}!battleship2D::ui::BoardUIComputer@{battleship2\-D\-::ui\-::\-Board\-U\-I\-Computer}}
+\subsubsection[{find\-Missile\-Destination\-From\-Future\-Targets}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Coord2\-D} battleship2\-D.\-ui.\-Board\-U\-I\-Computer.\-find\-Missile\-Destination\-From\-Future\-Targets (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classbattleship2D_1_1ui_1_1BoardUIComputer_ae895f4892488717da8d778264c963cb3}
+
+
+Select the future missile target. 
+
+\begin{DoxyReturn}{Returns}
+-\/ the target cell coordinates 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classbattleship2D_1_1ui_1_1BoardUIComputer_a2291bd3adb54e7414eb484d28fdec820}{find\-Missile\-Destination\-Cell\-Expert()} 
+\end{DoxySeeAlso}
+\hypertarget{classbattleship2D_1_1ui_1_1BoardUIComputer_aae69c40ffb435b086ccb725670840619}{\index{battleship2\-D\-::ui\-::\-Board\-U\-I\-Computer@{battleship2\-D\-::ui\-::\-Board\-U\-I\-Computer}!find\-Opposite\-Adjacent\-Cell@{find\-Opposite\-Adjacent\-Cell}}
+\index{find\-Opposite\-Adjacent\-Cell@{find\-Opposite\-Adjacent\-Cell}!battleship2D::ui::BoardUIComputer@{battleship2\-D\-::ui\-::\-Board\-U\-I\-Computer}}
+\subsubsection[{find\-Opposite\-Adjacent\-Cell}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cell\-Model} battleship2\-D.\-ui.\-Board\-U\-I\-Computer.\-find\-Opposite\-Adjacent\-Cell (
+\begin{DoxyParamCaption}
+\item[{{\bf Cell\-Model}}]{cell\-Model, }
+\item[{Array\-List$<$ {\bf Cell\-Model} $>$}]{adjacent\-Cells}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classbattleship2D_1_1ui_1_1BoardUIComputer_aae69c40ffb435b086ccb725670840619}
+
+
+In order to increase the odds to find a cell belonging to the lat ship hit, the set adjacent\-Cells of cells adjacent to the one representing the ship is provided, together with cell\-Model, which represents also a ship (cell\-Model is an element of adjacent\-Cells). 
+
+We search in adjacent\-Cells if there is an U\-N\-K\-N\-O\-W\-N cell in the cardinal direction opposite to cell\-Model's If it exists, this cell will be a future target. 
+\begin{DoxyParams}{Parameters}
+{\em cell\-Model} & -\/ cell in a cardinal direction \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+cell\-Model is not null 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Parameters}
+{\em adjacent\-Cells} & -\/ set of cells adjacent to the current ship \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the element of adjacent\-Calls placed in the direction opposite to cell\-Model's $\ast$ 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classbattleship2D_1_1ui_1_1BoardUIComputer_a2291bd3adb54e7414eb484d28fdec820}{find\-Missile\-Destination\-Cell\-Expert()} 
+\end{DoxySeeAlso}
+\hypertarget{classbattleship2D_1_1ui_1_1BoardUIComputer_abd860959bf0e63c9bbf089a96d1e38b4}{\index{battleship2\-D\-::ui\-::\-Board\-U\-I\-Computer@{battleship2\-D\-::ui\-::\-Board\-U\-I\-Computer}!find\-Size\-Of\-The\-Biggest\-Ship\-Not\-Destroyed@{find\-Size\-Of\-The\-Biggest\-Ship\-Not\-Destroyed}}
+\index{find\-Size\-Of\-The\-Biggest\-Ship\-Not\-Destroyed@{find\-Size\-Of\-The\-Biggest\-Ship\-Not\-Destroyed}!battleship2D::ui::BoardUIComputer@{battleship2\-D\-::ui\-::\-Board\-U\-I\-Computer}}
+\subsubsection[{find\-Size\-Of\-The\-Biggest\-Ship\-Not\-Destroyed}]{\setlength{\rightskip}{0pt plus 5cm}int battleship2\-D.\-ui.\-Board\-U\-I\-Computer.\-find\-Size\-Of\-The\-Biggest\-Ship\-Not\-Destroyed (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classbattleship2D_1_1ui_1_1BoardUIComputer_abd860959bf0e63c9bbf089a96d1e38b4}
+
+
+Search for the size of the biggest adverse ship that has not been already destroyed. 
+
+\begin{DoxyReturn}{Returns}
+the biggest size 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classbattleship2D_1_1ui_1_1BoardUIComputer_abc8377b572ab0b53866609189e9c81a5}{find\-Missile\-Destination\-Cell\-Medium()} 
+\end{DoxySeeAlso}
+\hypertarget{classbattleship2D_1_1ui_1_1BoardUIComputer_a102d4a76a46a6a6f8f3f0e827930a9a5}{\index{battleship2\-D\-::ui\-::\-Board\-U\-I\-Computer@{battleship2\-D\-::ui\-::\-Board\-U\-I\-Computer}!get\-Last\-Cell\-Targeted@{get\-Last\-Cell\-Targeted}}
+\index{get\-Last\-Cell\-Targeted@{get\-Last\-Cell\-Targeted}!battleship2D::ui::BoardUIComputer@{battleship2\-D\-::ui\-::\-Board\-U\-I\-Computer}}
+\subsubsection[{get\-Last\-Cell\-Targeted}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cell\-Model} battleship2\-D.\-ui.\-Board\-U\-I\-Computer.\-get\-Last\-Cell\-Targeted (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classbattleship2D_1_1ui_1_1BoardUIComputer_a102d4a76a46a6a6f8f3f0e827930a9a5}
+\hypertarget{classbattleship2D_1_1ui_1_1BoardUIComputer_af7b50be2e65d26ec9548625ff79bd671}{\index{battleship2\-D\-::ui\-::\-Board\-U\-I\-Computer@{battleship2\-D\-::ui\-::\-Board\-U\-I\-Computer}!init\-Adverse\-Ship\-Information@{init\-Adverse\-Ship\-Information}}
+\index{init\-Adverse\-Ship\-Information@{init\-Adverse\-Ship\-Information}!battleship2D::ui::BoardUIComputer@{battleship2\-D\-::ui\-::\-Board\-U\-I\-Computer}}
+\subsubsection[{init\-Adverse\-Ship\-Information}]{\setlength{\rightskip}{0pt plus 5cm}void battleship2\-D.\-ui.\-Board\-U\-I\-Computer.\-init\-Adverse\-Ship\-Information (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classbattleship2D_1_1ui_1_1BoardUIComputer_af7b50be2e65d26ec9548625ff79bd671}
+
+
+Initialize adverse\-Ship\-Information We assume that the adverse fleet is composed of the same ships as the computer's fleet. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fleet} & -\/ set of ships to deal with \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classbattleship2D_1_1ui_1_1BoardUIComputer_a5ac5d7134ce3b7e68a3aee583e6c1f9c}{Board\-U\-I\-Computer()} 
+\end{DoxySeeAlso}
+\hypertarget{classbattleship2D_1_1ui_1_1BoardUIComputer_ab01227e9e77399e740e47aa21cd6e176}{\index{battleship2\-D\-::ui\-::\-Board\-U\-I\-Computer@{battleship2\-D\-::ui\-::\-Board\-U\-I\-Computer}!init\-Specific\-Cell\-U\-I\-Listener@{init\-Specific\-Cell\-U\-I\-Listener}}
+\index{init\-Specific\-Cell\-U\-I\-Listener@{init\-Specific\-Cell\-U\-I\-Listener}!battleship2D::ui::BoardUIComputer@{battleship2\-D\-::ui\-::\-Board\-U\-I\-Computer}}
+\subsubsection[{init\-Specific\-Cell\-U\-I\-Listener}]{\setlength{\rightskip}{0pt plus 5cm}void battleship2\-D.\-ui.\-Board\-U\-I\-Computer.\-init\-Specific\-Cell\-U\-I\-Listener (
+\begin{DoxyParamCaption}
+\item[{Property\-Change\-Event}]{property\-Change\-Event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classbattleship2D_1_1ui_1_1BoardUIComputer_ab01227e9e77399e740e47aa21cd6e176}
+
+
+Manages notification sent by Cell\-U\-Is. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em property\-Change\-Event} & -\/ event to deal with \\
+\hline
+\end{DoxyParams}
+\hypertarget{classbattleship2D_1_1ui_1_1BoardUIComputer_a6f52a41b7ac76ca87f14f14e9c03860a}{\index{battleship2\-D\-::ui\-::\-Board\-U\-I\-Computer@{battleship2\-D\-::ui\-::\-Board\-U\-I\-Computer}!Is\-Cell\-Center\-Of\-Unknown\-Span@{Is\-Cell\-Center\-Of\-Unknown\-Span}}
+\index{Is\-Cell\-Center\-Of\-Unknown\-Span@{Is\-Cell\-Center\-Of\-Unknown\-Span}!battleship2D::ui::BoardUIComputer@{battleship2\-D\-::ui\-::\-Board\-U\-I\-Computer}}
+\subsubsection[{Is\-Cell\-Center\-Of\-Unknown\-Span}]{\setlength{\rightskip}{0pt plus 5cm}boolean battleship2\-D.\-ui.\-Board\-U\-I\-Computer.\-Is\-Cell\-Center\-Of\-Unknown\-Span (
+\begin{DoxyParamCaption}
+\item[{{\bf Cell\-Model}}]{cell\-Model, }
+\item[{int}]{size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classbattleship2D_1_1ui_1_1BoardUIComputer_a6f52a41b7ac76ca87f14f14e9c03860a}
+
+
+Determines whether a Cell\-Model is at the center of a \char`\"{}size\char`\"{}-\/lenth span of U\-N\-K\-N\-O\-W\-N cells Noting C the coordinate (either row or column) of cell\-Model, spans are defined as follows\-: 
+
+
+\begin{DoxyItemize}
+\item if size is odd\-: \mbox{[}C-\/2\mbox{]}\mbox{[}C-\/1\mbox{]}\mbox{[}cell\-Model\mbox{]}\mbox{[}C+1\mbox{]}\mbox{[}C+2\mbox{]}\-: test in both horizontal and vertical directions
+\item if size is even\-: \mbox{[}C-\/2\mbox{]}\mbox{[}C-\/1\mbox{]}\mbox{[}cell\-Model\mbox{]}\mbox{[}C+1\mbox{]} or \mbox{[}C-\/1\mbox{]}\mbox{[}cell\-Model\mbox{]}\mbox{[}C+1\mbox{]}\mbox{[}C+2\mbox{]}\-: test in both horizontal and vertical directions 
+\begin{DoxyParams}{Parameters}
+{\em cell\-Model} & -\/ span center \\
+\hline
+{\em size} & -\/ span length \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+size $>$ 1 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Returns}
+true if cell\-Model is a valid span center, false otherwise 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See Also}
+collect\-Candidate\-Cells\-For\-Future\-Targets() 
+\end{DoxySeeAlso}
+
+\end{DoxyItemize}\hypertarget{classbattleship2D_1_1ui_1_1BoardUIComputer_a4f83a91ccb9c8ea87e66e413f0d85e70}{\index{battleship2\-D\-::ui\-::\-Board\-U\-I\-Computer@{battleship2\-D\-::ui\-::\-Board\-U\-I\-Computer}!is\-Cell\-Center\-Of\-Unknown\-Span\-Along\-One\-Direction@{is\-Cell\-Center\-Of\-Unknown\-Span\-Along\-One\-Direction}}
+\index{is\-Cell\-Center\-Of\-Unknown\-Span\-Along\-One\-Direction@{is\-Cell\-Center\-Of\-Unknown\-Span\-Along\-One\-Direction}!battleship2D::ui::BoardUIComputer@{battleship2\-D\-::ui\-::\-Board\-U\-I\-Computer}}
+\subsubsection[{is\-Cell\-Center\-Of\-Unknown\-Span\-Along\-One\-Direction}]{\setlength{\rightskip}{0pt plus 5cm}boolean battleship2\-D.\-ui.\-Board\-U\-I\-Computer.\-is\-Cell\-Center\-Of\-Unknown\-Span\-Along\-One\-Direction (
+\begin{DoxyParamCaption}
+\item[{{\bf Cell\-Model}}]{cell\-Model, }
+\item[{{\bf Direction}}]{direction, }
+\item[{int}]{span\-Length}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classbattleship2D_1_1ui_1_1BoardUIComputer_a4f83a91ccb9c8ea87e66e413f0d85e70}
+
+
+Determines whether a span along one direction is made of U\-N\-K\-N\-O\-W\-N cells. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cell\-Model} & -\/ span center \\
+\hline
+{\em direction} & -\/ one cardinal direction \\
+\hline
+{\em span\-Length} & -\/ number of cells to test \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if a valid span exists, false otherwise 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classbattleship2D_1_1ui_1_1BoardUIComputer_a6f52a41b7ac76ca87f14f14e9c03860a}{Is\-Cell\-Center\-Of\-Unknown\-Span()} 
+\end{DoxySeeAlso}
+\hypertarget{classbattleship2D_1_1ui_1_1BoardUIComputer_ac08e09696adf3c76c1cdfe5fb9010a36}{\index{battleship2\-D\-::ui\-::\-Board\-U\-I\-Computer@{battleship2\-D\-::ui\-::\-Board\-U\-I\-Computer}!place\-Ships\-On\-Board\-At\-Random@{place\-Ships\-On\-Board\-At\-Random}}
+\index{place\-Ships\-On\-Board\-At\-Random@{place\-Ships\-On\-Board\-At\-Random}!battleship2D::ui::BoardUIComputer@{battleship2\-D\-::ui\-::\-Board\-U\-I\-Computer}}
+\subsubsection[{place\-Ships\-On\-Board\-At\-Random}]{\setlength{\rightskip}{0pt plus 5cm}void battleship2\-D.\-ui.\-Board\-U\-I\-Computer.\-place\-Ships\-On\-Board\-At\-Random (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classbattleship2D_1_1ui_1_1BoardUIComputer_ac08e09696adf3c76c1cdfe5fb9010a36}
+
+
+Automatically places a whole fleet of ships on this board, at random locations. 
+
+\hypertarget{classbattleship2D_1_1ui_1_1BoardUIComputer_ab022a170309c399025e12739cdd58617}{\index{battleship2\-D\-::ui\-::\-Board\-U\-I\-Computer@{battleship2\-D\-::ui\-::\-Board\-U\-I\-Computer}!random\-Direction@{random\-Direction}}
+\index{random\-Direction@{random\-Direction}!battleship2D::ui::BoardUIComputer@{battleship2\-D\-::ui\-::\-Board\-U\-I\-Computer}}
+\subsubsection[{random\-Direction}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Direction} battleship2\-D.\-ui.\-Board\-U\-I\-Computer.\-random\-Direction (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classbattleship2D_1_1ui_1_1BoardUIComputer_ab022a170309c399025e12739cdd58617}
+\begin{DoxyReturn}{Returns}
+a random Direction 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classbattleship2D_1_1ui_1_1BoardUIComputer_ac08e09696adf3c76c1cdfe5fb9010a36}{place\-Ships\-On\-Board\-At\-Random()} 
+\end{DoxySeeAlso}
+\hypertarget{classbattleship2D_1_1ui_1_1BoardUIComputer_a10da37bcc8fb42cf582ad6903441b722}{\index{battleship2\-D\-::ui\-::\-Board\-U\-I\-Computer@{battleship2\-D\-::ui\-::\-Board\-U\-I\-Computer}!select\-And\-Remove\-Future\-Target@{select\-And\-Remove\-Future\-Target}}
+\index{select\-And\-Remove\-Future\-Target@{select\-And\-Remove\-Future\-Target}!battleship2D::ui::BoardUIComputer@{battleship2\-D\-::ui\-::\-Board\-U\-I\-Computer}}
+\subsubsection[{select\-And\-Remove\-Future\-Target}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cell\-Model} battleship2\-D.\-ui.\-Board\-U\-I\-Computer.\-select\-And\-Remove\-Future\-Target (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classbattleship2D_1_1ui_1_1BoardUIComputer_a10da37bcc8fb42cf582ad6903441b722}
+\begin{DoxyReturn}{Returns}
+the Cell\-Model associated with the best score, null if there is no Cell\-Model available If not null, the selected\-Cell\-Model is removed from the set of future targets 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classbattleship2D_1_1ui_1_1BoardUIComputer_ae895f4892488717da8d778264c963cb3}{find\-Missile\-Destination\-From\-Future\-Targets()} 
+\end{DoxySeeAlso}
+\hypertarget{classbattleship2D_1_1ui_1_1BoardUIComputer_a564ca53a00bfee32ae6d7dafc01e2efb}{\index{battleship2\-D\-::ui\-::\-Board\-U\-I\-Computer@{battleship2\-D\-::ui\-::\-Board\-U\-I\-Computer}!update\-Info\-About\-Adverse\-Destroyed\-Ship@{update\-Info\-About\-Adverse\-Destroyed\-Ship}}
+\index{update\-Info\-About\-Adverse\-Destroyed\-Ship@{update\-Info\-About\-Adverse\-Destroyed\-Ship}!battleship2D::ui::BoardUIComputer@{battleship2\-D\-::ui\-::\-Board\-U\-I\-Computer}}
+\subsubsection[{update\-Info\-About\-Adverse\-Destroyed\-Ship}]{\setlength{\rightskip}{0pt plus 5cm}void battleship2\-D.\-ui.\-Board\-U\-I\-Computer.\-update\-Info\-About\-Adverse\-Destroyed\-Ship (
+\begin{DoxyParamCaption}
+\item[{String}]{ship\-Description}
+\end{DoxyParamCaption}
+)}}\label{classbattleship2D_1_1ui_1_1BoardUIComputer_a564ca53a00bfee32ae6d7dafc01e2efb}
+
+
+Each time an adverse (player) ship has been destroyed, the number of target ships decreases. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ship\-Description} & -\/ name of the last adverse destroyed ship \\
+\hline
+\end{DoxyParams}
+\hypertarget{classbattleship2D_1_1ui_1_1BoardUIComputer_ae89828da98cd56e91741bb91a191931d}{\index{battleship2\-D\-::ui\-::\-Board\-U\-I\-Computer@{battleship2\-D\-::ui\-::\-Board\-U\-I\-Computer}!update\-Score\-Of\-Future\-Target@{update\-Score\-Of\-Future\-Target}}
+\index{update\-Score\-Of\-Future\-Target@{update\-Score\-Of\-Future\-Target}!battleship2D::ui::BoardUIComputer@{battleship2\-D\-::ui\-::\-Board\-U\-I\-Computer}}
+\subsubsection[{update\-Score\-Of\-Future\-Target}]{\setlength{\rightskip}{0pt plus 5cm}void battleship2\-D.\-ui.\-Board\-U\-I\-Computer.\-update\-Score\-Of\-Future\-Target (
+\begin{DoxyParamCaption}
+\item[{{\bf Cell\-Model}}]{cell\-Model}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classbattleship2D_1_1ui_1_1BoardUIComputer_ae89828da98cd56e91741bb91a191931d}
+
+
+Add a Cell\-Model as a future target or increases it score if it is already a future target $\ast$. 
+
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classbattleship2D_1_1ui_1_1BoardUIComputer_a2291bd3adb54e7414eb484d28fdec820}{find\-Missile\-Destination\-Cell\-Expert()} 
+\end{DoxySeeAlso}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classbattleship2D_1_1ui_1_1BoardUIComputer_adf7a02abc86da93e185ff514c12e9265}{\index{battleship2\-D\-::ui\-::\-Board\-U\-I\-Computer@{battleship2\-D\-::ui\-::\-Board\-U\-I\-Computer}!adverse\-Ship\-Information@{adverse\-Ship\-Information}}
+\index{adverse\-Ship\-Information@{adverse\-Ship\-Information}!battleship2D::ui::BoardUIComputer@{battleship2\-D\-::ui\-::\-Board\-U\-I\-Computer}}
+\subsubsection[{adverse\-Ship\-Information}]{\setlength{\rightskip}{0pt plus 5cm}final Hash\-Map$<$String, Integer$>$ battleship2\-D.\-ui.\-Board\-U\-I\-Computer.\-adverse\-Ship\-Information\hspace{0.3cm}{\ttfamily [private]}}}\label{classbattleship2D_1_1ui_1_1BoardUIComputer_adf7a02abc86da93e185ff514c12e9265}
+
+
+Store adverse ship information to improve the performance of future targets search Each string represents the ship's name, associated with its size as an Integer. 
+
+This Has\-Map is updated each time an adverse ship is destroyed. \hypertarget{classbattleship2D_1_1ui_1_1BoardUIComputer_a1290864469f2ab3ba675119d1ac709f4}{\index{battleship2\-D\-::ui\-::\-Board\-U\-I\-Computer@{battleship2\-D\-::ui\-::\-Board\-U\-I\-Computer}!future\-Targets@{future\-Targets}}
+\index{future\-Targets@{future\-Targets}!battleship2D::ui::BoardUIComputer@{battleship2\-D\-::ui\-::\-Board\-U\-I\-Computer}}
+\subsubsection[{future\-Targets}]{\setlength{\rightskip}{0pt plus 5cm}final Hash\-Map$<${\bf Cell\-Model},Integer$>$ battleship2\-D.\-ui.\-Board\-U\-I\-Computer.\-future\-Targets\hspace{0.3cm}{\ttfamily [private]}}}\label{classbattleship2D_1_1ui_1_1BoardUIComputer_a1290864469f2ab3ba675119d1ac709f4}
+
+
+Store a selection of cells for future targets Each Cell\-Model is associated with an Integer representing its score for selection as the next actual target. 
+
+\hypertarget{classbattleship2D_1_1ui_1_1BoardUIComputer_a0d4adb0bce02dfe3629b361edbb58ce0}{\index{battleship2\-D\-::ui\-::\-Board\-U\-I\-Computer@{battleship2\-D\-::ui\-::\-Board\-U\-I\-Computer}!last\-Cell\-Targeted@{last\-Cell\-Targeted}}
+\index{last\-Cell\-Targeted@{last\-Cell\-Targeted}!battleship2D::ui::BoardUIComputer@{battleship2\-D\-::ui\-::\-Board\-U\-I\-Computer}}
+\subsubsection[{last\-Cell\-Targeted}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cell\-Model} battleship2\-D.\-ui.\-Board\-U\-I\-Computer.\-last\-Cell\-Targeted\hspace{0.3cm}{\ttfamily [private]}}}\label{classbattleship2D_1_1ui_1_1BoardUIComputer_a0d4adb0bce02dfe3629b361edbb58ce0}
+
+
+Store a copy the last targeted cell in the player board. 
+
+\hypertarget{classbattleship2D_1_1ui_1_1BoardUIComputer_a732fb169b5de8459716765e2196e0a13}{\index{battleship2\-D\-::ui\-::\-Board\-U\-I\-Computer@{battleship2\-D\-::ui\-::\-Board\-U\-I\-Computer}!player\-Board\-Model\-Copy@{player\-Board\-Model\-Copy}}
+\index{player\-Board\-Model\-Copy@{player\-Board\-Model\-Copy}!battleship2D::ui::BoardUIComputer@{battleship2\-D\-::ui\-::\-Board\-U\-I\-Computer}}
+\subsubsection[{player\-Board\-Model\-Copy}]{\setlength{\rightskip}{0pt plus 5cm}final {\bf Board\-Model} battleship2\-D.\-ui.\-Board\-U\-I\-Computer.\-player\-Board\-Model\-Copy\hspace{0.3cm}{\ttfamily [private]}}}\label{classbattleship2D_1_1ui_1_1BoardUIComputer_a732fb169b5de8459716765e2196e0a13}
+
+
+Store moves played against the player. 
+
+\hypertarget{classbattleship2D_1_1ui_1_1BoardUIComputer_a1c8d0fc4e6fd8ae9402dc45bee0fde2b}{\index{battleship2\-D\-::ui\-::\-Board\-U\-I\-Computer@{battleship2\-D\-::ui\-::\-Board\-U\-I\-Computer}!skill\-Level@{skill\-Level}}
+\index{skill\-Level@{skill\-Level}!battleship2D::ui::BoardUIComputer@{battleship2\-D\-::ui\-::\-Board\-U\-I\-Computer}}
+\subsubsection[{skill\-Level}]{\setlength{\rightskip}{0pt plus 5cm}final {\bf Skill\-Level} battleship2\-D.\-ui.\-Board\-U\-I\-Computer.\-skill\-Level\hspace{0.3cm}{\ttfamily [private]}}}\label{classbattleship2D_1_1ui_1_1BoardUIComputer_a1c8d0fc4e6fd8ae9402dc45bee0fde2b}
+
+
+Skill level for the computer. 
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/home/xaviator/\-Enseignements/2015-\/2016/\-S\-F\-A/\-M1-\/\-Info/\-I\-H\-M/\-Battle\-Ship2\-D\-\_\-students/battleship2\-D/ui/\hyperlink{BoardUIComputer_8java}{Board\-U\-I\-Computer.\-java}\end{DoxyCompactItemize}

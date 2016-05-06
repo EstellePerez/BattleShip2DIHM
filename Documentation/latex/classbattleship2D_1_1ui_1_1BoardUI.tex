@@ -1,0 +1,376 @@
+\hypertarget{classbattleship2D_1_1ui_1_1BoardUI}{\section{battleship2\-D.\-ui.\-Board\-U\-I Class Reference}
+\label{classbattleship2D_1_1ui_1_1BoardUI}\index{battleship2\-D.\-ui.\-Board\-U\-I@{battleship2\-D.\-ui.\-Board\-U\-I}}
+}
+
+
+U\-I associated with a Board\-Model.  
+
+
+
+
+Inheritance diagram for battleship2\-D.\-ui.\-Board\-U\-I\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbattleship2D_1_1ui_1_1BoardUI__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for battleship2\-D.\-ui.\-Board\-U\-I\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbattleship2D_1_1ui_1_1BoardUI__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classbattleship2D_1_1ui_1_1BoardUI_a4dcedc80daf997ceb696643f001c34f3}{Board\-U\-I} (String \hyperlink{classbattleship2D_1_1ui_1_1BoardUI_a7ad8f5d72803137c6ea6bde92a667c03}{name}, \hyperlink{classbattleship2D_1_1model_1_1BoardModel}{Board\-Model} \hyperlink{classbattleship2D_1_1ui_1_1BoardUI_a6c61b16484c780fb58e68bc8fb1494e6}{board\-Model}, Boolean is\-Bound)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\hyperlink{classbattleship2D_1_1ui_1_1CellUI}{Cell\-U\-I} \hyperlink{classbattleship2D_1_1ui_1_1BoardUI_a853812e318d4da7352b92bc4226a8310}{find\-Cell\-U\-I\-From\-Model} (\hyperlink{classbattleship2D_1_1model_1_1CellModel}{Cell\-Model} cell\-Model)
+\begin{DoxyCompactList}\small\item\em Searches for the \hyperlink{classbattleship2D_1_1ui_1_1CellUI}{Cell\-U\-I} associated with a Cell\-Model. \end{DoxyCompactList}\item 
+Boolean \hyperlink{classbattleship2D_1_1ui_1_1BoardUI_a571a95d38e4f6740ff5aaa27661aec39}{is\-Ship\-On\-Board} (\hyperlink{enumbattleship2D_1_1model_1_1CellType}{Cell\-Type} cell\-Type)
+\begin{DoxyCompactList}\small\item\em Checks the presence of a ship, depending on a given type. \end{DoxyCompactList}\item 
+void \hyperlink{classbattleship2D_1_1ui_1_1BoardUI_a4a66dac6dd3266ee5520db89ae91317e}{add\-Property\-Change\-Listener} (Property\-Change\-Listener \hyperlink{classbattleship2D_1_1ui_1_1BoardUI_a457c5910efd06093f84977cd1e464891}{property\-Change\-Listener})
+\item 
+void \hyperlink{classbattleship2D_1_1ui_1_1BoardUI_aee22fa9fb602146b7db935e1e9294fc5}{remove\-Property\-Change\-Listener} (Property\-Change\-Listener \hyperlink{classbattleship2D_1_1ui_1_1BoardUI_a457c5910efd06093f84977cd1e464891}{property\-Change\-Listener})
+\item 
+\hyperlink{classbattleship2D_1_1model_1_1BoardModel}{Board\-Model} \hyperlink{classbattleship2D_1_1ui_1_1BoardUI_aed92ed352b18fdda6de9f6a61f76c06e}{get\-Board\-Model} ()
+\item 
+String \hyperlink{classbattleship2D_1_1ui_1_1BoardUI_a2fffd962361295ab5c9b672af9cc8695}{get\-Name} ()
+\item 
+\hyperlink{classbattleship2D_1_1ui_1_1CellUI}{Cell\-U\-I} \hyperlink{classbattleship2D_1_1ui_1_1BoardUI_a99ba7ffd4aa8f9c5a8707b61119f581d}{get\-Missile\-Destination} ()
+\item 
+void \hyperlink{classbattleship2D_1_1ui_1_1BoardUI_a245f604b6a6415f40befb26ad01465f5}{set\-Missile\-Destination} (\hyperlink{classbattleship2D_1_1ui_1_1CellUI}{Cell\-U\-I} cell\-U\-I)
+\item 
+\hyperlink{classbattleship2D_1_1ui_1_1CellUI}{Cell\-U\-I} \hyperlink{classbattleship2D_1_1ui_1_1BoardUI_a4ced3032f0e34050ea3d1a2e1195013d}{get\-Missile\-Source} ()
+\item 
+void \hyperlink{classbattleship2D_1_1ui_1_1BoardUI_a60ab2df0774770b8cc4623f39c2f39c5}{set\-Missile\-Source} (\hyperlink{classbattleship2D_1_1ui_1_1CellUI}{Cell\-U\-I} cell\-U\-I)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Array\-List$<$ \hyperlink{classbattleship2D_1_1model_1_1CellModel}{Cell\-Model} $>$ \hyperlink{classbattleship2D_1_1ui_1_1BoardUI_a33e7e92812292c5f12120527dca6235a}{cell\-Span} (\hyperlink{classbattleship2D_1_1model_1_1CellModel}{Cell\-Model} cell\-Model, \hyperlink{enumbattleship2D_1_1model_1_1Direction}{Direction} direction, int nb\-Cells)
+\begin{DoxyCompactList}\small\item\em Computes a set of adjacent cells along a given direction. \end{DoxyCompactList}\item 
+final void \hyperlink{classbattleship2D_1_1ui_1_1BoardUI_af5065de9a559f9380fc454d8925475a9}{init\-Cell\-U\-I\-Listener} ()
+\begin{DoxyCompactList}\small\item\em Initializes the cells listener. \end{DoxyCompactList}\item 
+abstract void \hyperlink{classbattleship2D_1_1ui_1_1BoardUI_a7e3ea738a19683ac7ac9cb247d519a1f}{init\-Specific\-Cell\-U\-I\-Listener} (Property\-Change\-Event property\-Change\-Event)
+\begin{DoxyCompactList}\small\item\em Manages notification sent by Cell\-U\-Is. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+final \hyperlink{classbattleship2D_1_1model_1_1BoardModel}{Board\-Model} \hyperlink{classbattleship2D_1_1ui_1_1BoardUI_a6c61b16484c780fb58e68bc8fb1494e6}{board\-Model}
+\begin{DoxyCompactList}\small\item\em Related board model. \end{DoxyCompactList}\item 
+Array\-List$<$ \hyperlink{classbattleship2D_1_1model_1_1CellModel}{Cell\-Model} $>$ \hyperlink{classbattleship2D_1_1ui_1_1BoardUI_a315014776bda2cb2a79e90d62a41c0af}{east\-Cell\-Span}
+\begin{DoxyCompactList}\small\item\em Set of oriented cells available for placing a ship on the board. \end{DoxyCompactList}\item 
+\hyperlink{classbattleship2D_1_1ui_1_1CellUI}{Cell\-U\-I} \hyperlink{classbattleship2D_1_1ui_1_1BoardUI_a97417a860426981ff901e82029b4936e}{missile\-Destination}
+\begin{DoxyCompactList}\small\item\em Designated cells for missile trajectorey endpoints. \end{DoxyCompactList}\item 
+final Property\-Change\-Support \hyperlink{classbattleship2D_1_1ui_1_1BoardUI_a7ef95a87641c7018a8ff78e9a0a5ab3a}{pcs\-Listeners} = new Property\-Change\-Support(this)
+\begin{DoxyCompactList}\small\item\em Listeners management. \end{DoxyCompactList}\item 
+Property\-Change\-Listener \hyperlink{classbattleship2D_1_1ui_1_1BoardUI_a457c5910efd06093f84977cd1e464891}{property\-Change\-Listener}
+\begin{DoxyCompactList}\small\item\em This class listens for each of its cells. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Package Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Array\-List$<$ \hyperlink{classbattleship2D_1_1model_1_1CellModel}{Cell\-Model} $>$ \hyperlink{classbattleship2D_1_1ui_1_1BoardUI_a63fa6a70d952f7fa9daff2cc57682c46}{north\-Cell\-Span}
+\item 
+Array\-List$<$ \hyperlink{classbattleship2D_1_1model_1_1CellModel}{Cell\-Model} $>$ \hyperlink{classbattleship2D_1_1ui_1_1BoardUI_ac295e84c64a347a4d374f70948ea7080}{south\-Cell\-Span}
+\item 
+Array\-List$<$ \hyperlink{classbattleship2D_1_1model_1_1CellModel}{Cell\-Model} $>$ \hyperlink{classbattleship2D_1_1ui_1_1BoardUI_a0be656b4f354cb96b52ccd53ea6b7eb8}{west\-Cell\-Span}
+\item 
+\hyperlink{classbattleship2D_1_1ui_1_1CellUI}{Cell\-U\-I} \hyperlink{classbattleship2D_1_1ui_1_1BoardUI_a0362784460b94e92144f6dc02dcefc19}{missile\-Source}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classbattleship2D_1_1ui_1_1BoardUI_ae66ef7309a5ed62805221c24f0e37ebe}{init\-Cells} (Boolean is\-Bound)
+\begin{DoxyCompactList}\small\item\em Initializes contents. \end{DoxyCompactList}\item 
+void \hyperlink{classbattleship2D_1_1ui_1_1BoardUI_acbe908560c44abf6ae935943c8eb7604}{init\-Cell\-Spans} ()
+\begin{DoxyCompactList}\small\item\em Initializes the different cell spans. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+final String \hyperlink{classbattleship2D_1_1ui_1_1BoardUI_a7ad8f5d72803137c6ea6bde92a667c03}{name}
+\begin{DoxyCompactList}\small\item\em Board name. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+U\-I associated with a Board\-Model. 
+
+This model is displayed as a Grid\-Pane to the user. \begin{DoxyAuthor}{Author}
+xaviator 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classbattleship2D_1_1ui_1_1BoardUI_a4dcedc80daf997ceb696643f001c34f3}{\index{battleship2\-D\-::ui\-::\-Board\-U\-I@{battleship2\-D\-::ui\-::\-Board\-U\-I}!Board\-U\-I@{Board\-U\-I}}
+\index{Board\-U\-I@{Board\-U\-I}!battleship2D::ui::BoardUI@{battleship2\-D\-::ui\-::\-Board\-U\-I}}
+\subsubsection[{Board\-U\-I}]{\setlength{\rightskip}{0pt plus 5cm}battleship2\-D.\-ui.\-Board\-U\-I.\-Board\-U\-I (
+\begin{DoxyParamCaption}
+\item[{String}]{name, }
+\item[{{\bf Board\-Model}}]{board\-Model, }
+\item[{Boolean}]{is\-Bound}
+\end{DoxyParamCaption}
+)}}\label{classbattleship2D_1_1ui_1_1BoardUI_a4dcedc80daf997ceb696643f001c34f3}
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & -\/ This board's name \\
+\hline
+{\em board\-Model} & -\/ related model \\
+\hline
+{\em is\-Bound} & -\/ determines whether \hyperlink{classbattleship2D_1_1ui_1_1CellUI}{Cell\-U\-I}'s styles are bound to cell models' \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classbattleship2D_1_1ui_1_1BoardUI_a4a66dac6dd3266ee5520db89ae91317e}{\index{battleship2\-D\-::ui\-::\-Board\-U\-I@{battleship2\-D\-::ui\-::\-Board\-U\-I}!add\-Property\-Change\-Listener@{add\-Property\-Change\-Listener}}
+\index{add\-Property\-Change\-Listener@{add\-Property\-Change\-Listener}!battleship2D::ui::BoardUI@{battleship2\-D\-::ui\-::\-Board\-U\-I}}
+\subsubsection[{add\-Property\-Change\-Listener}]{\setlength{\rightskip}{0pt plus 5cm}void battleship2\-D.\-ui.\-Board\-U\-I.\-add\-Property\-Change\-Listener (
+\begin{DoxyParamCaption}
+\item[{Property\-Change\-Listener}]{property\-Change\-Listener}
+\end{DoxyParamCaption}
+)}}\label{classbattleship2D_1_1ui_1_1BoardUI_a4a66dac6dd3266ee5520db89ae91317e}
+\hypertarget{classbattleship2D_1_1ui_1_1BoardUI_a33e7e92812292c5f12120527dca6235a}{\index{battleship2\-D\-::ui\-::\-Board\-U\-I@{battleship2\-D\-::ui\-::\-Board\-U\-I}!cell\-Span@{cell\-Span}}
+\index{cell\-Span@{cell\-Span}!battleship2D::ui::BoardUI@{battleship2\-D\-::ui\-::\-Board\-U\-I}}
+\subsubsection[{cell\-Span}]{\setlength{\rightskip}{0pt plus 5cm}Array\-List$<${\bf Cell\-Model}$>$ battleship2\-D.\-ui.\-Board\-U\-I.\-cell\-Span (
+\begin{DoxyParamCaption}
+\item[{{\bf Cell\-Model}}]{cell\-Model, }
+\item[{{\bf Direction}}]{direction, }
+\item[{int}]{nb\-Cells}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classbattleship2D_1_1ui_1_1BoardUI_a33e7e92812292c5f12120527dca6235a}
+
+
+Computes a set of adjacent cells along a given direction. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cell\-Model} & -\/ first cell of the span \\
+\hline
+{\em direction} & -\/ direction to follow to get successive cells \\
+\hline
+{\em nb\-Cells} & -\/ span length \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the set of cells if there are enough available cells (i.\-e. the span does not expand beyond the grid), null otherwise 
+\end{DoxyReturn}
+\hypertarget{classbattleship2D_1_1ui_1_1BoardUI_a853812e318d4da7352b92bc4226a8310}{\index{battleship2\-D\-::ui\-::\-Board\-U\-I@{battleship2\-D\-::ui\-::\-Board\-U\-I}!find\-Cell\-U\-I\-From\-Model@{find\-Cell\-U\-I\-From\-Model}}
+\index{find\-Cell\-U\-I\-From\-Model@{find\-Cell\-U\-I\-From\-Model}!battleship2D::ui::BoardUI@{battleship2\-D\-::ui\-::\-Board\-U\-I}}
+\subsubsection[{find\-Cell\-U\-I\-From\-Model}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cell\-U\-I} battleship2\-D.\-ui.\-Board\-U\-I.\-find\-Cell\-U\-I\-From\-Model (
+\begin{DoxyParamCaption}
+\item[{{\bf Cell\-Model}}]{cell\-Model}
+\end{DoxyParamCaption}
+)}}\label{classbattleship2D_1_1ui_1_1BoardUI_a853812e318d4da7352b92bc4226a8310}
+
+
+Searches for the \hyperlink{classbattleship2D_1_1ui_1_1CellUI}{Cell\-U\-I} associated with a Cell\-Model. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cell\-Model} & -\/ associated Cell\-Model \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the associated \hyperlink{classbattleship2D_1_1ui_1_1CellUI}{Cell\-U\-I} if found, null otherwise 
+\end{DoxyReturn}
+\hypertarget{classbattleship2D_1_1ui_1_1BoardUI_aed92ed352b18fdda6de9f6a61f76c06e}{\index{battleship2\-D\-::ui\-::\-Board\-U\-I@{battleship2\-D\-::ui\-::\-Board\-U\-I}!get\-Board\-Model@{get\-Board\-Model}}
+\index{get\-Board\-Model@{get\-Board\-Model}!battleship2D::ui::BoardUI@{battleship2\-D\-::ui\-::\-Board\-U\-I}}
+\subsubsection[{get\-Board\-Model}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Board\-Model} battleship2\-D.\-ui.\-Board\-U\-I.\-get\-Board\-Model (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classbattleship2D_1_1ui_1_1BoardUI_aed92ed352b18fdda6de9f6a61f76c06e}
+\hypertarget{classbattleship2D_1_1ui_1_1BoardUI_a99ba7ffd4aa8f9c5a8707b61119f581d}{\index{battleship2\-D\-::ui\-::\-Board\-U\-I@{battleship2\-D\-::ui\-::\-Board\-U\-I}!get\-Missile\-Destination@{get\-Missile\-Destination}}
+\index{get\-Missile\-Destination@{get\-Missile\-Destination}!battleship2D::ui::BoardUI@{battleship2\-D\-::ui\-::\-Board\-U\-I}}
+\subsubsection[{get\-Missile\-Destination}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cell\-U\-I} battleship2\-D.\-ui.\-Board\-U\-I.\-get\-Missile\-Destination (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classbattleship2D_1_1ui_1_1BoardUI_a99ba7ffd4aa8f9c5a8707b61119f581d}
+\hypertarget{classbattleship2D_1_1ui_1_1BoardUI_a4ced3032f0e34050ea3d1a2e1195013d}{\index{battleship2\-D\-::ui\-::\-Board\-U\-I@{battleship2\-D\-::ui\-::\-Board\-U\-I}!get\-Missile\-Source@{get\-Missile\-Source}}
+\index{get\-Missile\-Source@{get\-Missile\-Source}!battleship2D::ui::BoardUI@{battleship2\-D\-::ui\-::\-Board\-U\-I}}
+\subsubsection[{get\-Missile\-Source}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cell\-U\-I} battleship2\-D.\-ui.\-Board\-U\-I.\-get\-Missile\-Source (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classbattleship2D_1_1ui_1_1BoardUI_a4ced3032f0e34050ea3d1a2e1195013d}
+\hypertarget{classbattleship2D_1_1ui_1_1BoardUI_a2fffd962361295ab5c9b672af9cc8695}{\index{battleship2\-D\-::ui\-::\-Board\-U\-I@{battleship2\-D\-::ui\-::\-Board\-U\-I}!get\-Name@{get\-Name}}
+\index{get\-Name@{get\-Name}!battleship2D::ui::BoardUI@{battleship2\-D\-::ui\-::\-Board\-U\-I}}
+\subsubsection[{get\-Name}]{\setlength{\rightskip}{0pt plus 5cm}String battleship2\-D.\-ui.\-Board\-U\-I.\-get\-Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classbattleship2D_1_1ui_1_1BoardUI_a2fffd962361295ab5c9b672af9cc8695}
+\hypertarget{classbattleship2D_1_1ui_1_1BoardUI_ae66ef7309a5ed62805221c24f0e37ebe}{\index{battleship2\-D\-::ui\-::\-Board\-U\-I@{battleship2\-D\-::ui\-::\-Board\-U\-I}!init\-Cells@{init\-Cells}}
+\index{init\-Cells@{init\-Cells}!battleship2D::ui::BoardUI@{battleship2\-D\-::ui\-::\-Board\-U\-I}}
+\subsubsection[{init\-Cells}]{\setlength{\rightskip}{0pt plus 5cm}void battleship2\-D.\-ui.\-Board\-U\-I.\-init\-Cells (
+\begin{DoxyParamCaption}
+\item[{Boolean}]{is\-Bound}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classbattleship2D_1_1ui_1_1BoardUI_ae66ef7309a5ed62805221c24f0e37ebe}
+
+
+Initializes contents. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em is\-Bound} & -\/ determines whether \hyperlink{classbattleship2D_1_1ui_1_1CellUI}{Cell\-U\-I}'s styles are bound to cell models' \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classbattleship2D_1_1ui_1_1BoardUI_a4dcedc80daf997ceb696643f001c34f3}{Board\-U\-I()} 
+\end{DoxySeeAlso}
+\hypertarget{classbattleship2D_1_1ui_1_1BoardUI_acbe908560c44abf6ae935943c8eb7604}{\index{battleship2\-D\-::ui\-::\-Board\-U\-I@{battleship2\-D\-::ui\-::\-Board\-U\-I}!init\-Cell\-Spans@{init\-Cell\-Spans}}
+\index{init\-Cell\-Spans@{init\-Cell\-Spans}!battleship2D::ui::BoardUI@{battleship2\-D\-::ui\-::\-Board\-U\-I}}
+\subsubsection[{init\-Cell\-Spans}]{\setlength{\rightskip}{0pt plus 5cm}void battleship2\-D.\-ui.\-Board\-U\-I.\-init\-Cell\-Spans (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classbattleship2D_1_1ui_1_1BoardUI_acbe908560c44abf6ae935943c8eb7604}
+
+
+Initializes the different cell spans. 
+
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classbattleship2D_1_1ui_1_1BoardUI_a4dcedc80daf997ceb696643f001c34f3}{Board\-U\-I()} 
+\end{DoxySeeAlso}
+\hypertarget{classbattleship2D_1_1ui_1_1BoardUI_af5065de9a559f9380fc454d8925475a9}{\index{battleship2\-D\-::ui\-::\-Board\-U\-I@{battleship2\-D\-::ui\-::\-Board\-U\-I}!init\-Cell\-U\-I\-Listener@{init\-Cell\-U\-I\-Listener}}
+\index{init\-Cell\-U\-I\-Listener@{init\-Cell\-U\-I\-Listener}!battleship2D::ui::BoardUI@{battleship2\-D\-::ui\-::\-Board\-U\-I}}
+\subsubsection[{init\-Cell\-U\-I\-Listener}]{\setlength{\rightskip}{0pt plus 5cm}final void battleship2\-D.\-ui.\-Board\-U\-I.\-init\-Cell\-U\-I\-Listener (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classbattleship2D_1_1ui_1_1BoardUI_af5065de9a559f9380fc454d8925475a9}
+
+
+Initializes the cells listener. 
+
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classbattleship2D_1_1ui_1_1BoardUI_a4dcedc80daf997ceb696643f001c34f3}{Board\-U\-I\-::\-Board\-U\-I} 
+\end{DoxySeeAlso}
+\hypertarget{classbattleship2D_1_1ui_1_1BoardUI_a7e3ea738a19683ac7ac9cb247d519a1f}{\index{battleship2\-D\-::ui\-::\-Board\-U\-I@{battleship2\-D\-::ui\-::\-Board\-U\-I}!init\-Specific\-Cell\-U\-I\-Listener@{init\-Specific\-Cell\-U\-I\-Listener}}
+\index{init\-Specific\-Cell\-U\-I\-Listener@{init\-Specific\-Cell\-U\-I\-Listener}!battleship2D::ui::BoardUI@{battleship2\-D\-::ui\-::\-Board\-U\-I}}
+\subsubsection[{init\-Specific\-Cell\-U\-I\-Listener}]{\setlength{\rightskip}{0pt plus 5cm}abstract void battleship2\-D.\-ui.\-Board\-U\-I.\-init\-Specific\-Cell\-U\-I\-Listener (
+\begin{DoxyParamCaption}
+\item[{Property\-Change\-Event}]{property\-Change\-Event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [abstract]}, {\ttfamily [protected]}}}\label{classbattleship2D_1_1ui_1_1BoardUI_a7e3ea738a19683ac7ac9cb247d519a1f}
+
+
+Manages notification sent by Cell\-U\-Is. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em property\-Change\-Event} & -\/ event to deal with \\
+\hline
+\end{DoxyParams}
+\hypertarget{classbattleship2D_1_1ui_1_1BoardUI_a571a95d38e4f6740ff5aaa27661aec39}{\index{battleship2\-D\-::ui\-::\-Board\-U\-I@{battleship2\-D\-::ui\-::\-Board\-U\-I}!is\-Ship\-On\-Board@{is\-Ship\-On\-Board}}
+\index{is\-Ship\-On\-Board@{is\-Ship\-On\-Board}!battleship2D::ui::BoardUI@{battleship2\-D\-::ui\-::\-Board\-U\-I}}
+\subsubsection[{is\-Ship\-On\-Board}]{\setlength{\rightskip}{0pt plus 5cm}Boolean battleship2\-D.\-ui.\-Board\-U\-I.\-is\-Ship\-On\-Board (
+\begin{DoxyParamCaption}
+\item[{{\bf Cell\-Type}}]{cell\-Type}
+\end{DoxyParamCaption}
+)}}\label{classbattleship2D_1_1ui_1_1BoardUI_a571a95d38e4f6740ff5aaa27661aec39}
+
+
+Checks the presence of a ship, depending on a given type. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cell\-Type} & -\/ ship type \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if a ship has been placed on the board 
+\end{DoxyReturn}
+\hypertarget{classbattleship2D_1_1ui_1_1BoardUI_aee22fa9fb602146b7db935e1e9294fc5}{\index{battleship2\-D\-::ui\-::\-Board\-U\-I@{battleship2\-D\-::ui\-::\-Board\-U\-I}!remove\-Property\-Change\-Listener@{remove\-Property\-Change\-Listener}}
+\index{remove\-Property\-Change\-Listener@{remove\-Property\-Change\-Listener}!battleship2D::ui::BoardUI@{battleship2\-D\-::ui\-::\-Board\-U\-I}}
+\subsubsection[{remove\-Property\-Change\-Listener}]{\setlength{\rightskip}{0pt plus 5cm}void battleship2\-D.\-ui.\-Board\-U\-I.\-remove\-Property\-Change\-Listener (
+\begin{DoxyParamCaption}
+\item[{Property\-Change\-Listener}]{property\-Change\-Listener}
+\end{DoxyParamCaption}
+)}}\label{classbattleship2D_1_1ui_1_1BoardUI_aee22fa9fb602146b7db935e1e9294fc5}
+\hypertarget{classbattleship2D_1_1ui_1_1BoardUI_a245f604b6a6415f40befb26ad01465f5}{\index{battleship2\-D\-::ui\-::\-Board\-U\-I@{battleship2\-D\-::ui\-::\-Board\-U\-I}!set\-Missile\-Destination@{set\-Missile\-Destination}}
+\index{set\-Missile\-Destination@{set\-Missile\-Destination}!battleship2D::ui::BoardUI@{battleship2\-D\-::ui\-::\-Board\-U\-I}}
+\subsubsection[{set\-Missile\-Destination}]{\setlength{\rightskip}{0pt plus 5cm}void battleship2\-D.\-ui.\-Board\-U\-I.\-set\-Missile\-Destination (
+\begin{DoxyParamCaption}
+\item[{{\bf Cell\-U\-I}}]{cell\-U\-I}
+\end{DoxyParamCaption}
+)}}\label{classbattleship2D_1_1ui_1_1BoardUI_a245f604b6a6415f40befb26ad01465f5}
+\hypertarget{classbattleship2D_1_1ui_1_1BoardUI_a60ab2df0774770b8cc4623f39c2f39c5}{\index{battleship2\-D\-::ui\-::\-Board\-U\-I@{battleship2\-D\-::ui\-::\-Board\-U\-I}!set\-Missile\-Source@{set\-Missile\-Source}}
+\index{set\-Missile\-Source@{set\-Missile\-Source}!battleship2D::ui::BoardUI@{battleship2\-D\-::ui\-::\-Board\-U\-I}}
+\subsubsection[{set\-Missile\-Source}]{\setlength{\rightskip}{0pt plus 5cm}void battleship2\-D.\-ui.\-Board\-U\-I.\-set\-Missile\-Source (
+\begin{DoxyParamCaption}
+\item[{{\bf Cell\-U\-I}}]{cell\-U\-I}
+\end{DoxyParamCaption}
+)}}\label{classbattleship2D_1_1ui_1_1BoardUI_a60ab2df0774770b8cc4623f39c2f39c5}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classbattleship2D_1_1ui_1_1BoardUI_a6c61b16484c780fb58e68bc8fb1494e6}{\index{battleship2\-D\-::ui\-::\-Board\-U\-I@{battleship2\-D\-::ui\-::\-Board\-U\-I}!board\-Model@{board\-Model}}
+\index{board\-Model@{board\-Model}!battleship2D::ui::BoardUI@{battleship2\-D\-::ui\-::\-Board\-U\-I}}
+\subsubsection[{board\-Model}]{\setlength{\rightskip}{0pt plus 5cm}final {\bf Board\-Model} battleship2\-D.\-ui.\-Board\-U\-I.\-board\-Model\hspace{0.3cm}{\ttfamily [protected]}}}\label{classbattleship2D_1_1ui_1_1BoardUI_a6c61b16484c780fb58e68bc8fb1494e6}
+
+
+Related board model. 
+
+\hypertarget{classbattleship2D_1_1ui_1_1BoardUI_a315014776bda2cb2a79e90d62a41c0af}{\index{battleship2\-D\-::ui\-::\-Board\-U\-I@{battleship2\-D\-::ui\-::\-Board\-U\-I}!east\-Cell\-Span@{east\-Cell\-Span}}
+\index{east\-Cell\-Span@{east\-Cell\-Span}!battleship2D::ui::BoardUI@{battleship2\-D\-::ui\-::\-Board\-U\-I}}
+\subsubsection[{east\-Cell\-Span}]{\setlength{\rightskip}{0pt plus 5cm}Array\-List$<${\bf Cell\-Model}$>$ battleship2\-D.\-ui.\-Board\-U\-I.\-east\-Cell\-Span\hspace{0.3cm}{\ttfamily [protected]}}}\label{classbattleship2D_1_1ui_1_1BoardUI_a315014776bda2cb2a79e90d62a41c0af}
+
+
+Set of oriented cells available for placing a ship on the board. 
+
+\hypertarget{classbattleship2D_1_1ui_1_1BoardUI_a97417a860426981ff901e82029b4936e}{\index{battleship2\-D\-::ui\-::\-Board\-U\-I@{battleship2\-D\-::ui\-::\-Board\-U\-I}!missile\-Destination@{missile\-Destination}}
+\index{missile\-Destination@{missile\-Destination}!battleship2D::ui::BoardUI@{battleship2\-D\-::ui\-::\-Board\-U\-I}}
+\subsubsection[{missile\-Destination}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cell\-U\-I} battleship2\-D.\-ui.\-Board\-U\-I.\-missile\-Destination\hspace{0.3cm}{\ttfamily [protected]}}}\label{classbattleship2D_1_1ui_1_1BoardUI_a97417a860426981ff901e82029b4936e}
+
+
+Designated cells for missile trajectorey endpoints. 
+
+\hypertarget{classbattleship2D_1_1ui_1_1BoardUI_a0362784460b94e92144f6dc02dcefc19}{\index{battleship2\-D\-::ui\-::\-Board\-U\-I@{battleship2\-D\-::ui\-::\-Board\-U\-I}!missile\-Source@{missile\-Source}}
+\index{missile\-Source@{missile\-Source}!battleship2D::ui::BoardUI@{battleship2\-D\-::ui\-::\-Board\-U\-I}}
+\subsubsection[{missile\-Source}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cell\-U\-I} battleship2\-D.\-ui.\-Board\-U\-I.\-missile\-Source\hspace{0.3cm}{\ttfamily [package]}}}\label{classbattleship2D_1_1ui_1_1BoardUI_a0362784460b94e92144f6dc02dcefc19}
+\hypertarget{classbattleship2D_1_1ui_1_1BoardUI_a7ad8f5d72803137c6ea6bde92a667c03}{\index{battleship2\-D\-::ui\-::\-Board\-U\-I@{battleship2\-D\-::ui\-::\-Board\-U\-I}!name@{name}}
+\index{name@{name}!battleship2D::ui::BoardUI@{battleship2\-D\-::ui\-::\-Board\-U\-I}}
+\subsubsection[{name}]{\setlength{\rightskip}{0pt plus 5cm}final String battleship2\-D.\-ui.\-Board\-U\-I.\-name\hspace{0.3cm}{\ttfamily [private]}}}\label{classbattleship2D_1_1ui_1_1BoardUI_a7ad8f5d72803137c6ea6bde92a667c03}
+
+
+Board name. 
+
+\hypertarget{classbattleship2D_1_1ui_1_1BoardUI_a63fa6a70d952f7fa9daff2cc57682c46}{\index{battleship2\-D\-::ui\-::\-Board\-U\-I@{battleship2\-D\-::ui\-::\-Board\-U\-I}!north\-Cell\-Span@{north\-Cell\-Span}}
+\index{north\-Cell\-Span@{north\-Cell\-Span}!battleship2D::ui::BoardUI@{battleship2\-D\-::ui\-::\-Board\-U\-I}}
+\subsubsection[{north\-Cell\-Span}]{\setlength{\rightskip}{0pt plus 5cm}Array\-List$<${\bf Cell\-Model}$>$ battleship2\-D.\-ui.\-Board\-U\-I.\-north\-Cell\-Span\hspace{0.3cm}{\ttfamily [package]}}}\label{classbattleship2D_1_1ui_1_1BoardUI_a63fa6a70d952f7fa9daff2cc57682c46}
+\hypertarget{classbattleship2D_1_1ui_1_1BoardUI_a7ef95a87641c7018a8ff78e9a0a5ab3a}{\index{battleship2\-D\-::ui\-::\-Board\-U\-I@{battleship2\-D\-::ui\-::\-Board\-U\-I}!pcs\-Listeners@{pcs\-Listeners}}
+\index{pcs\-Listeners@{pcs\-Listeners}!battleship2D::ui::BoardUI@{battleship2\-D\-::ui\-::\-Board\-U\-I}}
+\subsubsection[{pcs\-Listeners}]{\setlength{\rightskip}{0pt plus 5cm}final Property\-Change\-Support battleship2\-D.\-ui.\-Board\-U\-I.\-pcs\-Listeners = new Property\-Change\-Support(this)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classbattleship2D_1_1ui_1_1BoardUI_a7ef95a87641c7018a8ff78e9a0a5ab3a}
+
+
+Listeners management. 
+
+\hypertarget{classbattleship2D_1_1ui_1_1BoardUI_a457c5910efd06093f84977cd1e464891}{\index{battleship2\-D\-::ui\-::\-Board\-U\-I@{battleship2\-D\-::ui\-::\-Board\-U\-I}!property\-Change\-Listener@{property\-Change\-Listener}}
+\index{property\-Change\-Listener@{property\-Change\-Listener}!battleship2D::ui::BoardUI@{battleship2\-D\-::ui\-::\-Board\-U\-I}}
+\subsubsection[{property\-Change\-Listener}]{\setlength{\rightskip}{0pt plus 5cm}Property\-Change\-Listener battleship2\-D.\-ui.\-Board\-U\-I.\-property\-Change\-Listener\hspace{0.3cm}{\ttfamily [protected]}}}\label{classbattleship2D_1_1ui_1_1BoardUI_a457c5910efd06093f84977cd1e464891}
+
+
+This class listens for each of its cells. 
+
+\hypertarget{classbattleship2D_1_1ui_1_1BoardUI_ac295e84c64a347a4d374f70948ea7080}{\index{battleship2\-D\-::ui\-::\-Board\-U\-I@{battleship2\-D\-::ui\-::\-Board\-U\-I}!south\-Cell\-Span@{south\-Cell\-Span}}
+\index{south\-Cell\-Span@{south\-Cell\-Span}!battleship2D::ui::BoardUI@{battleship2\-D\-::ui\-::\-Board\-U\-I}}
+\subsubsection[{south\-Cell\-Span}]{\setlength{\rightskip}{0pt plus 5cm}Array\-List$<${\bf Cell\-Model}$>$ battleship2\-D.\-ui.\-Board\-U\-I.\-south\-Cell\-Span\hspace{0.3cm}{\ttfamily [package]}}}\label{classbattleship2D_1_1ui_1_1BoardUI_ac295e84c64a347a4d374f70948ea7080}
+\hypertarget{classbattleship2D_1_1ui_1_1BoardUI_a0be656b4f354cb96b52ccd53ea6b7eb8}{\index{battleship2\-D\-::ui\-::\-Board\-U\-I@{battleship2\-D\-::ui\-::\-Board\-U\-I}!west\-Cell\-Span@{west\-Cell\-Span}}
+\index{west\-Cell\-Span@{west\-Cell\-Span}!battleship2D::ui::BoardUI@{battleship2\-D\-::ui\-::\-Board\-U\-I}}
+\subsubsection[{west\-Cell\-Span}]{\setlength{\rightskip}{0pt plus 5cm}Array\-List$<${\bf Cell\-Model}$>$ battleship2\-D.\-ui.\-Board\-U\-I.\-west\-Cell\-Span\hspace{0.3cm}{\ttfamily [package]}}}\label{classbattleship2D_1_1ui_1_1BoardUI_a0be656b4f354cb96b52ccd53ea6b7eb8}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/home/xaviator/\-Enseignements/2015-\/2016/\-S\-F\-A/\-M1-\/\-Info/\-I\-H\-M/\-Battle\-Ship2\-D\-\_\-students/battleship2\-D/ui/\hyperlink{BoardUI_8java}{Board\-U\-I.\-java}\end{DoxyCompactItemize}

@@ -1,0 +1,312 @@
+\hypertarget{classbattleship2D_1_1ui_1_1Particle}{\section{battleship2\-D.\-ui.\-Particle Class Reference}
+\label{classbattleship2D_1_1ui_1_1Particle}\index{battleship2\-D.\-ui.\-Particle@{battleship2\-D.\-ui.\-Particle}}
+}
+
+
+A Simple \hyperlink{classbattleship2D_1_1ui_1_1Particle}{Particle} that draws its self as a circle.  
+
+
+
+
+Collaboration diagram for battleship2\-D.\-ui.\-Particle\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=198pt]{classbattleship2D_1_1ui_1_1Particle__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classbattleship2D_1_1ui_1_1Particle_a88a64982ac1370fbc6d9eeb737e9716f}{Particle} (double \hyperlink{classbattleship2D_1_1ui_1_1Particle_a43ea7800c7ba89fcc30583e2cc0970e4}{pos\-X}, double \hyperlink{classbattleship2D_1_1ui_1_1Particle_ad049d4283943c3eb9f3ed76dfdb585c2}{pos\-Y}, double \hyperlink{classbattleship2D_1_1ui_1_1Particle_a9e831b513842b2cd2e41fc1a2524e590}{vel\-X}, double \hyperlink{classbattleship2D_1_1ui_1_1Particle_a75fa162ccfdadf4b05828097a4e1549c}{vel\-Y}, double \hyperlink{classbattleship2D_1_1ui_1_1Particle_adac981aee070e317de343ce7b5967b73}{target\-X}, double \hyperlink{classbattleship2D_1_1ui_1_1Particle_a0c427daa62b3aa8f58077879af4e4c24}{target\-Y}, Paint \hyperlink{classbattleship2D_1_1ui_1_1Particle_a0b9479695af9d931940e2bdff6877e80}{color}, int \hyperlink{classbattleship2D_1_1ui_1_1Particle_aeed0f277dadb5f0f4d41d7852ee8f708}{size}, boolean \hyperlink{classbattleship2D_1_1ui_1_1Particle_ad1d8ec268600a69b4ae2986c9b1e4ec1}{use\-Physics}, boolean \hyperlink{classbattleship2D_1_1ui_1_1Particle_ae89e92c546d7ab12b38a1da0ed34470c}{should\-Explode\-Children}, boolean \hyperlink{classbattleship2D_1_1ui_1_1Particle_aecbdfda0673ec091a555cbf5c18d346f}{has\-Tail})
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+void \hyperlink{classbattleship2D_1_1ui_1_1Particle_a160552441cdc69887bc6892f7bc41283}{draw} (Graphics\-Context context)
+\begin{DoxyCompactList}\small\item\em Displays the particle. \end{DoxyCompactList}\item 
+boolean \hyperlink{classbattleship2D_1_1ui_1_1Particle_a6f794d4df9bd0c74a71e7176071e3b79}{update} ()
+\begin{DoxyCompactList}\small\item\em Update internal data. \end{DoxyCompactList}\item 
+Paint \hyperlink{classbattleship2D_1_1ui_1_1Particle_a76e9ff34c208baa589c1f53f81fa4f48}{get\-Color} ()
+\item 
+double \hyperlink{classbattleship2D_1_1ui_1_1Particle_af870562265e0aa8584ae3d3deeb60b05}{get\-Pos\-X} ()
+\item 
+double \hyperlink{classbattleship2D_1_1ui_1_1Particle_a06aa365f8a9a2e746e878656182e6fc5}{get\-Pos\-Y} ()
+\item 
+boolean \hyperlink{classbattleship2D_1_1ui_1_1Particle_a138fd341ae6fcc9a1f0bb0dbdbd9d989}{get\-Shound\-Explore\-Children} ()
+\item 
+int \hyperlink{classbattleship2D_1_1ui_1_1Particle_a4c81950e35f0a19c0367d4df79e958e5}{get\-Size} ()
+\end{DoxyCompactItemize}
+\subsection*{Package Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{classbattleship2D_1_1ui_1_1Particle_a5a420fd563faed7e5fe9635413dd6b5e}{last\-Pos\-Y}
+\item 
+double \hyperlink{classbattleship2D_1_1ui_1_1Particle_ad049d4283943c3eb9f3ed76dfdb585c2}{pos\-Y}
+\item 
+final double \hyperlink{classbattleship2D_1_1ui_1_1Particle_a0c427daa62b3aa8f58077879af4e4c24}{target\-Y}
+\item 
+double \hyperlink{classbattleship2D_1_1ui_1_1Particle_a75fa162ccfdadf4b05828097a4e1549c}{vel\-Y}
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{classbattleship2D_1_1ui_1_1Particle_ad0c4375f37f512dfc526defc826ea8e1}{alpha}
+\begin{DoxyCompactList}\small\item\em Alpha blending coefficient to make the particle fade. \end{DoxyCompactList}\item 
+final Paint \hyperlink{classbattleship2D_1_1ui_1_1Particle_a0b9479695af9d931940e2bdff6877e80}{color}
+\begin{DoxyCompactList}\small\item\em \hyperlink{classbattleship2D_1_1ui_1_1Particle}{Particle} color. \end{DoxyCompactList}\item 
+final double \hyperlink{classbattleship2D_1_1ui_1_1Particle_a702cb6c94a6bab26ab8f2d89e9ed006d}{easing}
+\begin{DoxyCompactList}\small\item\em \char`\"{}\-Dampening\char`\"{} coefficient for particle position \end{DoxyCompactList}\item 
+final double \hyperlink{classbattleship2D_1_1ui_1_1Particle_aacae09c8362b3db517af7cb42e755c90}{fade}
+\begin{DoxyCompactList}\small\item\em Fading coefficient. \end{DoxyCompactList}\item 
+final boolean \hyperlink{classbattleship2D_1_1ui_1_1Particle_aecbdfda0673ec091a555cbf5c18d346f}{has\-Tail}
+\begin{DoxyCompactList}\small\item\em Dtermine whether a particle tail is drawn. \end{DoxyCompactList}\item 
+double \hyperlink{classbattleship2D_1_1ui_1_1Particle_af78e18d695e448d974013d67b31cc035}{last\-Pos\-X}
+\begin{DoxyCompactList}\small\item\em Previous position. \end{DoxyCompactList}\item 
+double \hyperlink{classbattleship2D_1_1ui_1_1Particle_a43ea7800c7ba89fcc30583e2cc0970e4}{pos\-X}
+\begin{DoxyCompactList}\small\item\em Current position. \end{DoxyCompactList}\item 
+final boolean \hyperlink{classbattleship2D_1_1ui_1_1Particle_ae89e92c546d7ab12b38a1da0ed34470c}{should\-Explode\-Children}
+\begin{DoxyCompactList}\small\item\em Determine whether this particle should give birth to other particles. \end{DoxyCompactList}\item 
+final int \hyperlink{classbattleship2D_1_1ui_1_1Particle_aeed0f277dadb5f0f4d41d7852ee8f708}{size}
+\begin{DoxyCompactList}\small\item\em \hyperlink{classbattleship2D_1_1ui_1_1Particle}{Particle}'s size. \end{DoxyCompactList}\item 
+final double \hyperlink{classbattleship2D_1_1ui_1_1Particle_adac981aee070e317de343ce7b5967b73}{target\-X}
+\begin{DoxyCompactList}\small\item\em New position after moving. \end{DoxyCompactList}\item 
+final boolean \hyperlink{classbattleship2D_1_1ui_1_1Particle_ad1d8ec268600a69b4ae2986c9b1e4ec1}{use\-Physics}
+\begin{DoxyCompactList}\small\item\em Use a physics model to update position. \end{DoxyCompactList}\item 
+double \hyperlink{classbattleship2D_1_1ui_1_1Particle_a9e831b513842b2cd2e41fc1a2524e590}{vel\-X}
+\begin{DoxyCompactList}\small\item\em Velocity 2\-D coordinates. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final double \hyperlink{classbattleship2D_1_1ui_1_1Particle_ab1a0d8047fe05a97b83604fe032a7326}{G\-R\-A\-V\-I\-T\-Y} = 0.\-06
+\begin{DoxyCompactList}\small\item\em Gravity coefficient. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A Simple \hyperlink{classbattleship2D_1_1ui_1_1Particle}{Particle} that draws its self as a circle. 
+
+Code derived from Oracle's Java\-F\-X sample \char`\"{}\-Ensemble.\-jar\char`\"{} 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classbattleship2D_1_1ui_1_1Particle_a88a64982ac1370fbc6d9eeb737e9716f}{\index{battleship2\-D\-::ui\-::\-Particle@{battleship2\-D\-::ui\-::\-Particle}!Particle@{Particle}}
+\index{Particle@{Particle}!battleship2D::ui::Particle@{battleship2\-D\-::ui\-::\-Particle}}
+\subsubsection[{Particle}]{\setlength{\rightskip}{0pt plus 5cm}battleship2\-D.\-ui.\-Particle.\-Particle (
+\begin{DoxyParamCaption}
+\item[{double}]{pos\-X, }
+\item[{double}]{pos\-Y, }
+\item[{double}]{vel\-X, }
+\item[{double}]{vel\-Y, }
+\item[{double}]{target\-X, }
+\item[{double}]{target\-Y, }
+\item[{Paint}]{color, }
+\item[{int}]{size, }
+\item[{boolean}]{use\-Physics, }
+\item[{boolean}]{should\-Explode\-Children, }
+\item[{boolean}]{has\-Tail}
+\end{DoxyParamCaption}
+)}}\label{classbattleship2D_1_1ui_1_1Particle_a88a64982ac1370fbc6d9eeb737e9716f}
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos\-X} & -\/ \hyperlink{classbattleship2D_1_1ui_1_1Particle}{Particle}'s X-\/coordinate \\
+\hline
+{\em pos\-Y} & -\/ \hyperlink{classbattleship2D_1_1ui_1_1Particle}{Particle}'s Y-\/coordinate \\
+\hline
+{\em vel\-X} & -\/ \hyperlink{classbattleship2D_1_1ui_1_1Particle}{Particle}'s X-\/velocity \\
+\hline
+{\em vel\-Y} & -\/ \hyperlink{classbattleship2D_1_1ui_1_1Particle}{Particle}'s Y-\/velocity \\
+\hline
+{\em target\-X} & -\/ \hyperlink{classbattleship2D_1_1ui_1_1Particle}{Particle}'s new X-\/coordinate after moving \\
+\hline
+{\em target\-Y} & -\/ \hyperlink{classbattleship2D_1_1ui_1_1Particle}{Particle}'s new Y-\/coordinate after moving \\
+\hline
+{\em color} & -\/ \hyperlink{classbattleship2D_1_1ui_1_1Particle}{Particle}'s color \\
+\hline
+{\em size} & -\/ \hyperlink{classbattleship2D_1_1ui_1_1Particle}{Particle}'s size \\
+\hline
+{\em use\-Physics} & -\/ true if a physics model should be used to compute the new position \\
+\hline
+{\em should\-Explode\-Children} & -\/ true if the Pärticle's shound give birth to smaller Particles \\
+\hline
+{\em has\-Tail} & -\/ true is a tail should be displayed following this \hyperlink{classbattleship2D_1_1ui_1_1Particle}{Particle}'s move \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classbattleship2D_1_1ui_1_1Particle_a160552441cdc69887bc6892f7bc41283}{\index{battleship2\-D\-::ui\-::\-Particle@{battleship2\-D\-::ui\-::\-Particle}!draw@{draw}}
+\index{draw@{draw}!battleship2D::ui::Particle@{battleship2\-D\-::ui\-::\-Particle}}
+\subsubsection[{draw}]{\setlength{\rightskip}{0pt plus 5cm}void battleship2\-D.\-ui.\-Particle.\-draw (
+\begin{DoxyParamCaption}
+\item[{Graphics\-Context}]{context}
+\end{DoxyParamCaption}
+)}}\label{classbattleship2D_1_1ui_1_1Particle_a160552441cdc69887bc6892f7bc41283}
+
+
+Displays the particle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em context} & drawing zone \\
+\hline
+\end{DoxyParams}
+\hypertarget{classbattleship2D_1_1ui_1_1Particle_a76e9ff34c208baa589c1f53f81fa4f48}{\index{battleship2\-D\-::ui\-::\-Particle@{battleship2\-D\-::ui\-::\-Particle}!get\-Color@{get\-Color}}
+\index{get\-Color@{get\-Color}!battleship2D::ui::Particle@{battleship2\-D\-::ui\-::\-Particle}}
+\subsubsection[{get\-Color}]{\setlength{\rightskip}{0pt plus 5cm}Paint battleship2\-D.\-ui.\-Particle.\-get\-Color (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classbattleship2D_1_1ui_1_1Particle_a76e9ff34c208baa589c1f53f81fa4f48}
+\hypertarget{classbattleship2D_1_1ui_1_1Particle_af870562265e0aa8584ae3d3deeb60b05}{\index{battleship2\-D\-::ui\-::\-Particle@{battleship2\-D\-::ui\-::\-Particle}!get\-Pos\-X@{get\-Pos\-X}}
+\index{get\-Pos\-X@{get\-Pos\-X}!battleship2D::ui::Particle@{battleship2\-D\-::ui\-::\-Particle}}
+\subsubsection[{get\-Pos\-X}]{\setlength{\rightskip}{0pt plus 5cm}double battleship2\-D.\-ui.\-Particle.\-get\-Pos\-X (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classbattleship2D_1_1ui_1_1Particle_af870562265e0aa8584ae3d3deeb60b05}
+\hypertarget{classbattleship2D_1_1ui_1_1Particle_a06aa365f8a9a2e746e878656182e6fc5}{\index{battleship2\-D\-::ui\-::\-Particle@{battleship2\-D\-::ui\-::\-Particle}!get\-Pos\-Y@{get\-Pos\-Y}}
+\index{get\-Pos\-Y@{get\-Pos\-Y}!battleship2D::ui::Particle@{battleship2\-D\-::ui\-::\-Particle}}
+\subsubsection[{get\-Pos\-Y}]{\setlength{\rightskip}{0pt plus 5cm}double battleship2\-D.\-ui.\-Particle.\-get\-Pos\-Y (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classbattleship2D_1_1ui_1_1Particle_a06aa365f8a9a2e746e878656182e6fc5}
+\hypertarget{classbattleship2D_1_1ui_1_1Particle_a138fd341ae6fcc9a1f0bb0dbdbd9d989}{\index{battleship2\-D\-::ui\-::\-Particle@{battleship2\-D\-::ui\-::\-Particle}!get\-Shound\-Explore\-Children@{get\-Shound\-Explore\-Children}}
+\index{get\-Shound\-Explore\-Children@{get\-Shound\-Explore\-Children}!battleship2D::ui::Particle@{battleship2\-D\-::ui\-::\-Particle}}
+\subsubsection[{get\-Shound\-Explore\-Children}]{\setlength{\rightskip}{0pt plus 5cm}boolean battleship2\-D.\-ui.\-Particle.\-get\-Shound\-Explore\-Children (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classbattleship2D_1_1ui_1_1Particle_a138fd341ae6fcc9a1f0bb0dbdbd9d989}
+\hypertarget{classbattleship2D_1_1ui_1_1Particle_a4c81950e35f0a19c0367d4df79e958e5}{\index{battleship2\-D\-::ui\-::\-Particle@{battleship2\-D\-::ui\-::\-Particle}!get\-Size@{get\-Size}}
+\index{get\-Size@{get\-Size}!battleship2D::ui::Particle@{battleship2\-D\-::ui\-::\-Particle}}
+\subsubsection[{get\-Size}]{\setlength{\rightskip}{0pt plus 5cm}int battleship2\-D.\-ui.\-Particle.\-get\-Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classbattleship2D_1_1ui_1_1Particle_a4c81950e35f0a19c0367d4df79e958e5}
+\hypertarget{classbattleship2D_1_1ui_1_1Particle_a6f794d4df9bd0c74a71e7176071e3b79}{\index{battleship2\-D\-::ui\-::\-Particle@{battleship2\-D\-::ui\-::\-Particle}!update@{update}}
+\index{update@{update}!battleship2D::ui::Particle@{battleship2\-D\-::ui\-::\-Particle}}
+\subsubsection[{update}]{\setlength{\rightskip}{0pt plus 5cm}boolean battleship2\-D.\-ui.\-Particle.\-update (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classbattleship2D_1_1ui_1_1Particle_a6f794d4df9bd0c74a71e7176071e3b79}
+
+
+Update internal data. 
+
+\begin{DoxyReturn}{Returns}
+true if the \hyperlink{classbattleship2D_1_1ui_1_1Particle}{Particle} has expired 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classbattleship2D_1_1ui_1_1Particle_ad0c4375f37f512dfc526defc826ea8e1}{\index{battleship2\-D\-::ui\-::\-Particle@{battleship2\-D\-::ui\-::\-Particle}!alpha@{alpha}}
+\index{alpha@{alpha}!battleship2D::ui::Particle@{battleship2\-D\-::ui\-::\-Particle}}
+\subsubsection[{alpha}]{\setlength{\rightskip}{0pt plus 5cm}double battleship2\-D.\-ui.\-Particle.\-alpha\hspace{0.3cm}{\ttfamily [private]}}}\label{classbattleship2D_1_1ui_1_1Particle_ad0c4375f37f512dfc526defc826ea8e1}
+
+
+Alpha blending coefficient to make the particle fade. 
+
+\hypertarget{classbattleship2D_1_1ui_1_1Particle_a0b9479695af9d931940e2bdff6877e80}{\index{battleship2\-D\-::ui\-::\-Particle@{battleship2\-D\-::ui\-::\-Particle}!color@{color}}
+\index{color@{color}!battleship2D::ui::Particle@{battleship2\-D\-::ui\-::\-Particle}}
+\subsubsection[{color}]{\setlength{\rightskip}{0pt plus 5cm}final Paint battleship2\-D.\-ui.\-Particle.\-color\hspace{0.3cm}{\ttfamily [private]}}}\label{classbattleship2D_1_1ui_1_1Particle_a0b9479695af9d931940e2bdff6877e80}
+
+
+\hyperlink{classbattleship2D_1_1ui_1_1Particle}{Particle} color. 
+
+\hypertarget{classbattleship2D_1_1ui_1_1Particle_a702cb6c94a6bab26ab8f2d89e9ed006d}{\index{battleship2\-D\-::ui\-::\-Particle@{battleship2\-D\-::ui\-::\-Particle}!easing@{easing}}
+\index{easing@{easing}!battleship2D::ui::Particle@{battleship2\-D\-::ui\-::\-Particle}}
+\subsubsection[{easing}]{\setlength{\rightskip}{0pt plus 5cm}final double battleship2\-D.\-ui.\-Particle.\-easing\hspace{0.3cm}{\ttfamily [private]}}}\label{classbattleship2D_1_1ui_1_1Particle_a702cb6c94a6bab26ab8f2d89e9ed006d}
+
+
+\char`\"{}\-Dampening\char`\"{} coefficient for particle position 
+
+\hypertarget{classbattleship2D_1_1ui_1_1Particle_aacae09c8362b3db517af7cb42e755c90}{\index{battleship2\-D\-::ui\-::\-Particle@{battleship2\-D\-::ui\-::\-Particle}!fade@{fade}}
+\index{fade@{fade}!battleship2D::ui::Particle@{battleship2\-D\-::ui\-::\-Particle}}
+\subsubsection[{fade}]{\setlength{\rightskip}{0pt plus 5cm}final double battleship2\-D.\-ui.\-Particle.\-fade\hspace{0.3cm}{\ttfamily [private]}}}\label{classbattleship2D_1_1ui_1_1Particle_aacae09c8362b3db517af7cb42e755c90}
+
+
+Fading coefficient. 
+
+\hypertarget{classbattleship2D_1_1ui_1_1Particle_ab1a0d8047fe05a97b83604fe032a7326}{\index{battleship2\-D\-::ui\-::\-Particle@{battleship2\-D\-::ui\-::\-Particle}!G\-R\-A\-V\-I\-T\-Y@{G\-R\-A\-V\-I\-T\-Y}}
+\index{G\-R\-A\-V\-I\-T\-Y@{G\-R\-A\-V\-I\-T\-Y}!battleship2D::ui::Particle@{battleship2\-D\-::ui\-::\-Particle}}
+\subsubsection[{G\-R\-A\-V\-I\-T\-Y}]{\setlength{\rightskip}{0pt plus 5cm}final double battleship2\-D.\-ui.\-Particle.\-G\-R\-A\-V\-I\-T\-Y = 0.\-06\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{classbattleship2D_1_1ui_1_1Particle_ab1a0d8047fe05a97b83604fe032a7326}
+
+
+Gravity coefficient. 
+
+\hypertarget{classbattleship2D_1_1ui_1_1Particle_aecbdfda0673ec091a555cbf5c18d346f}{\index{battleship2\-D\-::ui\-::\-Particle@{battleship2\-D\-::ui\-::\-Particle}!has\-Tail@{has\-Tail}}
+\index{has\-Tail@{has\-Tail}!battleship2D::ui::Particle@{battleship2\-D\-::ui\-::\-Particle}}
+\subsubsection[{has\-Tail}]{\setlength{\rightskip}{0pt plus 5cm}final boolean battleship2\-D.\-ui.\-Particle.\-has\-Tail\hspace{0.3cm}{\ttfamily [private]}}}\label{classbattleship2D_1_1ui_1_1Particle_aecbdfda0673ec091a555cbf5c18d346f}
+
+
+Dtermine whether a particle tail is drawn. 
+
+\hypertarget{classbattleship2D_1_1ui_1_1Particle_af78e18d695e448d974013d67b31cc035}{\index{battleship2\-D\-::ui\-::\-Particle@{battleship2\-D\-::ui\-::\-Particle}!last\-Pos\-X@{last\-Pos\-X}}
+\index{last\-Pos\-X@{last\-Pos\-X}!battleship2D::ui::Particle@{battleship2\-D\-::ui\-::\-Particle}}
+\subsubsection[{last\-Pos\-X}]{\setlength{\rightskip}{0pt plus 5cm}double battleship2\-D.\-ui.\-Particle.\-last\-Pos\-X\hspace{0.3cm}{\ttfamily [private]}}}\label{classbattleship2D_1_1ui_1_1Particle_af78e18d695e448d974013d67b31cc035}
+
+
+Previous position. 
+
+\hypertarget{classbattleship2D_1_1ui_1_1Particle_a5a420fd563faed7e5fe9635413dd6b5e}{\index{battleship2\-D\-::ui\-::\-Particle@{battleship2\-D\-::ui\-::\-Particle}!last\-Pos\-Y@{last\-Pos\-Y}}
+\index{last\-Pos\-Y@{last\-Pos\-Y}!battleship2D::ui::Particle@{battleship2\-D\-::ui\-::\-Particle}}
+\subsubsection[{last\-Pos\-Y}]{\setlength{\rightskip}{0pt plus 5cm}double battleship2\-D.\-ui.\-Particle.\-last\-Pos\-Y\hspace{0.3cm}{\ttfamily [package]}}}\label{classbattleship2D_1_1ui_1_1Particle_a5a420fd563faed7e5fe9635413dd6b5e}
+\hypertarget{classbattleship2D_1_1ui_1_1Particle_a43ea7800c7ba89fcc30583e2cc0970e4}{\index{battleship2\-D\-::ui\-::\-Particle@{battleship2\-D\-::ui\-::\-Particle}!pos\-X@{pos\-X}}
+\index{pos\-X@{pos\-X}!battleship2D::ui::Particle@{battleship2\-D\-::ui\-::\-Particle}}
+\subsubsection[{pos\-X}]{\setlength{\rightskip}{0pt plus 5cm}double battleship2\-D.\-ui.\-Particle.\-pos\-X\hspace{0.3cm}{\ttfamily [private]}}}\label{classbattleship2D_1_1ui_1_1Particle_a43ea7800c7ba89fcc30583e2cc0970e4}
+
+
+Current position. 
+
+\hypertarget{classbattleship2D_1_1ui_1_1Particle_ad049d4283943c3eb9f3ed76dfdb585c2}{\index{battleship2\-D\-::ui\-::\-Particle@{battleship2\-D\-::ui\-::\-Particle}!pos\-Y@{pos\-Y}}
+\index{pos\-Y@{pos\-Y}!battleship2D::ui::Particle@{battleship2\-D\-::ui\-::\-Particle}}
+\subsubsection[{pos\-Y}]{\setlength{\rightskip}{0pt plus 5cm}double battleship2\-D.\-ui.\-Particle.\-pos\-Y\hspace{0.3cm}{\ttfamily [package]}}}\label{classbattleship2D_1_1ui_1_1Particle_ad049d4283943c3eb9f3ed76dfdb585c2}
+\hypertarget{classbattleship2D_1_1ui_1_1Particle_ae89e92c546d7ab12b38a1da0ed34470c}{\index{battleship2\-D\-::ui\-::\-Particle@{battleship2\-D\-::ui\-::\-Particle}!should\-Explode\-Children@{should\-Explode\-Children}}
+\index{should\-Explode\-Children@{should\-Explode\-Children}!battleship2D::ui::Particle@{battleship2\-D\-::ui\-::\-Particle}}
+\subsubsection[{should\-Explode\-Children}]{\setlength{\rightskip}{0pt plus 5cm}final boolean battleship2\-D.\-ui.\-Particle.\-should\-Explode\-Children\hspace{0.3cm}{\ttfamily [private]}}}\label{classbattleship2D_1_1ui_1_1Particle_ae89e92c546d7ab12b38a1da0ed34470c}
+
+
+Determine whether this particle should give birth to other particles. 
+
+\hypertarget{classbattleship2D_1_1ui_1_1Particle_aeed0f277dadb5f0f4d41d7852ee8f708}{\index{battleship2\-D\-::ui\-::\-Particle@{battleship2\-D\-::ui\-::\-Particle}!size@{size}}
+\index{size@{size}!battleship2D::ui::Particle@{battleship2\-D\-::ui\-::\-Particle}}
+\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}final int battleship2\-D.\-ui.\-Particle.\-size\hspace{0.3cm}{\ttfamily [private]}}}\label{classbattleship2D_1_1ui_1_1Particle_aeed0f277dadb5f0f4d41d7852ee8f708}
+
+
+\hyperlink{classbattleship2D_1_1ui_1_1Particle}{Particle}'s size. 
+
+\hypertarget{classbattleship2D_1_1ui_1_1Particle_adac981aee070e317de343ce7b5967b73}{\index{battleship2\-D\-::ui\-::\-Particle@{battleship2\-D\-::ui\-::\-Particle}!target\-X@{target\-X}}
+\index{target\-X@{target\-X}!battleship2D::ui::Particle@{battleship2\-D\-::ui\-::\-Particle}}
+\subsubsection[{target\-X}]{\setlength{\rightskip}{0pt plus 5cm}final double battleship2\-D.\-ui.\-Particle.\-target\-X\hspace{0.3cm}{\ttfamily [private]}}}\label{classbattleship2D_1_1ui_1_1Particle_adac981aee070e317de343ce7b5967b73}
+
+
+New position after moving. 
+
+\hypertarget{classbattleship2D_1_1ui_1_1Particle_a0c427daa62b3aa8f58077879af4e4c24}{\index{battleship2\-D\-::ui\-::\-Particle@{battleship2\-D\-::ui\-::\-Particle}!target\-Y@{target\-Y}}
+\index{target\-Y@{target\-Y}!battleship2D::ui::Particle@{battleship2\-D\-::ui\-::\-Particle}}
+\subsubsection[{target\-Y}]{\setlength{\rightskip}{0pt plus 5cm}final double battleship2\-D.\-ui.\-Particle.\-target\-Y\hspace{0.3cm}{\ttfamily [package]}}}\label{classbattleship2D_1_1ui_1_1Particle_a0c427daa62b3aa8f58077879af4e4c24}
+\hypertarget{classbattleship2D_1_1ui_1_1Particle_ad1d8ec268600a69b4ae2986c9b1e4ec1}{\index{battleship2\-D\-::ui\-::\-Particle@{battleship2\-D\-::ui\-::\-Particle}!use\-Physics@{use\-Physics}}
+\index{use\-Physics@{use\-Physics}!battleship2D::ui::Particle@{battleship2\-D\-::ui\-::\-Particle}}
+\subsubsection[{use\-Physics}]{\setlength{\rightskip}{0pt plus 5cm}final boolean battleship2\-D.\-ui.\-Particle.\-use\-Physics\hspace{0.3cm}{\ttfamily [private]}}}\label{classbattleship2D_1_1ui_1_1Particle_ad1d8ec268600a69b4ae2986c9b1e4ec1}
+
+
+Use a physics model to update position. 
+
+\hypertarget{classbattleship2D_1_1ui_1_1Particle_a9e831b513842b2cd2e41fc1a2524e590}{\index{battleship2\-D\-::ui\-::\-Particle@{battleship2\-D\-::ui\-::\-Particle}!vel\-X@{vel\-X}}
+\index{vel\-X@{vel\-X}!battleship2D::ui::Particle@{battleship2\-D\-::ui\-::\-Particle}}
+\subsubsection[{vel\-X}]{\setlength{\rightskip}{0pt plus 5cm}double battleship2\-D.\-ui.\-Particle.\-vel\-X\hspace{0.3cm}{\ttfamily [private]}}}\label{classbattleship2D_1_1ui_1_1Particle_a9e831b513842b2cd2e41fc1a2524e590}
+
+
+Velocity 2\-D coordinates. 
+
+\hypertarget{classbattleship2D_1_1ui_1_1Particle_a75fa162ccfdadf4b05828097a4e1549c}{\index{battleship2\-D\-::ui\-::\-Particle@{battleship2\-D\-::ui\-::\-Particle}!vel\-Y@{vel\-Y}}
+\index{vel\-Y@{vel\-Y}!battleship2D::ui::Particle@{battleship2\-D\-::ui\-::\-Particle}}
+\subsubsection[{vel\-Y}]{\setlength{\rightskip}{0pt plus 5cm}double battleship2\-D.\-ui.\-Particle.\-vel\-Y\hspace{0.3cm}{\ttfamily [package]}}}\label{classbattleship2D_1_1ui_1_1Particle_a75fa162ccfdadf4b05828097a4e1549c}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/home/xaviator/\-Enseignements/2015-\/2016/\-S\-F\-A/\-M1-\/\-Info/\-I\-H\-M/\-Battle\-Ship2\-D\-\_\-students/battleship2\-D/ui/\hyperlink{Particle_8java}{Particle.\-java}\end{DoxyCompactItemize}

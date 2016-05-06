@@ -1,0 +1,22 @@
+var searchData=
+[
+  ['selectandremovefuturetarget',['selectAndRemoveFutureTarget',['../classbattleship2D_1_1ui_1_1BoardUIComputer.html#a10da37bcc8fb42cf582ad6903441b722',1,'battleship2D::ui::BoardUIComputer']]],
+  ['selectedshipindex',['selectedShipIndex',['../classbattleship2D_1_1ui_1_1ShipInsertion.html#a7c9aefda6fac391cdaf8838e42dd9bbd',1,'battleship2D::ui::ShipInsertion']]],
+  ['selectedshiptype',['selectedShipType',['../classbattleship2D_1_1ui_1_1MainFrame.html#a78551c236b4bf69570890f531173ea16',1,'battleship2D::ui::MainFrame']]],
+  ['setcelltype',['setCellType',['../classbattleship2D_1_1model_1_1CellModel.html#aa4b33ed17badf1b1058d554c23d324bc',1,'battleship2D::model::CellModel']]],
+  ['setcolumn',['setColumn',['../classbattleship2D_1_1model_1_1Coord2D.html#a9152c6f9e7d7600483d4b36c89acefce',1,'battleship2D::model::Coord2D']]],
+  ['setgamestage',['setGameStage',['../classbattleship2D_1_1ui_1_1MainFrame.html#ad362924d8ec4b1512152db9a1d5705bf',1,'battleship2D::ui::MainFrame']]],
+  ['sethighlight',['setHighlight',['../classbattleship2D_1_1ui_1_1CellUI.html#a8309e9cfa7ebb4b8c62254f152a24561',1,'battleship2D::ui::CellUI']]],
+  ['setid',['setId',['../classbattleship2D_1_1model_1_1CellModel.html#ad3cf39763eb70d7ee5f4efa1553a5268',1,'battleship2D::model::CellModel']]],
+  ['setmissiledestination',['setMissileDestination',['../classbattleship2D_1_1ui_1_1BoardUI.html#a245f604b6a6415f40befb26ad01465f5',1,'battleship2D::ui::BoardUI']]],
+  ['setmissilesource',['setMissileSource',['../classbattleship2D_1_1ui_1_1BoardUI.html#a60ab2df0774770b8cc4623f39c2f39c5',1,'battleship2D::ui::BoardUI']]],
+  ['setrow',['setRow',['../classbattleship2D_1_1model_1_1Coord2D.html#a0be3424c423bd438cdcceae7b829353c',1,'battleship2D::model::Coord2D']]],
+  ['setstyle',['setStyle',['../classbattleship2D_1_1ui_1_1CellUI.html#a58244e6fa1932bf6f427c73a515d524f',1,'battleship2D::ui::CellUI']]],
+  ['ship',['Ship',['../classbattleship2D_1_1model_1_1Ship.html#a87eba7afe7524d43b60439a5fd269009',1,'battleship2D::model::Ship']]],
+  ['shipinsertion',['ShipInsertion',['../classbattleship2D_1_1ui_1_1ShipInsertion.html#a834d63089b081bcbf9f1952e7d6de4eb',1,'battleship2D::ui::ShipInsertion']]],
+  ['shiptype',['ShipType',['../enumbattleship2D_1_1model_1_1ShipType.html#af75a4ecff25c2d6fd086c0f9e443d8ab',1,'battleship2D::model::ShipType']]],
+  ['shiptypetocelltype',['shipTypeToCellType',['../enumbattleship2D_1_1model_1_1CellType.html#a5d3b8fd30d9afa7a8505074b87850719',1,'battleship2D::model::CellType']]],
+  ['showexplosion',['showExplosion',['../classbattleship2D_1_1ui_1_1MainFrame.html#a5868b473495cb0b1f2219257649900f2',1,'battleship2D::ui::MainFrame']]],
+  ['start',['start',['../classbattleship2D_1_1ui_1_1BattleShip2D.html#a821e6c85587d58945cc3bd511c575ebd',1,'battleship2D.ui.BattleShip2D.start()'],['../classbattleship2D_1_1ui_1_1EndGame.html#af0f158a999fabe77a5f8559daeb71a6a',1,'battleship2D.ui.EndGame.start()'],['../classbattleship2D_1_1ui_1_1Explosion.html#a0831b223d28d71af3045fe25e9dcfe76',1,'battleship2D.ui.Explosion.start()']]],
+  ['stop',['stop',['../classbattleship2D_1_1ui_1_1EndGame.html#a82f69c08cff75a2f0eb0b47b9982d838',1,'battleship2D.ui.EndGame.stop()'],['../classbattleship2D_1_1ui_1_1Explosion.html#aa858a4539a0f76f0e96ddad158179740',1,'battleship2D.ui.Explosion.stop()']]]
+];

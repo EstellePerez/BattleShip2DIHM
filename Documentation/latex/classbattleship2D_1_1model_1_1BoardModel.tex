@@ -1,0 +1,462 @@
+\hypertarget{classbattleship2D_1_1model_1_1BoardModel}{\section{battleship2\-D.\-model.\-Board\-Model Class Reference}
+\label{classbattleship2D_1_1model_1_1BoardModel}\index{battleship2\-D.\-model.\-Board\-Model@{battleship2\-D.\-model.\-Board\-Model}}
+}
+
+
+Global board for manipulating cells.  
+
+
+
+
+Collaboration diagram for battleship2\-D.\-model.\-Board\-Model\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbattleship2D_1_1model_1_1BoardModel__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classbattleship2D_1_1model_1_1BoardModel_ae4cfe2d64ce4aced2bd0ae0efd42764e}{Board\-Model} (\hyperlink{enumbattleship2D_1_1model_1_1CellType}{Cell\-Type} cell\-Type)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\hyperlink{classbattleship2D_1_1model_1_1CellModel}{Cell\-Model} \hyperlink{classbattleship2D_1_1model_1_1BoardModel_a301ebd2b0d375366c4c2549988c70522}{adjacent\-Cell} (\hyperlink{classbattleship2D_1_1model_1_1CellModel}{Cell\-Model} cell\-Model, \hyperlink{enumbattleship2D_1_1model_1_1Direction}{Direction} direction)
+\begin{DoxyCompactList}\small\item\em Searches for the cells adjacent to another along cardinal directions. \end{DoxyCompactList}\item 
+\hyperlink{classbattleship2D_1_1model_1_1CellModel}{Cell\-Model} \hyperlink{classbattleship2D_1_1model_1_1BoardModel_a5127bef6a246972c2cdacc38a07b36d8}{adjacent\-Cell} (\hyperlink{classbattleship2D_1_1model_1_1CellModel}{Cell\-Model} cell\-Model, \hyperlink{enumbattleship2D_1_1model_1_1Direction}{Direction} direction, int step)
+\begin{DoxyCompactList}\small\item\em Searches for the cells adjacent to another along cardinal directions. \end{DoxyCompactList}\item 
+\hyperlink{classbattleship2D_1_1model_1_1Coord2D}{Coord2\-D} \hyperlink{classbattleship2D_1_1model_1_1BoardModel_a9f192bbde7b6523a8ec7e78e09f08db1}{cell\-Coords} (\hyperlink{classbattleship2D_1_1model_1_1CellModel}{Cell\-Model} cell\-Model)
+\item 
+void \hyperlink{classbattleship2D_1_1model_1_1BoardModel_a70d5de35696401c7271e63e7392da0a0}{display} ()
+\begin{DoxyCompactList}\small\item\em Displays board's contents. \end{DoxyCompactList}\item 
+\hyperlink{classbattleship2D_1_1model_1_1CellModel}{Cell\-Model} \hyperlink{classbattleship2D_1_1model_1_1BoardModel_a91ddb22e8123ffd145fc5c05585110f8}{find\-First\-Cell\-Of\-Type} (\hyperlink{enumbattleship2D_1_1model_1_1CellType}{Cell\-Type} cell\-Type)
+\item 
+Boolean \hyperlink{classbattleship2D_1_1model_1_1BoardModel_a4a79e7a8f51182ced9478fee68f7842a}{is\-Cell\-Of\-Type} (\hyperlink{classbattleship2D_1_1model_1_1CellModel}{Cell\-Model} cell\-Model, \hyperlink{enumbattleship2D_1_1model_1_1CellType}{Cell\-Type} cell\-Type)
+\begin{DoxyCompactList}\small\item\em Checks whether a cell is of a given type. \end{DoxyCompactList}\item 
+Boolean \hyperlink{classbattleship2D_1_1model_1_1BoardModel_a3a7275142b51bcf384bc40c8836038e4}{is\-Cell\-Type\-Inside} (\hyperlink{enumbattleship2D_1_1model_1_1CellType}{Cell\-Type} cell\-Type)
+\item 
+\hyperlink{classbattleship2D_1_1model_1_1CellModel}{Cell\-Model} \hyperlink{classbattleship2D_1_1model_1_1BoardModel_a528b0e9bf9dbd8cfd0f9f3754cea5d79}{random\-Cell} (\hyperlink{enumbattleship2D_1_1model_1_1CellType}{Cell\-Type} cell\-Type, Boolean is\-Cell\-Type)
+\item 
+void \hyperlink{classbattleship2D_1_1model_1_1BoardModel_a28b2129ced4821bddf7a3c5e27bfbf8e}{replace\-All} (\hyperlink{enumbattleship2D_1_1model_1_1CellType}{Cell\-Type} old\-Cell\-Type, \hyperlink{enumbattleship2D_1_1model_1_1CellType}{Cell\-Type} new\-Cell\-Type)
+\begin{DoxyCompactList}\small\item\em Replaces a set of cell types with another one. \end{DoxyCompactList}\item 
+void \hyperlink{classbattleship2D_1_1model_1_1BoardModel_a7aa5da807e5e13cd066ff43096c0f159}{reset} (\hyperlink{enumbattleship2D_1_1model_1_1CellType}{Cell\-Type} cell\-Type)
+\begin{DoxyCompactList}\small\item\em Resets board's contents to default value. \end{DoxyCompactList}\item 
+\hyperlink{classbattleship2D_1_1model_1_1CellModel}{Cell\-Model} \hyperlink{classbattleship2D_1_1model_1_1BoardModel_afa03fdf7f571196dcf71d6dd6026f5c2}{get\-Cell\-Model} (int row, int column)
+\item 
+\hyperlink{enumbattleship2D_1_1model_1_1CellType}{Cell\-Type} \hyperlink{classbattleship2D_1_1model_1_1BoardModel_accfa1eebdda7de04ac59c2399d27eeef}{get\-Default\-Cell\-Type} ()
+\item 
+\hyperlink{classbattleship2D_1_1model_1_1Fleet}{Fleet} \hyperlink{classbattleship2D_1_1model_1_1BoardModel_a4071154c05caa46d691892f565ff9aeb}{get\-Fleet} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static boolean \hyperlink{classbattleship2D_1_1model_1_1BoardModel_a96c8e6db76df3433972e99d4d2ebada0}{are\-All\-Cells\-Of\-Type} (Array\-List$<$ \hyperlink{classbattleship2D_1_1model_1_1CellModel}{Cell\-Model} $>$cell\-Models, \hyperlink{enumbattleship2D_1_1model_1_1CellType}{Cell\-Type} cell\-Type)
+\item 
+static \hyperlink{classbattleship2D_1_1model_1_1CellModel}{Cell\-Model} \hyperlink{classbattleship2D_1_1model_1_1BoardModel_ab82fdc92af2604db0677e050632e4c52}{find\-First\-Cell\-Of\-Type} (Array\-List$<$ \hyperlink{classbattleship2D_1_1model_1_1CellModel}{Cell\-Model} $>$cell\-Models, \hyperlink{enumbattleship2D_1_1model_1_1CellType}{Cell\-Type} cell\-Type)
+\begin{DoxyCompactList}\small\item\em Determine whether there is at least one element of a cell set with a given type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static int \hyperlink{classbattleship2D_1_1model_1_1BoardModel_ae460f6b5b6c201a4260f504cee2bbe88}{B\-O\-A\-R\-D\-\_\-\-S\-I\-Z\-E} = 10
+\begin{DoxyCompactList}\small\item\em Game board size. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+final \hyperlink{classbattleship2D_1_1model_1_1CellModel}{Cell\-Model}\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} \hyperlink{classbattleship2D_1_1model_1_1BoardModel_aef391200a2e699e06c2f0efa9c75f93b}{board}
+\begin{DoxyCompactList}\small\item\em 2\-D board \end{DoxyCompactList}\item 
+final \hyperlink{classbattleship2D_1_1model_1_1Fleet}{Fleet} \hyperlink{classbattleship2D_1_1model_1_1BoardModel_a31a41118d87b809557a0d3579068efe9}{fleet}
+\begin{DoxyCompactList}\small\item\em \hyperlink{classbattleship2D_1_1model_1_1Fleet}{Fleet} of ships to place on the board. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Boolean \hyperlink{classbattleship2D_1_1model_1_1BoardModel_a834c3bb01a7486857faab326f2c9af33}{are\-Coordinates\-Inside} (int row, int column)
+\begin{DoxyCompactList}\small\item\em Checks whether a pair of coordinates is located inside the board. \end{DoxyCompactList}\item 
+\hyperlink{classbattleship2D_1_1model_1_1CellModel}{Cell\-Model} \hyperlink{classbattleship2D_1_1model_1_1BoardModel_a84e362612177e2e6b989713bc5fff49f}{find\-Cell\-With\-Id} (Integer \hyperlink{classbattleship2D_1_1model_1_1BoardModel_a6a039e078208c6fe2df015b9b3e6bdf1}{cell\-Id})
+\begin{DoxyCompactList}\small\item\em Searches for a cell, knowing its id. \end{DoxyCompactList}\item 
+void \hyperlink{classbattleship2D_1_1model_1_1BoardModel_a3e3f9d28be068d3ec4f56be1e4fa4258}{init} (\hyperlink{enumbattleship2D_1_1model_1_1CellType}{Cell\-Type} cell\-Type)
+\begin{DoxyCompactList}\small\item\em Initializes board's contents. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Integer \hyperlink{classbattleship2D_1_1model_1_1BoardModel_a6a039e078208c6fe2df015b9b3e6bdf1}{cell\-Id}
+\begin{DoxyCompactList}\small\item\em Cell identifier. \end{DoxyCompactList}\item 
+final \hyperlink{enumbattleship2D_1_1model_1_1CellType}{Cell\-Type} \hyperlink{classbattleship2D_1_1model_1_1BoardModel_a0b9c7c69532e0643f423711e0e5f478e}{default\-Cell\-Type}
+\begin{DoxyCompactList}\small\item\em Default cell type for board cells. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Global board for manipulating cells. 
+
+\begin{DoxyAuthor}{Author}
+xaviator 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classbattleship2D_1_1model_1_1BoardModel_ae4cfe2d64ce4aced2bd0ae0efd42764e}{\index{battleship2\-D\-::model\-::\-Board\-Model@{battleship2\-D\-::model\-::\-Board\-Model}!Board\-Model@{Board\-Model}}
+\index{Board\-Model@{Board\-Model}!battleship2D::model::BoardModel@{battleship2\-D\-::model\-::\-Board\-Model}}
+\subsubsection[{Board\-Model}]{\setlength{\rightskip}{0pt plus 5cm}battleship2\-D.\-model.\-Board\-Model.\-Board\-Model (
+\begin{DoxyParamCaption}
+\item[{{\bf Cell\-Type}}]{cell\-Type}
+\end{DoxyParamCaption}
+)}}\label{classbattleship2D_1_1model_1_1BoardModel_ae4cfe2d64ce4aced2bd0ae0efd42764e}
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cell\-Type} & -\/ default cell type for every board cell \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classbattleship2D_1_1model_1_1BoardModel_a301ebd2b0d375366c4c2549988c70522}{\index{battleship2\-D\-::model\-::\-Board\-Model@{battleship2\-D\-::model\-::\-Board\-Model}!adjacent\-Cell@{adjacent\-Cell}}
+\index{adjacent\-Cell@{adjacent\-Cell}!battleship2D::model::BoardModel@{battleship2\-D\-::model\-::\-Board\-Model}}
+\subsubsection[{adjacent\-Cell}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cell\-Model} battleship2\-D.\-model.\-Board\-Model.\-adjacent\-Cell (
+\begin{DoxyParamCaption}
+\item[{{\bf Cell\-Model}}]{cell\-Model, }
+\item[{{\bf Direction}}]{direction}
+\end{DoxyParamCaption}
+)}}\label{classbattleship2D_1_1model_1_1BoardModel_a301ebd2b0d375366c4c2549988c70522}
+
+
+Searches for the cells adjacent to another along cardinal directions. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cell\-Model} & -\/ cell to deal with \\
+\hline
+{\em direction} & -\/ direction to check \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the adjacent cell if it exists, null otherwise 
+\end{DoxyReturn}
+\hypertarget{classbattleship2D_1_1model_1_1BoardModel_a5127bef6a246972c2cdacc38a07b36d8}{\index{battleship2\-D\-::model\-::\-Board\-Model@{battleship2\-D\-::model\-::\-Board\-Model}!adjacent\-Cell@{adjacent\-Cell}}
+\index{adjacent\-Cell@{adjacent\-Cell}!battleship2D::model::BoardModel@{battleship2\-D\-::model\-::\-Board\-Model}}
+\subsubsection[{adjacent\-Cell}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cell\-Model} battleship2\-D.\-model.\-Board\-Model.\-adjacent\-Cell (
+\begin{DoxyParamCaption}
+\item[{{\bf Cell\-Model}}]{cell\-Model, }
+\item[{{\bf Direction}}]{direction, }
+\item[{int}]{step}
+\end{DoxyParamCaption}
+)}}\label{classbattleship2D_1_1model_1_1BoardModel_a5127bef6a246972c2cdacc38a07b36d8}
+
+
+Searches for the cells adjacent to another along cardinal directions. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cell\-Model} & -\/ cell to deal with \\
+\hline
+{\em direction} & -\/ direction to check \\
+\hline
+{\em step} & -\/ the number of cells to \char`\"{}jump\char`\"{} with respect to cell\-Model\-: if step = 1, the adjacent cell is the first one directly touching cell\-Model if step = 2, the adjacent cell is the second one, and so on \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the adjacent cell if it exists, null otherwise 
+\end{DoxyReturn}
+\hypertarget{classbattleship2D_1_1model_1_1BoardModel_a96c8e6db76df3433972e99d4d2ebada0}{\index{battleship2\-D\-::model\-::\-Board\-Model@{battleship2\-D\-::model\-::\-Board\-Model}!are\-All\-Cells\-Of\-Type@{are\-All\-Cells\-Of\-Type}}
+\index{are\-All\-Cells\-Of\-Type@{are\-All\-Cells\-Of\-Type}!battleship2D::model::BoardModel@{battleship2\-D\-::model\-::\-Board\-Model}}
+\subsubsection[{are\-All\-Cells\-Of\-Type}]{\setlength{\rightskip}{0pt plus 5cm}static boolean battleship2\-D.\-model.\-Board\-Model.\-are\-All\-Cells\-Of\-Type (
+\begin{DoxyParamCaption}
+\item[{Array\-List$<$ {\bf Cell\-Model} $>$}]{cell\-Models, }
+\item[{{\bf Cell\-Type}}]{cell\-Type}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classbattleship2D_1_1model_1_1BoardModel_a96c8e6db76df3433972e99d4d2ebada0}
+\begin{DoxyReturn}{Returns}
+true if all elements of a cell set are of the same kind 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em cell\-Models} & -\/ set of cells \\
+\hline
+{\em cell\-Type} & -\/ type to check \\
+\hline
+\end{DoxyParams}
+\hypertarget{classbattleship2D_1_1model_1_1BoardModel_a834c3bb01a7486857faab326f2c9af33}{\index{battleship2\-D\-::model\-::\-Board\-Model@{battleship2\-D\-::model\-::\-Board\-Model}!are\-Coordinates\-Inside@{are\-Coordinates\-Inside}}
+\index{are\-Coordinates\-Inside@{are\-Coordinates\-Inside}!battleship2D::model::BoardModel@{battleship2\-D\-::model\-::\-Board\-Model}}
+\subsubsection[{are\-Coordinates\-Inside}]{\setlength{\rightskip}{0pt plus 5cm}Boolean battleship2\-D.\-model.\-Board\-Model.\-are\-Coordinates\-Inside (
+\begin{DoxyParamCaption}
+\item[{int}]{row, }
+\item[{int}]{column}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classbattleship2D_1_1model_1_1BoardModel_a834c3bb01a7486857faab326f2c9af33}
+
+
+Checks whether a pair of coordinates is located inside the board. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em row} & -\/ row coordinate \\
+\hline
+{\em column} & -\/ column coordinate \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if coordinates are inside, null otherwise 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classbattleship2D_1_1model_1_1BoardModel_a301ebd2b0d375366c4c2549988c70522}{adjacent\-Cell()} 
+\end{DoxySeeAlso}
+\hypertarget{classbattleship2D_1_1model_1_1BoardModel_a9f192bbde7b6523a8ec7e78e09f08db1}{\index{battleship2\-D\-::model\-::\-Board\-Model@{battleship2\-D\-::model\-::\-Board\-Model}!cell\-Coords@{cell\-Coords}}
+\index{cell\-Coords@{cell\-Coords}!battleship2D::model::BoardModel@{battleship2\-D\-::model\-::\-Board\-Model}}
+\subsubsection[{cell\-Coords}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Coord2\-D} battleship2\-D.\-model.\-Board\-Model.\-cell\-Coords (
+\begin{DoxyParamCaption}
+\item[{{\bf Cell\-Model}}]{cell\-Model}
+\end{DoxyParamCaption}
+)}}\label{classbattleship2D_1_1model_1_1BoardModel_a9f192bbde7b6523a8ec7e78e09f08db1}
+\begin{DoxyReturn}{Returns}
+the position of a cell in the board 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em cell\-Model} & -\/ the cell to deal with \\
+\hline
+\end{DoxyParams}
+\hypertarget{classbattleship2D_1_1model_1_1BoardModel_a70d5de35696401c7271e63e7392da0a0}{\index{battleship2\-D\-::model\-::\-Board\-Model@{battleship2\-D\-::model\-::\-Board\-Model}!display@{display}}
+\index{display@{display}!battleship2D::model::BoardModel@{battleship2\-D\-::model\-::\-Board\-Model}}
+\subsubsection[{display}]{\setlength{\rightskip}{0pt plus 5cm}void battleship2\-D.\-model.\-Board\-Model.\-display (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classbattleship2D_1_1model_1_1BoardModel_a70d5de35696401c7271e63e7392da0a0}
+
+
+Displays board's contents. 
+
+\hypertarget{classbattleship2D_1_1model_1_1BoardModel_a84e362612177e2e6b989713bc5fff49f}{\index{battleship2\-D\-::model\-::\-Board\-Model@{battleship2\-D\-::model\-::\-Board\-Model}!find\-Cell\-With\-Id@{find\-Cell\-With\-Id}}
+\index{find\-Cell\-With\-Id@{find\-Cell\-With\-Id}!battleship2D::model::BoardModel@{battleship2\-D\-::model\-::\-Board\-Model}}
+\subsubsection[{find\-Cell\-With\-Id}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cell\-Model} battleship2\-D.\-model.\-Board\-Model.\-find\-Cell\-With\-Id (
+\begin{DoxyParamCaption}
+\item[{Integer}]{cell\-Id}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classbattleship2D_1_1model_1_1BoardModel_a84e362612177e2e6b989713bc5fff49f}
+
+
+Searches for a cell, knowing its id. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cell\-Id} & -\/ identifier to deal with \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the cell matching cell\-Id, null otherwise 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classbattleship2D_1_1model_1_1BoardModel_a4a79e7a8f51182ced9478fee68f7842a}{is\-Cell\-Of\-Type()} 
+\end{DoxySeeAlso}
+\hypertarget{classbattleship2D_1_1model_1_1BoardModel_a91ddb22e8123ffd145fc5c05585110f8}{\index{battleship2\-D\-::model\-::\-Board\-Model@{battleship2\-D\-::model\-::\-Board\-Model}!find\-First\-Cell\-Of\-Type@{find\-First\-Cell\-Of\-Type}}
+\index{find\-First\-Cell\-Of\-Type@{find\-First\-Cell\-Of\-Type}!battleship2D::model::BoardModel@{battleship2\-D\-::model\-::\-Board\-Model}}
+\subsubsection[{find\-First\-Cell\-Of\-Type}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cell\-Model} battleship2\-D.\-model.\-Board\-Model.\-find\-First\-Cell\-Of\-Type (
+\begin{DoxyParamCaption}
+\item[{{\bf Cell\-Type}}]{cell\-Type}
+\end{DoxyParamCaption}
+)}}\label{classbattleship2D_1_1model_1_1BoardModel_a91ddb22e8123ffd145fc5c05585110f8}
+\begin{DoxyReturn}{Returns}
+the first cell of a specific type stored in this, null otherwise 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em cell\-Type} & -\/ type to deal with \\
+\hline
+\end{DoxyParams}
+\hypertarget{classbattleship2D_1_1model_1_1BoardModel_ab82fdc92af2604db0677e050632e4c52}{\index{battleship2\-D\-::model\-::\-Board\-Model@{battleship2\-D\-::model\-::\-Board\-Model}!find\-First\-Cell\-Of\-Type@{find\-First\-Cell\-Of\-Type}}
+\index{find\-First\-Cell\-Of\-Type@{find\-First\-Cell\-Of\-Type}!battleship2D::model::BoardModel@{battleship2\-D\-::model\-::\-Board\-Model}}
+\subsubsection[{find\-First\-Cell\-Of\-Type}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Cell\-Model} battleship2\-D.\-model.\-Board\-Model.\-find\-First\-Cell\-Of\-Type (
+\begin{DoxyParamCaption}
+\item[{Array\-List$<$ {\bf Cell\-Model} $>$}]{cell\-Models, }
+\item[{{\bf Cell\-Type}}]{cell\-Type}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classbattleship2D_1_1model_1_1BoardModel_ab82fdc92af2604db0677e050632e4c52}
+
+
+Determine whether there is at least one element of a cell set with a given type. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cell\-Models} & -\/ set of cells \\
+\hline
+{\em cell\-Type} & -\/ type to check \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the first cell found of type cell\-Type, null if no cell has been found 
+\end{DoxyReturn}
+\hypertarget{classbattleship2D_1_1model_1_1BoardModel_afa03fdf7f571196dcf71d6dd6026f5c2}{\index{battleship2\-D\-::model\-::\-Board\-Model@{battleship2\-D\-::model\-::\-Board\-Model}!get\-Cell\-Model@{get\-Cell\-Model}}
+\index{get\-Cell\-Model@{get\-Cell\-Model}!battleship2D::model::BoardModel@{battleship2\-D\-::model\-::\-Board\-Model}}
+\subsubsection[{get\-Cell\-Model}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cell\-Model} battleship2\-D.\-model.\-Board\-Model.\-get\-Cell\-Model (
+\begin{DoxyParamCaption}
+\item[{int}]{row, }
+\item[{int}]{column}
+\end{DoxyParamCaption}
+)}}\label{classbattleship2D_1_1model_1_1BoardModel_afa03fdf7f571196dcf71d6dd6026f5c2}
+\hypertarget{classbattleship2D_1_1model_1_1BoardModel_accfa1eebdda7de04ac59c2399d27eeef}{\index{battleship2\-D\-::model\-::\-Board\-Model@{battleship2\-D\-::model\-::\-Board\-Model}!get\-Default\-Cell\-Type@{get\-Default\-Cell\-Type}}
+\index{get\-Default\-Cell\-Type@{get\-Default\-Cell\-Type}!battleship2D::model::BoardModel@{battleship2\-D\-::model\-::\-Board\-Model}}
+\subsubsection[{get\-Default\-Cell\-Type}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cell\-Type} battleship2\-D.\-model.\-Board\-Model.\-get\-Default\-Cell\-Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classbattleship2D_1_1model_1_1BoardModel_accfa1eebdda7de04ac59c2399d27eeef}
+\hypertarget{classbattleship2D_1_1model_1_1BoardModel_a4071154c05caa46d691892f565ff9aeb}{\index{battleship2\-D\-::model\-::\-Board\-Model@{battleship2\-D\-::model\-::\-Board\-Model}!get\-Fleet@{get\-Fleet}}
+\index{get\-Fleet@{get\-Fleet}!battleship2D::model::BoardModel@{battleship2\-D\-::model\-::\-Board\-Model}}
+\subsubsection[{get\-Fleet}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Fleet} battleship2\-D.\-model.\-Board\-Model.\-get\-Fleet (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classbattleship2D_1_1model_1_1BoardModel_a4071154c05caa46d691892f565ff9aeb}
+\hypertarget{classbattleship2D_1_1model_1_1BoardModel_a3e3f9d28be068d3ec4f56be1e4fa4258}{\index{battleship2\-D\-::model\-::\-Board\-Model@{battleship2\-D\-::model\-::\-Board\-Model}!init@{init}}
+\index{init@{init}!battleship2D::model::BoardModel@{battleship2\-D\-::model\-::\-Board\-Model}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}void battleship2\-D.\-model.\-Board\-Model.\-init (
+\begin{DoxyParamCaption}
+\item[{{\bf Cell\-Type}}]{cell\-Type}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classbattleship2D_1_1model_1_1BoardModel_a3e3f9d28be068d3ec4f56be1e4fa4258}
+
+
+Initializes board's contents. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cell\-Type} & -\/ default cell type for every cell \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classbattleship2D_1_1model_1_1BoardModel_ae4cfe2d64ce4aced2bd0ae0efd42764e}{Board\-Model()} 
+\end{DoxySeeAlso}
+\hypertarget{classbattleship2D_1_1model_1_1BoardModel_a4a79e7a8f51182ced9478fee68f7842a}{\index{battleship2\-D\-::model\-::\-Board\-Model@{battleship2\-D\-::model\-::\-Board\-Model}!is\-Cell\-Of\-Type@{is\-Cell\-Of\-Type}}
+\index{is\-Cell\-Of\-Type@{is\-Cell\-Of\-Type}!battleship2D::model::BoardModel@{battleship2\-D\-::model\-::\-Board\-Model}}
+\subsubsection[{is\-Cell\-Of\-Type}]{\setlength{\rightskip}{0pt plus 5cm}Boolean battleship2\-D.\-model.\-Board\-Model.\-is\-Cell\-Of\-Type (
+\begin{DoxyParamCaption}
+\item[{{\bf Cell\-Model}}]{cell\-Model, }
+\item[{{\bf Cell\-Type}}]{cell\-Type}
+\end{DoxyParamCaption}
+)}}\label{classbattleship2D_1_1model_1_1BoardModel_a4a79e7a8f51182ced9478fee68f7842a}
+
+
+Checks whether a cell is of a given type. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cell\-Model} & -\/ cell to deal with \\
+\hline
+{\em cell\-Type} & -\/ the type to compare with the cell's \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if cell\-Model's type is the same as cell\-Type 
+\end{DoxyReturn}
+\hypertarget{classbattleship2D_1_1model_1_1BoardModel_a3a7275142b51bcf384bc40c8836038e4}{\index{battleship2\-D\-::model\-::\-Board\-Model@{battleship2\-D\-::model\-::\-Board\-Model}!is\-Cell\-Type\-Inside@{is\-Cell\-Type\-Inside}}
+\index{is\-Cell\-Type\-Inside@{is\-Cell\-Type\-Inside}!battleship2D::model::BoardModel@{battleship2\-D\-::model\-::\-Board\-Model}}
+\subsubsection[{is\-Cell\-Type\-Inside}]{\setlength{\rightskip}{0pt plus 5cm}Boolean battleship2\-D.\-model.\-Board\-Model.\-is\-Cell\-Type\-Inside (
+\begin{DoxyParamCaption}
+\item[{{\bf Cell\-Type}}]{cell\-Type}
+\end{DoxyParamCaption}
+)}}\label{classbattleship2D_1_1model_1_1BoardModel_a3a7275142b51bcf384bc40c8836038e4}
+\begin{DoxyReturn}{Returns}
+true if a specific kind of cell is currenlty located on the board 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em cell\-Type} & -\/ type of the cell to test \\
+\hline
+\end{DoxyParams}
+\hypertarget{classbattleship2D_1_1model_1_1BoardModel_a528b0e9bf9dbd8cfd0f9f3754cea5d79}{\index{battleship2\-D\-::model\-::\-Board\-Model@{battleship2\-D\-::model\-::\-Board\-Model}!random\-Cell@{random\-Cell}}
+\index{random\-Cell@{random\-Cell}!battleship2D::model::BoardModel@{battleship2\-D\-::model\-::\-Board\-Model}}
+\subsubsection[{random\-Cell}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cell\-Model} battleship2\-D.\-model.\-Board\-Model.\-random\-Cell (
+\begin{DoxyParamCaption}
+\item[{{\bf Cell\-Type}}]{cell\-Type, }
+\item[{Boolean}]{is\-Cell\-Type}
+\end{DoxyParamCaption}
+)}}\label{classbattleship2D_1_1model_1_1BoardModel_a528b0e9bf9dbd8cfd0f9f3754cea5d79}
+\begin{DoxyReturn}{Returns}
+a randomly selected cell 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em cell\-Type} & -\/ type of the cell to search \\
+\hline
+{\em is\-Cell\-Type} & -\/ determines whether the type of the cell to search for is equal to cell\-Type or not \\
+\hline
+\end{DoxyParams}
+\hypertarget{classbattleship2D_1_1model_1_1BoardModel_a28b2129ced4821bddf7a3c5e27bfbf8e}{\index{battleship2\-D\-::model\-::\-Board\-Model@{battleship2\-D\-::model\-::\-Board\-Model}!replace\-All@{replace\-All}}
+\index{replace\-All@{replace\-All}!battleship2D::model::BoardModel@{battleship2\-D\-::model\-::\-Board\-Model}}
+\subsubsection[{replace\-All}]{\setlength{\rightskip}{0pt plus 5cm}void battleship2\-D.\-model.\-Board\-Model.\-replace\-All (
+\begin{DoxyParamCaption}
+\item[{{\bf Cell\-Type}}]{old\-Cell\-Type, }
+\item[{{\bf Cell\-Type}}]{new\-Cell\-Type}
+\end{DoxyParamCaption}
+)}}\label{classbattleship2D_1_1model_1_1BoardModel_a28b2129ced4821bddf7a3c5e27bfbf8e}
+
+
+Replaces a set of cell types with another one. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em old\-Cell\-Type} & -\/ type to replace \\
+\hline
+{\em new\-Cell\-Type} & -\/ new type to set \\
+\hline
+\end{DoxyParams}
+\hypertarget{classbattleship2D_1_1model_1_1BoardModel_a7aa5da807e5e13cd066ff43096c0f159}{\index{battleship2\-D\-::model\-::\-Board\-Model@{battleship2\-D\-::model\-::\-Board\-Model}!reset@{reset}}
+\index{reset@{reset}!battleship2D::model::BoardModel@{battleship2\-D\-::model\-::\-Board\-Model}}
+\subsubsection[{reset}]{\setlength{\rightskip}{0pt plus 5cm}void battleship2\-D.\-model.\-Board\-Model.\-reset (
+\begin{DoxyParamCaption}
+\item[{{\bf Cell\-Type}}]{cell\-Type}
+\end{DoxyParamCaption}
+)}}\label{classbattleship2D_1_1model_1_1BoardModel_a7aa5da807e5e13cd066ff43096c0f159}
+
+
+Resets board's contents to default value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cell\-Type} & -\/ default value \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classbattleship2D_1_1model_1_1BoardModel_aef391200a2e699e06c2f0efa9c75f93b}{\index{battleship2\-D\-::model\-::\-Board\-Model@{battleship2\-D\-::model\-::\-Board\-Model}!board@{board}}
+\index{board@{board}!battleship2D::model::BoardModel@{battleship2\-D\-::model\-::\-Board\-Model}}
+\subsubsection[{board}]{\setlength{\rightskip}{0pt plus 5cm}final {\bf Cell\-Model} \mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} battleship2\-D.\-model.\-Board\-Model.\-board\hspace{0.3cm}{\ttfamily [protected]}}}\label{classbattleship2D_1_1model_1_1BoardModel_aef391200a2e699e06c2f0efa9c75f93b}
+
+
+2\-D board 
+
+\hypertarget{classbattleship2D_1_1model_1_1BoardModel_ae460f6b5b6c201a4260f504cee2bbe88}{\index{battleship2\-D\-::model\-::\-Board\-Model@{battleship2\-D\-::model\-::\-Board\-Model}!B\-O\-A\-R\-D\-\_\-\-S\-I\-Z\-E@{B\-O\-A\-R\-D\-\_\-\-S\-I\-Z\-E}}
+\index{B\-O\-A\-R\-D\-\_\-\-S\-I\-Z\-E@{B\-O\-A\-R\-D\-\_\-\-S\-I\-Z\-E}!battleship2D::model::BoardModel@{battleship2\-D\-::model\-::\-Board\-Model}}
+\subsubsection[{B\-O\-A\-R\-D\-\_\-\-S\-I\-Z\-E}]{\setlength{\rightskip}{0pt plus 5cm}int battleship2\-D.\-model.\-Board\-Model.\-B\-O\-A\-R\-D\-\_\-\-S\-I\-Z\-E = 10\hspace{0.3cm}{\ttfamily [static]}}}\label{classbattleship2D_1_1model_1_1BoardModel_ae460f6b5b6c201a4260f504cee2bbe88}
+
+
+Game board size. 
+
+\hypertarget{classbattleship2D_1_1model_1_1BoardModel_a6a039e078208c6fe2df015b9b3e6bdf1}{\index{battleship2\-D\-::model\-::\-Board\-Model@{battleship2\-D\-::model\-::\-Board\-Model}!cell\-Id@{cell\-Id}}
+\index{cell\-Id@{cell\-Id}!battleship2D::model::BoardModel@{battleship2\-D\-::model\-::\-Board\-Model}}
+\subsubsection[{cell\-Id}]{\setlength{\rightskip}{0pt plus 5cm}Integer battleship2\-D.\-model.\-Board\-Model.\-cell\-Id\hspace{0.3cm}{\ttfamily [private]}}}\label{classbattleship2D_1_1model_1_1BoardModel_a6a039e078208c6fe2df015b9b3e6bdf1}
+
+
+Cell identifier. 
+
+\hypertarget{classbattleship2D_1_1model_1_1BoardModel_a0b9c7c69532e0643f423711e0e5f478e}{\index{battleship2\-D\-::model\-::\-Board\-Model@{battleship2\-D\-::model\-::\-Board\-Model}!default\-Cell\-Type@{default\-Cell\-Type}}
+\index{default\-Cell\-Type@{default\-Cell\-Type}!battleship2D::model::BoardModel@{battleship2\-D\-::model\-::\-Board\-Model}}
+\subsubsection[{default\-Cell\-Type}]{\setlength{\rightskip}{0pt plus 5cm}final {\bf Cell\-Type} battleship2\-D.\-model.\-Board\-Model.\-default\-Cell\-Type\hspace{0.3cm}{\ttfamily [private]}}}\label{classbattleship2D_1_1model_1_1BoardModel_a0b9c7c69532e0643f423711e0e5f478e}
+
+
+Default cell type for board cells. 
+
+\hypertarget{classbattleship2D_1_1model_1_1BoardModel_a31a41118d87b809557a0d3579068efe9}{\index{battleship2\-D\-::model\-::\-Board\-Model@{battleship2\-D\-::model\-::\-Board\-Model}!fleet@{fleet}}
+\index{fleet@{fleet}!battleship2D::model::BoardModel@{battleship2\-D\-::model\-::\-Board\-Model}}
+\subsubsection[{fleet}]{\setlength{\rightskip}{0pt plus 5cm}final {\bf Fleet} battleship2\-D.\-model.\-Board\-Model.\-fleet\hspace{0.3cm}{\ttfamily [protected]}}}\label{classbattleship2D_1_1model_1_1BoardModel_a31a41118d87b809557a0d3579068efe9}
+
+
+\hyperlink{classbattleship2D_1_1model_1_1Fleet}{Fleet} of ships to place on the board. 
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/home/xaviator/\-Enseignements/2015-\/2016/\-S\-F\-A/\-M1-\/\-Info/\-I\-H\-M/\-Battle\-Ship2\-D\-\_\-students/battleship2\-D/model/\hyperlink{BoardModel_8java}{Board\-Model.\-java}\end{DoxyCompactItemize}

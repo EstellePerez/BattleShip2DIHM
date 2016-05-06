@@ -1,0 +1,200 @@
+\hypertarget{classbattleship2D_1_1ui_1_1BoardUIPlayer}{\section{battleship2\-D.\-ui.\-Board\-U\-I\-Player Class Reference}
+\label{classbattleship2D_1_1ui_1_1BoardUIPlayer}\index{battleship2\-D.\-ui.\-Board\-U\-I\-Player@{battleship2\-D.\-ui.\-Board\-U\-I\-Player}}
+}
+
+
+\hyperlink{classbattleship2D_1_1ui_1_1BoardUI}{Board\-U\-I} dedicated to player side.  
+
+
+
+
+Inheritance diagram for battleship2\-D.\-ui.\-Board\-U\-I\-Player\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=228pt]{classbattleship2D_1_1ui_1_1BoardUIPlayer__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for battleship2\-D.\-ui.\-Board\-U\-I\-Player\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbattleship2D_1_1ui_1_1BoardUIPlayer__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classbattleship2D_1_1ui_1_1BoardUIPlayer_aaa8a0ba6dc59dcb628e89c0bf5432b3a}{Board\-U\-I\-Player} (String \hyperlink{classbattleship2D_1_1ui_1_1BoardUI_a7ad8f5d72803137c6ea6bde92a667c03}{name}, \hyperlink{classbattleship2D_1_1model_1_1BoardModel}{Board\-Model} \hyperlink{classbattleship2D_1_1ui_1_1BoardUI_a6c61b16484c780fb58e68bc8fb1494e6}{board\-Model}, Boolean is\-Bound)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+void \hyperlink{classbattleship2D_1_1ui_1_1BoardUIPlayer_ab9e219c9243c91a4461cd1f6ce46066c}{available\-Cell\-Span\-By\-Direction} (\hyperlink{classbattleship2D_1_1model_1_1CellModel}{Cell\-Model} cell\-Model, \hyperlink{enumbattleship2D_1_1model_1_1Direction}{Direction} direction, int ship\-Size)
+\begin{DoxyCompactList}\small\item\em Highlights the cells that can receive a ship in a given direction. \end{DoxyCompactList}\item 
+void \hyperlink{classbattleship2D_1_1ui_1_1BoardUIPlayer_a12066af880f31bac98afa295ab9fafc4}{erase\-Selected\-Ship\-Locations} (\hyperlink{enumbattleship2D_1_1model_1_1CellType}{Cell\-Type} ship\-Type)
+\begin{DoxyCompactList}\small\item\em Erases the cells\-: \end{DoxyCompactList}\item 
+void \hyperlink{classbattleship2D_1_1ui_1_1BoardUIPlayer_a9229c03cfad2d3af9aa7fdaa9f9d3d2a}{place\-Ship\-On\-Board} (\hyperlink{enumbattleship2D_1_1model_1_1CellType}{Cell\-Type} cell\-Type)
+\begin{DoxyCompactList}\small\item\em Validates the user choice by actually inserting a ship on board. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classbattleship2D_1_1ui_1_1BoardUIPlayer_a2c7f4d5fdde5b8753c183115a791776a}{init\-Specific\-Cell\-U\-I\-Listener} (Property\-Change\-Event property\-Change\-Event)
+\begin{DoxyCompactList}\small\item\em Manages notification sent by Cell\-U\-Is. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classbattleship2D_1_1ui_1_1BoardUIPlayer_a682280776c3f98231aa0624d783566cb}{find\-Selected\-Cell\-Span} (\hyperlink{classbattleship2D_1_1model_1_1CellModel}{Cell\-Model} cell\-Model)
+\begin{DoxyCompactList}\small\item\em Searches for one of the cell spans available for inserting a ship and sets selected\-Cell\-Span accordingly. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Array\-List$<$ \hyperlink{classbattleship2D_1_1model_1_1CellModel}{Cell\-Model} $>$ \hyperlink{classbattleship2D_1_1ui_1_1BoardUIPlayer_a3a625b31f12b372502d3f48e07a9bc59}{selected\-Cell\-Span}
+\begin{DoxyCompactList}\small\item\em User-\/selected cell span to place a ship on the board. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\hyperlink{classbattleship2D_1_1ui_1_1BoardUI}{Board\-U\-I} dedicated to player side. 
+
+\begin{DoxyAuthor}{Author}
+xaviator 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classbattleship2D_1_1ui_1_1BoardUIPlayer_aaa8a0ba6dc59dcb628e89c0bf5432b3a}{\index{battleship2\-D\-::ui\-::\-Board\-U\-I\-Player@{battleship2\-D\-::ui\-::\-Board\-U\-I\-Player}!Board\-U\-I\-Player@{Board\-U\-I\-Player}}
+\index{Board\-U\-I\-Player@{Board\-U\-I\-Player}!battleship2D::ui::BoardUIPlayer@{battleship2\-D\-::ui\-::\-Board\-U\-I\-Player}}
+\subsubsection[{Board\-U\-I\-Player}]{\setlength{\rightskip}{0pt plus 5cm}battleship2\-D.\-ui.\-Board\-U\-I\-Player.\-Board\-U\-I\-Player (
+\begin{DoxyParamCaption}
+\item[{String}]{name, }
+\item[{{\bf Board\-Model}}]{board\-Model, }
+\item[{Boolean}]{is\-Bound}
+\end{DoxyParamCaption}
+)}}\label{classbattleship2D_1_1ui_1_1BoardUIPlayer_aaa8a0ba6dc59dcb628e89c0bf5432b3a}
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & -\/ This board's name \\
+\hline
+{\em board\-Model} & -\/ related model \\
+\hline
+{\em is\-Bound} & -\/ determines whether \hyperlink{classbattleship2D_1_1ui_1_1CellUI}{Cell\-U\-I}'s styles are bound to cell models' $\ast$ \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classbattleship2D_1_1ui_1_1BoardUIPlayer_ab9e219c9243c91a4461cd1f6ce46066c}{\index{battleship2\-D\-::ui\-::\-Board\-U\-I\-Player@{battleship2\-D\-::ui\-::\-Board\-U\-I\-Player}!available\-Cell\-Span\-By\-Direction@{available\-Cell\-Span\-By\-Direction}}
+\index{available\-Cell\-Span\-By\-Direction@{available\-Cell\-Span\-By\-Direction}!battleship2D::ui::BoardUIPlayer@{battleship2\-D\-::ui\-::\-Board\-U\-I\-Player}}
+\subsubsection[{available\-Cell\-Span\-By\-Direction}]{\setlength{\rightskip}{0pt plus 5cm}void battleship2\-D.\-ui.\-Board\-U\-I\-Player.\-available\-Cell\-Span\-By\-Direction (
+\begin{DoxyParamCaption}
+\item[{{\bf Cell\-Model}}]{cell\-Model, }
+\item[{{\bf Direction}}]{direction, }
+\item[{int}]{ship\-Size}
+\end{DoxyParamCaption}
+)}}\label{classbattleship2D_1_1ui_1_1BoardUIPlayer_ab9e219c9243c91a4461cd1f6ce46066c}
+
+
+Highlights the cells that can receive a ship in a given direction. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cell\-Model} & -\/ first cell of the span representing the ship \\
+\hline
+{\em direction} & direction to follow to get successive cells \\
+\hline
+{\em ship\-Size} & ship's span \\
+\hline
+\end{DoxyParams}
+\hypertarget{classbattleship2D_1_1ui_1_1BoardUIPlayer_a12066af880f31bac98afa295ab9fafc4}{\index{battleship2\-D\-::ui\-::\-Board\-U\-I\-Player@{battleship2\-D\-::ui\-::\-Board\-U\-I\-Player}!erase\-Selected\-Ship\-Locations@{erase\-Selected\-Ship\-Locations}}
+\index{erase\-Selected\-Ship\-Locations@{erase\-Selected\-Ship\-Locations}!battleship2D::ui::BoardUIPlayer@{battleship2\-D\-::ui\-::\-Board\-U\-I\-Player}}
+\subsubsection[{erase\-Selected\-Ship\-Locations}]{\setlength{\rightskip}{0pt plus 5cm}void battleship2\-D.\-ui.\-Board\-U\-I\-Player.\-erase\-Selected\-Ship\-Locations (
+\begin{DoxyParamCaption}
+\item[{{\bf Cell\-Type}}]{ship\-Type}
+\end{DoxyParamCaption}
+)}}\label{classbattleship2D_1_1ui_1_1BoardUIPlayer_a12066af880f31bac98afa295ab9fafc4}
+
+
+Erases the cells\-: 
+
+
+\begin{DoxyItemize}
+\item showing the currently selected ship
+\item highlighting the available locations to insert a ship 
+\begin{DoxyParams}{Parameters}
+{\em ship\-Type} & -\/ type of the currenly selected ship, expressed as a Cell\-Type \\
+\hline
+\end{DoxyParams}
+
+\end{DoxyItemize}\hypertarget{classbattleship2D_1_1ui_1_1BoardUIPlayer_a682280776c3f98231aa0624d783566cb}{\index{battleship2\-D\-::ui\-::\-Board\-U\-I\-Player@{battleship2\-D\-::ui\-::\-Board\-U\-I\-Player}!find\-Selected\-Cell\-Span@{find\-Selected\-Cell\-Span}}
+\index{find\-Selected\-Cell\-Span@{find\-Selected\-Cell\-Span}!battleship2D::ui::BoardUIPlayer@{battleship2\-D\-::ui\-::\-Board\-U\-I\-Player}}
+\subsubsection[{find\-Selected\-Cell\-Span}]{\setlength{\rightskip}{0pt plus 5cm}void battleship2\-D.\-ui.\-Board\-U\-I\-Player.\-find\-Selected\-Cell\-Span (
+\begin{DoxyParamCaption}
+\item[{{\bf Cell\-Model}}]{cell\-Model}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classbattleship2D_1_1ui_1_1BoardUIPlayer_a682280776c3f98231aa0624d783566cb}
+
+
+Searches for one of the cell spans available for inserting a ship and sets selected\-Cell\-Span accordingly. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cell\-Model} & -\/ one of the cells constituting the span to retrieve. Note that this cell may belong to several cell spans. In such a case, the returned cell span is the first one following the directions\-: North, West, South, East in this order \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+one cell span containing cell\-Model 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classbattleship2D_1_1ui_1_1BoardUI_af5065de9a559f9380fc454d8925475a9}{init\-Cell\-U\-I\-Listener()} 
+\end{DoxySeeAlso}
+\hypertarget{classbattleship2D_1_1ui_1_1BoardUIPlayer_a2c7f4d5fdde5b8753c183115a791776a}{\index{battleship2\-D\-::ui\-::\-Board\-U\-I\-Player@{battleship2\-D\-::ui\-::\-Board\-U\-I\-Player}!init\-Specific\-Cell\-U\-I\-Listener@{init\-Specific\-Cell\-U\-I\-Listener}}
+\index{init\-Specific\-Cell\-U\-I\-Listener@{init\-Specific\-Cell\-U\-I\-Listener}!battleship2D::ui::BoardUIPlayer@{battleship2\-D\-::ui\-::\-Board\-U\-I\-Player}}
+\subsubsection[{init\-Specific\-Cell\-U\-I\-Listener}]{\setlength{\rightskip}{0pt plus 5cm}void battleship2\-D.\-ui.\-Board\-U\-I\-Player.\-init\-Specific\-Cell\-U\-I\-Listener (
+\begin{DoxyParamCaption}
+\item[{Property\-Change\-Event}]{property\-Change\-Event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classbattleship2D_1_1ui_1_1BoardUIPlayer_a2c7f4d5fdde5b8753c183115a791776a}
+
+
+Manages notification sent by Cell\-U\-Is. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em property\-Change\-Event} & -\/ event to deal with \\
+\hline
+\end{DoxyParams}
+\hypertarget{classbattleship2D_1_1ui_1_1BoardUIPlayer_a9229c03cfad2d3af9aa7fdaa9f9d3d2a}{\index{battleship2\-D\-::ui\-::\-Board\-U\-I\-Player@{battleship2\-D\-::ui\-::\-Board\-U\-I\-Player}!place\-Ship\-On\-Board@{place\-Ship\-On\-Board}}
+\index{place\-Ship\-On\-Board@{place\-Ship\-On\-Board}!battleship2D::ui::BoardUIPlayer@{battleship2\-D\-::ui\-::\-Board\-U\-I\-Player}}
+\subsubsection[{place\-Ship\-On\-Board}]{\setlength{\rightskip}{0pt plus 5cm}void battleship2\-D.\-ui.\-Board\-U\-I\-Player.\-place\-Ship\-On\-Board (
+\begin{DoxyParamCaption}
+\item[{{\bf Cell\-Type}}]{cell\-Type}
+\end{DoxyParamCaption}
+)}}\label{classbattleship2D_1_1ui_1_1BoardUIPlayer_a9229c03cfad2d3af9aa7fdaa9f9d3d2a}
+
+
+Validates the user choice by actually inserting a ship on board. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cell\-Type} & -\/ type related to the ship to insert \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classbattleship2D_1_1ui_1_1BoardUIPlayer_a3a625b31f12b372502d3f48e07a9bc59}{\index{battleship2\-D\-::ui\-::\-Board\-U\-I\-Player@{battleship2\-D\-::ui\-::\-Board\-U\-I\-Player}!selected\-Cell\-Span@{selected\-Cell\-Span}}
+\index{selected\-Cell\-Span@{selected\-Cell\-Span}!battleship2D::ui::BoardUIPlayer@{battleship2\-D\-::ui\-::\-Board\-U\-I\-Player}}
+\subsubsection[{selected\-Cell\-Span}]{\setlength{\rightskip}{0pt plus 5cm}Array\-List$<${\bf Cell\-Model}$>$ battleship2\-D.\-ui.\-Board\-U\-I\-Player.\-selected\-Cell\-Span\hspace{0.3cm}{\ttfamily [private]}}}\label{classbattleship2D_1_1ui_1_1BoardUIPlayer_a3a625b31f12b372502d3f48e07a9bc59}
+
+
+User-\/selected cell span to place a ship on the board. 
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/home/xaviator/\-Enseignements/2015-\/2016/\-S\-F\-A/\-M1-\/\-Info/\-I\-H\-M/\-Battle\-Ship2\-D\-\_\-students/battleship2\-D/ui/\hyperlink{BoardUIPlayer_8java}{Board\-U\-I\-Player.\-java}\end{DoxyCompactItemize}

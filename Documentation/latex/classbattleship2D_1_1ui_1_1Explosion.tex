@@ -1,0 +1,321 @@
+\hypertarget{classbattleship2D_1_1ui_1_1Explosion}{\section{battleship2\-D.\-ui.\-Explosion Class Reference}
+\label{classbattleship2D_1_1ui_1_1Explosion}\index{battleship2\-D.\-ui.\-Explosion@{battleship2\-D.\-ui.\-Explosion}}
+}
+
+
+Fireworks animation when a ship has been hit Code derived from Oracle's Java\-F\-X sample \char`\"{}\-Ensemble.\-jar\char`\"{} Adapted by Xaviator.  
+
+
+
+
+Inheritance diagram for battleship2\-D.\-ui.\-Explosion\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{classbattleship2D_1_1ui_1_1Explosion__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for battleship2\-D.\-ui.\-Explosion\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbattleship2D_1_1ui_1_1Explosion__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classbattleship2D_1_1ui_1_1Explosion_af483832a0d9787c903d9aff653954892}{Explosion} (double default\-Width, double default\-Height)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+void \hyperlink{classbattleship2D_1_1ui_1_1Explosion_a0831b223d28d71af3045fe25e9dcfe76}{start} ()
+\begin{DoxyCompactList}\small\item\em Plays the animation. \end{DoxyCompactList}\item 
+void \hyperlink{classbattleship2D_1_1ui_1_1Explosion_aa858a4539a0f76f0e96ddad158179740}{stop} ()
+\begin{DoxyCompactList}\small\item\em Stops the animation. \end{DoxyCompactList}\item 
+Image\-View \hyperlink{classbattleship2D_1_1ui_1_1Explosion_a6f0bf18b4f52837666495a3dd81b3ca2}{get\-Background\-Image} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classbattleship2D_1_1ui_1_1Explosion_a61dba5f9eb620647547fe4eff0a53210}{layout\-Children} ()
+\begin{DoxyCompactList}\small\item\em Makes canvas resizable. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classbattleship2D_1_1ui_1_1Explosion_a4b196534a62cd03284da2db8e37578e8}{draw\-Fireworks} (Graphics\-Context graphics\-Context)
+\begin{DoxyCompactList}\small\item\em Generates particles for fireworks. \end{DoxyCompactList}\item 
+void \hyperlink{classbattleship2D_1_1ui_1_1Explosion_a3a9a50a352593bca18bf2d13bd8e3c4e}{explode\-Circle} (\hyperlink{classbattleship2D_1_1ui_1_1Particle}{Particle} firework, List$<$ \hyperlink{classbattleship2D_1_1ui_1_1Particle}{Particle} $>$ new\-Particles)
+\begin{DoxyCompactList}\small\item\em Transforms a particle into a big circle for simulating an explosion and generates new particles. \end{DoxyCompactList}\item 
+void \hyperlink{classbattleship2D_1_1ui_1_1Explosion_a0d2cbeaefac4ab21a5be6d088797a74a}{explode\-Small\-Circle} (\hyperlink{classbattleship2D_1_1ui_1_1Particle}{Particle} firework, List$<$ \hyperlink{classbattleship2D_1_1ui_1_1Particle}{Particle} $>$ new\-Particles)
+\begin{DoxyCompactList}\small\item\em Transforms a particle into a small circle for simulating an explosion and generates new particles. \end{DoxyCompactList}\item 
+void \hyperlink{classbattleship2D_1_1ui_1_1Explosion_a51c9ffdbf54c26e716f9f97a8c34eb94}{fire\-Particle} ()
+\begin{DoxyCompactList}\small\item\em Relaunches a firework. \end{DoxyCompactList}\item 
+void \hyperlink{classbattleship2D_1_1ui_1_1Explosion_aa6893749b2bd4e0cffb7603338e139b2}{init\-Animation\-Timer} ()
+\begin{DoxyCompactList}\small\item\em Initializes global animation parameters. \end{DoxyCompactList}\item 
+void \hyperlink{classbattleship2D_1_1ui_1_1Explosion_a5eff5b74b85337c71606c878bb12c87a}{init\-Background} ()
+\begin{DoxyCompactList}\small\item\em Initializes background. \end{DoxyCompactList}\item 
+void \hyperlink{classbattleship2D_1_1ui_1_1Explosion_ab03741cb294ee98b2151d66cb701c00e}{init\-Canvas} ()
+\begin{DoxyCompactList}\small\item\em Initializes canvas. \end{DoxyCompactList}\item 
+void \hyperlink{classbattleship2D_1_1ui_1_1Explosion_a99dbff7a90e93b0dc44d75758c183e97}{init\-Colors} ()
+\begin{DoxyCompactList}\small\item\em Initializes color palette. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+final Image\-View \hyperlink{classbattleship2D_1_1ui_1_1Explosion_aec53964ab689b670e6e25b23669aaf70}{background\-Image}
+\begin{DoxyCompactList}\small\item\em Image covering the cell hit by a missile. \end{DoxyCompactList}\item 
+final Canvas \hyperlink{classbattleship2D_1_1ui_1_1Explosion_a7df261722990b64d7ef22ba25786bb54}{canvas}
+\begin{DoxyCompactList}\small\item\em Graphics zone for displaying fireworks. \end{DoxyCompactList}\item 
+final Paint\mbox{[}$\,$\mbox{]} \hyperlink{classbattleship2D_1_1ui_1_1Explosion_ac77ea2908aa3d5de71096df02623a018}{colors}
+\begin{DoxyCompactList}\small\item\em Fireworks canvas palette. \end{DoxyCompactList}\item 
+int \hyperlink{classbattleship2D_1_1ui_1_1Explosion_a5ebd846be63f323f45e95038f9941cb3}{count\-Down\-Till\-Next\-Firework} = 40
+\begin{DoxyCompactList}\small\item\em Timer between two particles sprays. \end{DoxyCompactList}\item 
+final List$<$ \hyperlink{classbattleship2D_1_1ui_1_1Particle}{Particle} $>$ \hyperlink{classbattleship2D_1_1ui_1_1Explosion_a4433fee8590870ce4f7d23d96efabb39}{particles} = new Array\-List$<$$>$()
+\begin{DoxyCompactList}\small\item\em Particles constituting the fireworks. \end{DoxyCompactList}\item 
+Animation\-Timer \hyperlink{classbattleship2D_1_1ui_1_1Explosion_a776b8d79ca23a39ec19567138498baf6}{timer}
+\begin{DoxyCompactList}\small\item\em Fireworks animation timer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Fireworks animation when a ship has been hit Code derived from Oracle's Java\-F\-X sample \char`\"{}\-Ensemble.\-jar\char`\"{} Adapted by Xaviator. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classbattleship2D_1_1ui_1_1Explosion_af483832a0d9787c903d9aff653954892}{\index{battleship2\-D\-::ui\-::\-Explosion@{battleship2\-D\-::ui\-::\-Explosion}!Explosion@{Explosion}}
+\index{Explosion@{Explosion}!battleship2D::ui::Explosion@{battleship2\-D\-::ui\-::\-Explosion}}
+\subsubsection[{Explosion}]{\setlength{\rightskip}{0pt plus 5cm}battleship2\-D.\-ui.\-Explosion.\-Explosion (
+\begin{DoxyParamCaption}
+\item[{double}]{default\-Width, }
+\item[{double}]{default\-Height}
+\end{DoxyParamCaption}
+)}}\label{classbattleship2D_1_1ui_1_1Explosion_af483832a0d9787c903d9aff653954892}
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em default\-Width} & -\/ default width for both canvas and background \\
+\hline
+{\em default\-Height} & -\/ default height for both canvas and background \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classbattleship2D_1_1ui_1_1Explosion_a4b196534a62cd03284da2db8e37578e8}{\index{battleship2\-D\-::ui\-::\-Explosion@{battleship2\-D\-::ui\-::\-Explosion}!draw\-Fireworks@{draw\-Fireworks}}
+\index{draw\-Fireworks@{draw\-Fireworks}!battleship2D::ui::Explosion@{battleship2\-D\-::ui\-::\-Explosion}}
+\subsubsection[{draw\-Fireworks}]{\setlength{\rightskip}{0pt plus 5cm}void battleship2\-D.\-ui.\-Explosion.\-draw\-Fireworks (
+\begin{DoxyParamCaption}
+\item[{Graphics\-Context}]{graphics\-Context}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classbattleship2D_1_1ui_1_1Explosion_a4b196534a62cd03284da2db8e37578e8}
+
+
+Generates particles for fireworks. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em graphics\-Context} & -\/ Context associated with canvas for drawing fireworks \hyperlink{classbattleship2D_1_1ui_1_1Explosion_aa6893749b2bd4e0cffb7603338e139b2}{init\-Animation\-Timer()} \\
+\hline
+\end{DoxyParams}
+\hypertarget{classbattleship2D_1_1ui_1_1Explosion_a3a9a50a352593bca18bf2d13bd8e3c4e}{\index{battleship2\-D\-::ui\-::\-Explosion@{battleship2\-D\-::ui\-::\-Explosion}!explode\-Circle@{explode\-Circle}}
+\index{explode\-Circle@{explode\-Circle}!battleship2D::ui::Explosion@{battleship2\-D\-::ui\-::\-Explosion}}
+\subsubsection[{explode\-Circle}]{\setlength{\rightskip}{0pt plus 5cm}void battleship2\-D.\-ui.\-Explosion.\-explode\-Circle (
+\begin{DoxyParamCaption}
+\item[{{\bf Particle}}]{firework, }
+\item[{List$<$ {\bf Particle} $>$}]{new\-Particles}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classbattleship2D_1_1ui_1_1Explosion_a3a9a50a352593bca18bf2d13bd8e3c4e}
+
+
+Transforms a particle into a big circle for simulating an explosion and generates new particles. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em firework} & -\/ \hyperlink{classbattleship2D_1_1ui_1_1Particle}{Particle} to deal with \\
+\hline
+{\em new\-Particles} & -\/ set receiving new Particles \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classbattleship2D_1_1ui_1_1Explosion_a4b196534a62cd03284da2db8e37578e8}{draw\-Fireworks()} 
+\end{DoxySeeAlso}
+\hypertarget{classbattleship2D_1_1ui_1_1Explosion_a0d2cbeaefac4ab21a5be6d088797a74a}{\index{battleship2\-D\-::ui\-::\-Explosion@{battleship2\-D\-::ui\-::\-Explosion}!explode\-Small\-Circle@{explode\-Small\-Circle}}
+\index{explode\-Small\-Circle@{explode\-Small\-Circle}!battleship2D::ui::Explosion@{battleship2\-D\-::ui\-::\-Explosion}}
+\subsubsection[{explode\-Small\-Circle}]{\setlength{\rightskip}{0pt plus 5cm}void battleship2\-D.\-ui.\-Explosion.\-explode\-Small\-Circle (
+\begin{DoxyParamCaption}
+\item[{{\bf Particle}}]{firework, }
+\item[{List$<$ {\bf Particle} $>$}]{new\-Particles}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classbattleship2D_1_1ui_1_1Explosion_a0d2cbeaefac4ab21a5be6d088797a74a}
+
+
+Transforms a particle into a small circle for simulating an explosion and generates new particles. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em firework} & -\/ \hyperlink{classbattleship2D_1_1ui_1_1Particle}{Particle} to deal with \\
+\hline
+{\em new\-Particles} & -\/ set receiving new Particles \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classbattleship2D_1_1ui_1_1Explosion_a4b196534a62cd03284da2db8e37578e8}{draw\-Fireworks()} 
+\end{DoxySeeAlso}
+\hypertarget{classbattleship2D_1_1ui_1_1Explosion_a51c9ffdbf54c26e716f9f97a8c34eb94}{\index{battleship2\-D\-::ui\-::\-Explosion@{battleship2\-D\-::ui\-::\-Explosion}!fire\-Particle@{fire\-Particle}}
+\index{fire\-Particle@{fire\-Particle}!battleship2D::ui::Explosion@{battleship2\-D\-::ui\-::\-Explosion}}
+\subsubsection[{fire\-Particle}]{\setlength{\rightskip}{0pt plus 5cm}void battleship2\-D.\-ui.\-Explosion.\-fire\-Particle (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classbattleship2D_1_1ui_1_1Explosion_a51c9ffdbf54c26e716f9f97a8c34eb94}
+
+
+Relaunches a firework. 
+
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classbattleship2D_1_1ui_1_1Explosion_aa6893749b2bd4e0cffb7603338e139b2}{init\-Animation\-Timer()} 
+\end{DoxySeeAlso}
+\hypertarget{classbattleship2D_1_1ui_1_1Explosion_a6f0bf18b4f52837666495a3dd81b3ca2}{\index{battleship2\-D\-::ui\-::\-Explosion@{battleship2\-D\-::ui\-::\-Explosion}!get\-Background\-Image@{get\-Background\-Image}}
+\index{get\-Background\-Image@{get\-Background\-Image}!battleship2D::ui::Explosion@{battleship2\-D\-::ui\-::\-Explosion}}
+\subsubsection[{get\-Background\-Image}]{\setlength{\rightskip}{0pt plus 5cm}Image\-View battleship2\-D.\-ui.\-Explosion.\-get\-Background\-Image (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classbattleship2D_1_1ui_1_1Explosion_a6f0bf18b4f52837666495a3dd81b3ca2}
+\hypertarget{classbattleship2D_1_1ui_1_1Explosion_aa6893749b2bd4e0cffb7603338e139b2}{\index{battleship2\-D\-::ui\-::\-Explosion@{battleship2\-D\-::ui\-::\-Explosion}!init\-Animation\-Timer@{init\-Animation\-Timer}}
+\index{init\-Animation\-Timer@{init\-Animation\-Timer}!battleship2D::ui::Explosion@{battleship2\-D\-::ui\-::\-Explosion}}
+\subsubsection[{init\-Animation\-Timer}]{\setlength{\rightskip}{0pt plus 5cm}void battleship2\-D.\-ui.\-Explosion.\-init\-Animation\-Timer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classbattleship2D_1_1ui_1_1Explosion_aa6893749b2bd4e0cffb7603338e139b2}
+
+
+Initializes global animation parameters. 
+
+\hypertarget{classbattleship2D_1_1ui_1_1Explosion_a5eff5b74b85337c71606c878bb12c87a}{\index{battleship2\-D\-::ui\-::\-Explosion@{battleship2\-D\-::ui\-::\-Explosion}!init\-Background@{init\-Background}}
+\index{init\-Background@{init\-Background}!battleship2D::ui::Explosion@{battleship2\-D\-::ui\-::\-Explosion}}
+\subsubsection[{init\-Background}]{\setlength{\rightskip}{0pt plus 5cm}void battleship2\-D.\-ui.\-Explosion.\-init\-Background (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classbattleship2D_1_1ui_1_1Explosion_a5eff5b74b85337c71606c878bb12c87a}
+
+
+Initializes background. 
+
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classbattleship2D_1_1ui_1_1Explosion_af483832a0d9787c903d9aff653954892}{Explosion()} 
+\end{DoxySeeAlso}
+\hypertarget{classbattleship2D_1_1ui_1_1Explosion_ab03741cb294ee98b2151d66cb701c00e}{\index{battleship2\-D\-::ui\-::\-Explosion@{battleship2\-D\-::ui\-::\-Explosion}!init\-Canvas@{init\-Canvas}}
+\index{init\-Canvas@{init\-Canvas}!battleship2D::ui::Explosion@{battleship2\-D\-::ui\-::\-Explosion}}
+\subsubsection[{init\-Canvas}]{\setlength{\rightskip}{0pt plus 5cm}void battleship2\-D.\-ui.\-Explosion.\-init\-Canvas (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classbattleship2D_1_1ui_1_1Explosion_ab03741cb294ee98b2151d66cb701c00e}
+
+
+Initializes canvas. 
+
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classbattleship2D_1_1ui_1_1Explosion_af483832a0d9787c903d9aff653954892}{Explosion()} 
+\end{DoxySeeAlso}
+\hypertarget{classbattleship2D_1_1ui_1_1Explosion_a99dbff7a90e93b0dc44d75758c183e97}{\index{battleship2\-D\-::ui\-::\-Explosion@{battleship2\-D\-::ui\-::\-Explosion}!init\-Colors@{init\-Colors}}
+\index{init\-Colors@{init\-Colors}!battleship2D::ui::Explosion@{battleship2\-D\-::ui\-::\-Explosion}}
+\subsubsection[{init\-Colors}]{\setlength{\rightskip}{0pt plus 5cm}void battleship2\-D.\-ui.\-Explosion.\-init\-Colors (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classbattleship2D_1_1ui_1_1Explosion_a99dbff7a90e93b0dc44d75758c183e97}
+
+
+Initializes color palette. 
+
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classbattleship2D_1_1ui_1_1Explosion_af483832a0d9787c903d9aff653954892}{Explosion()} 
+\end{DoxySeeAlso}
+\hypertarget{classbattleship2D_1_1ui_1_1Explosion_a61dba5f9eb620647547fe4eff0a53210}{\index{battleship2\-D\-::ui\-::\-Explosion@{battleship2\-D\-::ui\-::\-Explosion}!layout\-Children@{layout\-Children}}
+\index{layout\-Children@{layout\-Children}!battleship2D::ui::Explosion@{battleship2\-D\-::ui\-::\-Explosion}}
+\subsubsection[{layout\-Children}]{\setlength{\rightskip}{0pt plus 5cm}void battleship2\-D.\-ui.\-Explosion.\-layout\-Children (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classbattleship2D_1_1ui_1_1Explosion_a61dba5f9eb620647547fe4eff0a53210}
+
+
+Makes canvas resizable. 
+
+\hypertarget{classbattleship2D_1_1ui_1_1Explosion_a0831b223d28d71af3045fe25e9dcfe76}{\index{battleship2\-D\-::ui\-::\-Explosion@{battleship2\-D\-::ui\-::\-Explosion}!start@{start}}
+\index{start@{start}!battleship2D::ui::Explosion@{battleship2\-D\-::ui\-::\-Explosion}}
+\subsubsection[{start}]{\setlength{\rightskip}{0pt plus 5cm}void battleship2\-D.\-ui.\-Explosion.\-start (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classbattleship2D_1_1ui_1_1Explosion_a0831b223d28d71af3045fe25e9dcfe76}
+
+
+Plays the animation. 
+
+\hypertarget{classbattleship2D_1_1ui_1_1Explosion_aa858a4539a0f76f0e96ddad158179740}{\index{battleship2\-D\-::ui\-::\-Explosion@{battleship2\-D\-::ui\-::\-Explosion}!stop@{stop}}
+\index{stop@{stop}!battleship2D::ui::Explosion@{battleship2\-D\-::ui\-::\-Explosion}}
+\subsubsection[{stop}]{\setlength{\rightskip}{0pt plus 5cm}void battleship2\-D.\-ui.\-Explosion.\-stop (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classbattleship2D_1_1ui_1_1Explosion_aa858a4539a0f76f0e96ddad158179740}
+
+
+Stops the animation. 
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classbattleship2D_1_1ui_1_1Explosion_aec53964ab689b670e6e25b23669aaf70}{\index{battleship2\-D\-::ui\-::\-Explosion@{battleship2\-D\-::ui\-::\-Explosion}!background\-Image@{background\-Image}}
+\index{background\-Image@{background\-Image}!battleship2D::ui::Explosion@{battleship2\-D\-::ui\-::\-Explosion}}
+\subsubsection[{background\-Image}]{\setlength{\rightskip}{0pt plus 5cm}final Image\-View battleship2\-D.\-ui.\-Explosion.\-background\-Image\hspace{0.3cm}{\ttfamily [private]}}}\label{classbattleship2D_1_1ui_1_1Explosion_aec53964ab689b670e6e25b23669aaf70}
+
+
+Image covering the cell hit by a missile. 
+
+\hypertarget{classbattleship2D_1_1ui_1_1Explosion_a7df261722990b64d7ef22ba25786bb54}{\index{battleship2\-D\-::ui\-::\-Explosion@{battleship2\-D\-::ui\-::\-Explosion}!canvas@{canvas}}
+\index{canvas@{canvas}!battleship2D::ui::Explosion@{battleship2\-D\-::ui\-::\-Explosion}}
+\subsubsection[{canvas}]{\setlength{\rightskip}{0pt plus 5cm}final Canvas battleship2\-D.\-ui.\-Explosion.\-canvas\hspace{0.3cm}{\ttfamily [private]}}}\label{classbattleship2D_1_1ui_1_1Explosion_a7df261722990b64d7ef22ba25786bb54}
+
+
+Graphics zone for displaying fireworks. 
+
+\hypertarget{classbattleship2D_1_1ui_1_1Explosion_ac77ea2908aa3d5de71096df02623a018}{\index{battleship2\-D\-::ui\-::\-Explosion@{battleship2\-D\-::ui\-::\-Explosion}!colors@{colors}}
+\index{colors@{colors}!battleship2D::ui::Explosion@{battleship2\-D\-::ui\-::\-Explosion}}
+\subsubsection[{colors}]{\setlength{\rightskip}{0pt plus 5cm}final Paint \mbox{[}$\,$\mbox{]} battleship2\-D.\-ui.\-Explosion.\-colors\hspace{0.3cm}{\ttfamily [private]}}}\label{classbattleship2D_1_1ui_1_1Explosion_ac77ea2908aa3d5de71096df02623a018}
+
+
+Fireworks canvas palette. 
+
+\hypertarget{classbattleship2D_1_1ui_1_1Explosion_a5ebd846be63f323f45e95038f9941cb3}{\index{battleship2\-D\-::ui\-::\-Explosion@{battleship2\-D\-::ui\-::\-Explosion}!count\-Down\-Till\-Next\-Firework@{count\-Down\-Till\-Next\-Firework}}
+\index{count\-Down\-Till\-Next\-Firework@{count\-Down\-Till\-Next\-Firework}!battleship2D::ui::Explosion@{battleship2\-D\-::ui\-::\-Explosion}}
+\subsubsection[{count\-Down\-Till\-Next\-Firework}]{\setlength{\rightskip}{0pt plus 5cm}int battleship2\-D.\-ui.\-Explosion.\-count\-Down\-Till\-Next\-Firework = 40\hspace{0.3cm}{\ttfamily [private]}}}\label{classbattleship2D_1_1ui_1_1Explosion_a5ebd846be63f323f45e95038f9941cb3}
+
+
+Timer between two particles sprays. 
+
+\hypertarget{classbattleship2D_1_1ui_1_1Explosion_a4433fee8590870ce4f7d23d96efabb39}{\index{battleship2\-D\-::ui\-::\-Explosion@{battleship2\-D\-::ui\-::\-Explosion}!particles@{particles}}
+\index{particles@{particles}!battleship2D::ui::Explosion@{battleship2\-D\-::ui\-::\-Explosion}}
+\subsubsection[{particles}]{\setlength{\rightskip}{0pt plus 5cm}final List$<${\bf Particle}$>$ battleship2\-D.\-ui.\-Explosion.\-particles = new Array\-List$<$$>$()\hspace{0.3cm}{\ttfamily [private]}}}\label{classbattleship2D_1_1ui_1_1Explosion_a4433fee8590870ce4f7d23d96efabb39}
+
+
+Particles constituting the fireworks. 
+
+\hypertarget{classbattleship2D_1_1ui_1_1Explosion_a776b8d79ca23a39ec19567138498baf6}{\index{battleship2\-D\-::ui\-::\-Explosion@{battleship2\-D\-::ui\-::\-Explosion}!timer@{timer}}
+\index{timer@{timer}!battleship2D::ui::Explosion@{battleship2\-D\-::ui\-::\-Explosion}}
+\subsubsection[{timer}]{\setlength{\rightskip}{0pt plus 5cm}Animation\-Timer battleship2\-D.\-ui.\-Explosion.\-timer\hspace{0.3cm}{\ttfamily [private]}}}\label{classbattleship2D_1_1ui_1_1Explosion_a776b8d79ca23a39ec19567138498baf6}
+
+
+Fireworks animation timer. 
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/home/xaviator/\-Enseignements/2015-\/2016/\-S\-F\-A/\-M1-\/\-Info/\-I\-H\-M/\-Battle\-Ship2\-D\-\_\-students/battleship2\-D/ui/\hyperlink{Explosion_8java}{Explosion.\-java}\end{DoxyCompactItemize}

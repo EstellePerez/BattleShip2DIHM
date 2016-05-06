@@ -1,0 +1,228 @@
+\hypertarget{classbattleship2D_1_1model_1_1Fleet}{\section{battleship2\-D.\-model.\-Fleet Class Reference}
+\label{classbattleship2D_1_1model_1_1Fleet}\index{battleship2\-D.\-model.\-Fleet@{battleship2\-D.\-model.\-Fleet}}
+}
+
+
+\hyperlink{classbattleship2D_1_1model_1_1Fleet}{Fleet} of Ships.  
+
+
+
+
+Collaboration diagram for battleship2\-D.\-model.\-Fleet\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=232pt]{classbattleship2D_1_1model_1_1Fleet__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classbattleship2D_1_1model_1_1Fleet_a9a46df779cb57eb0b1808a573ac4092b}{Fleet} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\hyperlink{classbattleship2D_1_1model_1_1Ship}{Ship} \hyperlink{classbattleship2D_1_1model_1_1Fleet_a7625af5c1f9ff69cdf36435071f68067}{find\-Ship\-From\-Type} (\hyperlink{enumbattleship2D_1_1model_1_1ShipType}{Ship\-Type} ship\-Type)
+\item 
+int \hyperlink{classbattleship2D_1_1model_1_1Fleet_a5a1b1a93de04523fbd611e8ab6409563}{number\-Of\-Ships} ()
+\item 
+void \hyperlink{classbattleship2D_1_1model_1_1Fleet_a0a3dc6a4439ff0cfee866ddea9f95dd6}{update\-Hits} (\hyperlink{enumbattleship2D_1_1model_1_1ShipType}{Ship\-Type} ship\-Type)
+\begin{DoxyCompactList}\small\item\em Updates the number of ship parts that have been hit. \end{DoxyCompactList}\item 
+Array\-List$<$ \hyperlink{classbattleship2D_1_1model_1_1Ship}{Ship} $>$ \hyperlink{classbattleship2D_1_1model_1_1Fleet_aba27f200100513da49d732f3f3f1a523}{get\-Ships} ()
+\item 
+Boolean \hyperlink{classbattleship2D_1_1model_1_1Fleet_ae00eeb3cee781f1a21886d8a51ee6ec6}{is\-Fleet\-Destroyed} ()
+\item 
+Boolean \hyperlink{classbattleship2D_1_1model_1_1Fleet_a441dbb2a73b4828fe232e800decbf93a}{is\-Last\-Hit\-Ship\-Destroyed} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classbattleship2D_1_1model_1_1Fleet_aed5a2244dee690f2640cc8d1960f0669}{init\-Remaining\-Parts} ()
+\begin{DoxyCompactList}\small\item\em All ships are unscathed at first. \end{DoxyCompactList}\item 
+void \hyperlink{classbattleship2D_1_1model_1_1Fleet_a554aa032fe5ad3811effe0acf8c47c18}{init\-Ships} ()
+\begin{DoxyCompactList}\small\item\em Fills up the collection of ships. \end{DoxyCompactList}\item 
+void \hyperlink{classbattleship2D_1_1model_1_1Fleet_a69efdd7a9a1fe25892d057f0f31c912f}{update\-Remaininghips} ()
+\begin{DoxyCompactList}\small\item\em Updates fleet counters after a hit. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Boolean \hyperlink{classbattleship2D_1_1model_1_1Fleet_aa99ad6c0b52656c039a1b6e77d7a4f63}{fleet\-Destroyed} = false
+\begin{DoxyCompactList}\small\item\em Checks whether the whole fleet has been destroyed. \end{DoxyCompactList}\item 
+Boolean \hyperlink{classbattleship2D_1_1model_1_1Fleet_ac9245d7670e8ba55860fccead366b077}{last\-Hit\-Ship\-Destroyed} = false
+\begin{DoxyCompactList}\small\item\em Checks whether the last hit ship has been entirely destroyed. \end{DoxyCompactList}\item 
+final int\mbox{[}$\,$\mbox{]} \hyperlink{classbattleship2D_1_1model_1_1Fleet_acdbb1599e55f36117c255ee49df1148b}{remaining\-Parts}
+\begin{DoxyCompactList}\small\item\em Counts ships parts which have not been hit. \end{DoxyCompactList}\item 
+int \hyperlink{classbattleship2D_1_1model_1_1Fleet_a1e12ebdbc19e847806d5e41f69576cf7}{remaining\-Ships}
+\begin{DoxyCompactList}\small\item\em Count still remaining ships. \end{DoxyCompactList}\item 
+final Array\-List$<$ \hyperlink{classbattleship2D_1_1model_1_1Ship}{Ship} $>$ \hyperlink{classbattleship2D_1_1model_1_1Fleet_a969e704ee79c18874d9dddcf98401014}{ships}
+\begin{DoxyCompactList}\small\item\em A fleet is made of different ships. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classbattleship2D_1_1model_1_1Fleet}{Fleet} of Ships. 
+
+\begin{DoxyAuthor}{Author}
+xaviator 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classbattleship2D_1_1model_1_1Fleet_a9a46df779cb57eb0b1808a573ac4092b}{\index{battleship2\-D\-::model\-::\-Fleet@{battleship2\-D\-::model\-::\-Fleet}!Fleet@{Fleet}}
+\index{Fleet@{Fleet}!battleship2D::model::Fleet@{battleship2\-D\-::model\-::\-Fleet}}
+\subsubsection[{Fleet}]{\setlength{\rightskip}{0pt plus 5cm}battleship2\-D.\-model.\-Fleet.\-Fleet (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classbattleship2D_1_1model_1_1Fleet_a9a46df779cb57eb0b1808a573ac4092b}
+
+
+Constructor. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classbattleship2D_1_1model_1_1Fleet_a7625af5c1f9ff69cdf36435071f68067}{\index{battleship2\-D\-::model\-::\-Fleet@{battleship2\-D\-::model\-::\-Fleet}!find\-Ship\-From\-Type@{find\-Ship\-From\-Type}}
+\index{find\-Ship\-From\-Type@{find\-Ship\-From\-Type}!battleship2D::model::Fleet@{battleship2\-D\-::model\-::\-Fleet}}
+\subsubsection[{find\-Ship\-From\-Type}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ship} battleship2\-D.\-model.\-Fleet.\-find\-Ship\-From\-Type (
+\begin{DoxyParamCaption}
+\item[{{\bf Ship\-Type}}]{ship\-Type}
+\end{DoxyParamCaption}
+)}}\label{classbattleship2D_1_1model_1_1Fleet_a7625af5c1f9ff69cdf36435071f68067}
+
+\begin{DoxyParams}{Parameters}
+{\em ship\-Type} & -\/ type of the ship to find \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the ship matching shiptype, null otherwise 
+\end{DoxyReturn}
+\hypertarget{classbattleship2D_1_1model_1_1Fleet_aba27f200100513da49d732f3f3f1a523}{\index{battleship2\-D\-::model\-::\-Fleet@{battleship2\-D\-::model\-::\-Fleet}!get\-Ships@{get\-Ships}}
+\index{get\-Ships@{get\-Ships}!battleship2D::model::Fleet@{battleship2\-D\-::model\-::\-Fleet}}
+\subsubsection[{get\-Ships}]{\setlength{\rightskip}{0pt plus 5cm}Array\-List$<${\bf Ship}$>$ battleship2\-D.\-model.\-Fleet.\-get\-Ships (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classbattleship2D_1_1model_1_1Fleet_aba27f200100513da49d732f3f3f1a523}
+\hypertarget{classbattleship2D_1_1model_1_1Fleet_aed5a2244dee690f2640cc8d1960f0669}{\index{battleship2\-D\-::model\-::\-Fleet@{battleship2\-D\-::model\-::\-Fleet}!init\-Remaining\-Parts@{init\-Remaining\-Parts}}
+\index{init\-Remaining\-Parts@{init\-Remaining\-Parts}!battleship2D::model::Fleet@{battleship2\-D\-::model\-::\-Fleet}}
+\subsubsection[{init\-Remaining\-Parts}]{\setlength{\rightskip}{0pt plus 5cm}void battleship2\-D.\-model.\-Fleet.\-init\-Remaining\-Parts (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classbattleship2D_1_1model_1_1Fleet_aed5a2244dee690f2640cc8d1960f0669}
+
+
+All ships are unscathed at first. 
+
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classbattleship2D_1_1model_1_1Fleet_a9a46df779cb57eb0b1808a573ac4092b}{Fleet()} 
+\end{DoxySeeAlso}
+\hypertarget{classbattleship2D_1_1model_1_1Fleet_a554aa032fe5ad3811effe0acf8c47c18}{\index{battleship2\-D\-::model\-::\-Fleet@{battleship2\-D\-::model\-::\-Fleet}!init\-Ships@{init\-Ships}}
+\index{init\-Ships@{init\-Ships}!battleship2D::model::Fleet@{battleship2\-D\-::model\-::\-Fleet}}
+\subsubsection[{init\-Ships}]{\setlength{\rightskip}{0pt plus 5cm}void battleship2\-D.\-model.\-Fleet.\-init\-Ships (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classbattleship2D_1_1model_1_1Fleet_a554aa032fe5ad3811effe0acf8c47c18}
+
+
+Fills up the collection of ships. 
+
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classbattleship2D_1_1model_1_1Fleet_a9a46df779cb57eb0b1808a573ac4092b}{Fleet()} 
+\end{DoxySeeAlso}
+\hypertarget{classbattleship2D_1_1model_1_1Fleet_ae00eeb3cee781f1a21886d8a51ee6ec6}{\index{battleship2\-D\-::model\-::\-Fleet@{battleship2\-D\-::model\-::\-Fleet}!is\-Fleet\-Destroyed@{is\-Fleet\-Destroyed}}
+\index{is\-Fleet\-Destroyed@{is\-Fleet\-Destroyed}!battleship2D::model::Fleet@{battleship2\-D\-::model\-::\-Fleet}}
+\subsubsection[{is\-Fleet\-Destroyed}]{\setlength{\rightskip}{0pt plus 5cm}Boolean battleship2\-D.\-model.\-Fleet.\-is\-Fleet\-Destroyed (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classbattleship2D_1_1model_1_1Fleet_ae00eeb3cee781f1a21886d8a51ee6ec6}
+\hypertarget{classbattleship2D_1_1model_1_1Fleet_a441dbb2a73b4828fe232e800decbf93a}{\index{battleship2\-D\-::model\-::\-Fleet@{battleship2\-D\-::model\-::\-Fleet}!is\-Last\-Hit\-Ship\-Destroyed@{is\-Last\-Hit\-Ship\-Destroyed}}
+\index{is\-Last\-Hit\-Ship\-Destroyed@{is\-Last\-Hit\-Ship\-Destroyed}!battleship2D::model::Fleet@{battleship2\-D\-::model\-::\-Fleet}}
+\subsubsection[{is\-Last\-Hit\-Ship\-Destroyed}]{\setlength{\rightskip}{0pt plus 5cm}Boolean battleship2\-D.\-model.\-Fleet.\-is\-Last\-Hit\-Ship\-Destroyed (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classbattleship2D_1_1model_1_1Fleet_a441dbb2a73b4828fe232e800decbf93a}
+\hypertarget{classbattleship2D_1_1model_1_1Fleet_a5a1b1a93de04523fbd611e8ab6409563}{\index{battleship2\-D\-::model\-::\-Fleet@{battleship2\-D\-::model\-::\-Fleet}!number\-Of\-Ships@{number\-Of\-Ships}}
+\index{number\-Of\-Ships@{number\-Of\-Ships}!battleship2D::model::Fleet@{battleship2\-D\-::model\-::\-Fleet}}
+\subsubsection[{number\-Of\-Ships}]{\setlength{\rightskip}{0pt plus 5cm}int battleship2\-D.\-model.\-Fleet.\-number\-Of\-Ships (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classbattleship2D_1_1model_1_1Fleet_a5a1b1a93de04523fbd611e8ab6409563}
+\begin{DoxyReturn}{Returns}
+the number of ships in the fleet 
+\end{DoxyReturn}
+\hypertarget{classbattleship2D_1_1model_1_1Fleet_a0a3dc6a4439ff0cfee866ddea9f95dd6}{\index{battleship2\-D\-::model\-::\-Fleet@{battleship2\-D\-::model\-::\-Fleet}!update\-Hits@{update\-Hits}}
+\index{update\-Hits@{update\-Hits}!battleship2D::model::Fleet@{battleship2\-D\-::model\-::\-Fleet}}
+\subsubsection[{update\-Hits}]{\setlength{\rightskip}{0pt plus 5cm}void battleship2\-D.\-model.\-Fleet.\-update\-Hits (
+\begin{DoxyParamCaption}
+\item[{{\bf Ship\-Type}}]{ship\-Type}
+\end{DoxyParamCaption}
+)}}\label{classbattleship2D_1_1model_1_1Fleet_a0a3dc6a4439ff0cfee866ddea9f95dd6}
+
+
+Updates the number of ship parts that have been hit. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ship\-Type} & -\/ type of the ship to deal with \\
+\hline
+\end{DoxyParams}
+\hypertarget{classbattleship2D_1_1model_1_1Fleet_a69efdd7a9a1fe25892d057f0f31c912f}{\index{battleship2\-D\-::model\-::\-Fleet@{battleship2\-D\-::model\-::\-Fleet}!update\-Remaininghips@{update\-Remaininghips}}
+\index{update\-Remaininghips@{update\-Remaininghips}!battleship2D::model::Fleet@{battleship2\-D\-::model\-::\-Fleet}}
+\subsubsection[{update\-Remaininghips}]{\setlength{\rightskip}{0pt plus 5cm}void battleship2\-D.\-model.\-Fleet.\-update\-Remaininghips (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classbattleship2D_1_1model_1_1Fleet_a69efdd7a9a1fe25892d057f0f31c912f}
+
+
+Updates fleet counters after a hit. 
+
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classbattleship2D_1_1model_1_1Fleet_a0a3dc6a4439ff0cfee866ddea9f95dd6}{update\-Hits()} 
+\end{DoxySeeAlso}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classbattleship2D_1_1model_1_1Fleet_aa99ad6c0b52656c039a1b6e77d7a4f63}{\index{battleship2\-D\-::model\-::\-Fleet@{battleship2\-D\-::model\-::\-Fleet}!fleet\-Destroyed@{fleet\-Destroyed}}
+\index{fleet\-Destroyed@{fleet\-Destroyed}!battleship2D::model::Fleet@{battleship2\-D\-::model\-::\-Fleet}}
+\subsubsection[{fleet\-Destroyed}]{\setlength{\rightskip}{0pt plus 5cm}Boolean battleship2\-D.\-model.\-Fleet.\-fleet\-Destroyed = false\hspace{0.3cm}{\ttfamily [private]}}}\label{classbattleship2D_1_1model_1_1Fleet_aa99ad6c0b52656c039a1b6e77d7a4f63}
+
+
+Checks whether the whole fleet has been destroyed. 
+
+\hypertarget{classbattleship2D_1_1model_1_1Fleet_ac9245d7670e8ba55860fccead366b077}{\index{battleship2\-D\-::model\-::\-Fleet@{battleship2\-D\-::model\-::\-Fleet}!last\-Hit\-Ship\-Destroyed@{last\-Hit\-Ship\-Destroyed}}
+\index{last\-Hit\-Ship\-Destroyed@{last\-Hit\-Ship\-Destroyed}!battleship2D::model::Fleet@{battleship2\-D\-::model\-::\-Fleet}}
+\subsubsection[{last\-Hit\-Ship\-Destroyed}]{\setlength{\rightskip}{0pt plus 5cm}Boolean battleship2\-D.\-model.\-Fleet.\-last\-Hit\-Ship\-Destroyed = false\hspace{0.3cm}{\ttfamily [private]}}}\label{classbattleship2D_1_1model_1_1Fleet_ac9245d7670e8ba55860fccead366b077}
+
+
+Checks whether the last hit ship has been entirely destroyed. 
+
+\hypertarget{classbattleship2D_1_1model_1_1Fleet_acdbb1599e55f36117c255ee49df1148b}{\index{battleship2\-D\-::model\-::\-Fleet@{battleship2\-D\-::model\-::\-Fleet}!remaining\-Parts@{remaining\-Parts}}
+\index{remaining\-Parts@{remaining\-Parts}!battleship2D::model::Fleet@{battleship2\-D\-::model\-::\-Fleet}}
+\subsubsection[{remaining\-Parts}]{\setlength{\rightskip}{0pt plus 5cm}final int \mbox{[}$\,$\mbox{]} battleship2\-D.\-model.\-Fleet.\-remaining\-Parts\hspace{0.3cm}{\ttfamily [private]}}}\label{classbattleship2D_1_1model_1_1Fleet_acdbb1599e55f36117c255ee49df1148b}
+
+
+Counts ships parts which have not been hit. 
+
+\hypertarget{classbattleship2D_1_1model_1_1Fleet_a1e12ebdbc19e847806d5e41f69576cf7}{\index{battleship2\-D\-::model\-::\-Fleet@{battleship2\-D\-::model\-::\-Fleet}!remaining\-Ships@{remaining\-Ships}}
+\index{remaining\-Ships@{remaining\-Ships}!battleship2D::model::Fleet@{battleship2\-D\-::model\-::\-Fleet}}
+\subsubsection[{remaining\-Ships}]{\setlength{\rightskip}{0pt plus 5cm}int battleship2\-D.\-model.\-Fleet.\-remaining\-Ships\hspace{0.3cm}{\ttfamily [private]}}}\label{classbattleship2D_1_1model_1_1Fleet_a1e12ebdbc19e847806d5e41f69576cf7}
+
+
+Count still remaining ships. 
+
+\hypertarget{classbattleship2D_1_1model_1_1Fleet_a969e704ee79c18874d9dddcf98401014}{\index{battleship2\-D\-::model\-::\-Fleet@{battleship2\-D\-::model\-::\-Fleet}!ships@{ships}}
+\index{ships@{ships}!battleship2D::model::Fleet@{battleship2\-D\-::model\-::\-Fleet}}
+\subsubsection[{ships}]{\setlength{\rightskip}{0pt plus 5cm}final Array\-List$<${\bf Ship}$>$ battleship2\-D.\-model.\-Fleet.\-ships\hspace{0.3cm}{\ttfamily [private]}}}\label{classbattleship2D_1_1model_1_1Fleet_a969e704ee79c18874d9dddcf98401014}
+
+
+A fleet is made of different ships. 
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/home/xaviator/\-Enseignements/2015-\/2016/\-S\-F\-A/\-M1-\/\-Info/\-I\-H\-M/\-Battle\-Ship2\-D\-\_\-students/battleship2\-D/model/\hyperlink{Fleet_8java}{Fleet.\-java}\end{DoxyCompactItemize}

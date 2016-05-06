@@ -1,0 +1,209 @@
+\hypertarget{classbattleship2D_1_1ui_1_1EndGame}{\section{battleship2\-D.\-ui.\-End\-Game Class Reference}
+\label{classbattleship2D_1_1ui_1_1EndGame}\index{battleship2\-D.\-ui.\-End\-Game@{battleship2\-D.\-ui.\-End\-Game}}
+}
+
+
+Animatation triggered when the game has ended.  
+
+
+
+
+Inheritance diagram for battleship2\-D.\-ui.\-End\-Game\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{classbattleship2D_1_1ui_1_1EndGame__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for battleship2\-D.\-ui.\-End\-Game\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbattleship2D_1_1ui_1_1EndGame__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classbattleship2D_1_1ui_1_1EndGame_ad64305c0b6ece6f62ece7581cabd11d3}{End\-Game} (boolean player\-Wins)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+void \hyperlink{classbattleship2D_1_1ui_1_1EndGame_af0f158a999fabe77a5f8559daeb71a6a}{start} ()
+\begin{DoxyCompactList}\small\item\em Plays the animation. \end{DoxyCompactList}\item 
+void \hyperlink{classbattleship2D_1_1ui_1_1EndGame_a82f69c08cff75a2f0eb0b47b9982d838}{stop} ()
+\begin{DoxyCompactList}\small\item\em Stops the animation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Package Attributes}
+\begin{DoxyCompactItemize}
+\item 
+final Image\-View \hyperlink{classbattleship2D_1_1ui_1_1EndGame_a81c8d84b9284288f67fff7273fd7e7e3}{wins\-Image}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classbattleship2D_1_1ui_1_1EndGame_a3ce154a1f3cc9d83c1c678efcb36744e}{init\-Timeline} ()
+\begin{DoxyCompactList}\small\item\em Initializes timeline properties. \end{DoxyCompactList}\item 
+void \hyperlink{classbattleship2D_1_1ui_1_1EndGame_ae277746ac5dee64f49809a5174182453}{init\-Winner} ()
+\begin{DoxyCompactList}\small\item\em Initializes winner\-Image's properties. \end{DoxyCompactList}\item 
+void \hyperlink{classbattleship2D_1_1ui_1_1EndGame_a9128f76080cf1cbfe96730dc63226957}{init\-Wins} ()
+\begin{DoxyCompactList}\small\item\em Initializes wins\-Image's properties. \end{DoxyCompactList}\item 
+void \hyperlink{classbattleship2D_1_1ui_1_1EndGame_a1e19a1c4486117186a7ca32da05f880e}{run\-Animation} ()
+\begin{DoxyCompactList}\small\item\em The animation moves images at each step. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+final Image\-View \hyperlink{classbattleship2D_1_1ui_1_1EndGame_affa73ecfef0d96061aaeff85da4b208d}{winner\-Image}
+\begin{DoxyCompactList}\small\item\em Animation images. \end{DoxyCompactList}\item 
+final int \hyperlink{classbattleship2D_1_1ui_1_1EndGame_a65b563d1ded67e8300a7d52fe2be6f71}{duration}
+\begin{DoxyCompactList}\small\item\em Lapse time between two frame iterations. \end{DoxyCompactList}\item 
+final Simple\-Double\-Property \hyperlink{classbattleship2D_1_1ui_1_1EndGame_af2356a8563c785f5bf1611d34f400313}{scale\-Ratio\-Proparty}
+\begin{DoxyCompactList}\small\item\em Dynamic scaling ration to make image appear. \end{DoxyCompactList}\item 
+final Timeline \hyperlink{classbattleship2D_1_1ui_1_1EndGame_a7df35309ef96ff6207a7f2825f58ea73}{timeline}
+\begin{DoxyCompactList}\small\item\em Animation player. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Animatation triggered when the game has ended. 
+
+\begin{DoxyAuthor}{Author}
+xaviator 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classbattleship2D_1_1ui_1_1EndGame_ad64305c0b6ece6f62ece7581cabd11d3}{\index{battleship2\-D\-::ui\-::\-End\-Game@{battleship2\-D\-::ui\-::\-End\-Game}!End\-Game@{End\-Game}}
+\index{End\-Game@{End\-Game}!battleship2D::ui::EndGame@{battleship2\-D\-::ui\-::\-End\-Game}}
+\subsubsection[{End\-Game}]{\setlength{\rightskip}{0pt plus 5cm}battleship2\-D.\-ui.\-End\-Game.\-End\-Game (
+\begin{DoxyParamCaption}
+\item[{boolean}]{player\-Wins}
+\end{DoxyParamCaption}
+)}}\label{classbattleship2D_1_1ui_1_1EndGame_ad64305c0b6ece6f62ece7581cabd11d3}
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player\-Wins} & -\/ Determines whether the winner image to display represents the player (true) or the computer (false) \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classbattleship2D_1_1ui_1_1EndGame_a3ce154a1f3cc9d83c1c678efcb36744e}{\index{battleship2\-D\-::ui\-::\-End\-Game@{battleship2\-D\-::ui\-::\-End\-Game}!init\-Timeline@{init\-Timeline}}
+\index{init\-Timeline@{init\-Timeline}!battleship2D::ui::EndGame@{battleship2\-D\-::ui\-::\-End\-Game}}
+\subsubsection[{init\-Timeline}]{\setlength{\rightskip}{0pt plus 5cm}void battleship2\-D.\-ui.\-End\-Game.\-init\-Timeline (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classbattleship2D_1_1ui_1_1EndGame_a3ce154a1f3cc9d83c1c678efcb36744e}
+
+
+Initializes timeline properties. 
+
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classbattleship2D_1_1ui_1_1EndGame}{End\-Game} 
+\end{DoxySeeAlso}
+\hypertarget{classbattleship2D_1_1ui_1_1EndGame_ae277746ac5dee64f49809a5174182453}{\index{battleship2\-D\-::ui\-::\-End\-Game@{battleship2\-D\-::ui\-::\-End\-Game}!init\-Winner@{init\-Winner}}
+\index{init\-Winner@{init\-Winner}!battleship2D::ui::EndGame@{battleship2\-D\-::ui\-::\-End\-Game}}
+\subsubsection[{init\-Winner}]{\setlength{\rightskip}{0pt plus 5cm}void battleship2\-D.\-ui.\-End\-Game.\-init\-Winner (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classbattleship2D_1_1ui_1_1EndGame_ae277746ac5dee64f49809a5174182453}
+
+
+Initializes winner\-Image's properties. 
+
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classbattleship2D_1_1ui_1_1EndGame_ad64305c0b6ece6f62ece7581cabd11d3}{End\-Game()} 
+\end{DoxySeeAlso}
+\hypertarget{classbattleship2D_1_1ui_1_1EndGame_a9128f76080cf1cbfe96730dc63226957}{\index{battleship2\-D\-::ui\-::\-End\-Game@{battleship2\-D\-::ui\-::\-End\-Game}!init\-Wins@{init\-Wins}}
+\index{init\-Wins@{init\-Wins}!battleship2D::ui::EndGame@{battleship2\-D\-::ui\-::\-End\-Game}}
+\subsubsection[{init\-Wins}]{\setlength{\rightskip}{0pt plus 5cm}void battleship2\-D.\-ui.\-End\-Game.\-init\-Wins (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classbattleship2D_1_1ui_1_1EndGame_a9128f76080cf1cbfe96730dc63226957}
+
+
+Initializes wins\-Image's properties. 
+
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classbattleship2D_1_1ui_1_1EndGame_ad64305c0b6ece6f62ece7581cabd11d3}{End\-Game()} 
+\end{DoxySeeAlso}
+\hypertarget{classbattleship2D_1_1ui_1_1EndGame_a1e19a1c4486117186a7ca32da05f880e}{\index{battleship2\-D\-::ui\-::\-End\-Game@{battleship2\-D\-::ui\-::\-End\-Game}!run\-Animation@{run\-Animation}}
+\index{run\-Animation@{run\-Animation}!battleship2D::ui::EndGame@{battleship2\-D\-::ui\-::\-End\-Game}}
+\subsubsection[{run\-Animation}]{\setlength{\rightskip}{0pt plus 5cm}void battleship2\-D.\-ui.\-End\-Game.\-run\-Animation (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classbattleship2D_1_1ui_1_1EndGame_a1e19a1c4486117186a7ca32da05f880e}
+
+
+The animation moves images at each step. 
+
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classbattleship2D_1_1ui_1_1EndGame_a3ce154a1f3cc9d83c1c678efcb36744e}{init\-Timeline()} 
+\end{DoxySeeAlso}
+\hypertarget{classbattleship2D_1_1ui_1_1EndGame_af0f158a999fabe77a5f8559daeb71a6a}{\index{battleship2\-D\-::ui\-::\-End\-Game@{battleship2\-D\-::ui\-::\-End\-Game}!start@{start}}
+\index{start@{start}!battleship2D::ui::EndGame@{battleship2\-D\-::ui\-::\-End\-Game}}
+\subsubsection[{start}]{\setlength{\rightskip}{0pt plus 5cm}void battleship2\-D.\-ui.\-End\-Game.\-start (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classbattleship2D_1_1ui_1_1EndGame_af0f158a999fabe77a5f8559daeb71a6a}
+
+
+Plays the animation. 
+
+\hypertarget{classbattleship2D_1_1ui_1_1EndGame_a82f69c08cff75a2f0eb0b47b9982d838}{\index{battleship2\-D\-::ui\-::\-End\-Game@{battleship2\-D\-::ui\-::\-End\-Game}!stop@{stop}}
+\index{stop@{stop}!battleship2D::ui::EndGame@{battleship2\-D\-::ui\-::\-End\-Game}}
+\subsubsection[{stop}]{\setlength{\rightskip}{0pt plus 5cm}void battleship2\-D.\-ui.\-End\-Game.\-stop (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classbattleship2D_1_1ui_1_1EndGame_a82f69c08cff75a2f0eb0b47b9982d838}
+
+
+Stops the animation. 
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classbattleship2D_1_1ui_1_1EndGame_a65b563d1ded67e8300a7d52fe2be6f71}{\index{battleship2\-D\-::ui\-::\-End\-Game@{battleship2\-D\-::ui\-::\-End\-Game}!duration@{duration}}
+\index{duration@{duration}!battleship2D::ui::EndGame@{battleship2\-D\-::ui\-::\-End\-Game}}
+\subsubsection[{duration}]{\setlength{\rightskip}{0pt plus 5cm}final int battleship2\-D.\-ui.\-End\-Game.\-duration\hspace{0.3cm}{\ttfamily [private]}}}\label{classbattleship2D_1_1ui_1_1EndGame_a65b563d1ded67e8300a7d52fe2be6f71}
+
+
+Lapse time between two frame iterations. 
+
+\hypertarget{classbattleship2D_1_1ui_1_1EndGame_af2356a8563c785f5bf1611d34f400313}{\index{battleship2\-D\-::ui\-::\-End\-Game@{battleship2\-D\-::ui\-::\-End\-Game}!scale\-Ratio\-Proparty@{scale\-Ratio\-Proparty}}
+\index{scale\-Ratio\-Proparty@{scale\-Ratio\-Proparty}!battleship2D::ui::EndGame@{battleship2\-D\-::ui\-::\-End\-Game}}
+\subsubsection[{scale\-Ratio\-Proparty}]{\setlength{\rightskip}{0pt plus 5cm}final Simple\-Double\-Property battleship2\-D.\-ui.\-End\-Game.\-scale\-Ratio\-Proparty\hspace{0.3cm}{\ttfamily [private]}}}\label{classbattleship2D_1_1ui_1_1EndGame_af2356a8563c785f5bf1611d34f400313}
+
+
+Dynamic scaling ration to make image appear. 
+
+\hypertarget{classbattleship2D_1_1ui_1_1EndGame_a7df35309ef96ff6207a7f2825f58ea73}{\index{battleship2\-D\-::ui\-::\-End\-Game@{battleship2\-D\-::ui\-::\-End\-Game}!timeline@{timeline}}
+\index{timeline@{timeline}!battleship2D::ui::EndGame@{battleship2\-D\-::ui\-::\-End\-Game}}
+\subsubsection[{timeline}]{\setlength{\rightskip}{0pt plus 5cm}final Timeline battleship2\-D.\-ui.\-End\-Game.\-timeline\hspace{0.3cm}{\ttfamily [private]}}}\label{classbattleship2D_1_1ui_1_1EndGame_a7df35309ef96ff6207a7f2825f58ea73}
+
+
+Animation player. 
+
+\hypertarget{classbattleship2D_1_1ui_1_1EndGame_affa73ecfef0d96061aaeff85da4b208d}{\index{battleship2\-D\-::ui\-::\-End\-Game@{battleship2\-D\-::ui\-::\-End\-Game}!winner\-Image@{winner\-Image}}
+\index{winner\-Image@{winner\-Image}!battleship2D::ui::EndGame@{battleship2\-D\-::ui\-::\-End\-Game}}
+\subsubsection[{winner\-Image}]{\setlength{\rightskip}{0pt plus 5cm}final Image\-View battleship2\-D.\-ui.\-End\-Game.\-winner\-Image\hspace{0.3cm}{\ttfamily [private]}}}\label{classbattleship2D_1_1ui_1_1EndGame_affa73ecfef0d96061aaeff85da4b208d}
+
+
+Animation images. 
+
+\hypertarget{classbattleship2D_1_1ui_1_1EndGame_a81c8d84b9284288f67fff7273fd7e7e3}{\index{battleship2\-D\-::ui\-::\-End\-Game@{battleship2\-D\-::ui\-::\-End\-Game}!wins\-Image@{wins\-Image}}
+\index{wins\-Image@{wins\-Image}!battleship2D::ui::EndGame@{battleship2\-D\-::ui\-::\-End\-Game}}
+\subsubsection[{wins\-Image}]{\setlength{\rightskip}{0pt plus 5cm}final Image\-View battleship2\-D.\-ui.\-End\-Game.\-wins\-Image\hspace{0.3cm}{\ttfamily [package]}}}\label{classbattleship2D_1_1ui_1_1EndGame_a81c8d84b9284288f67fff7273fd7e7e3}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/home/xaviator/\-Enseignements/2015-\/2016/\-S\-F\-A/\-M1-\/\-Info/\-I\-H\-M/\-Battle\-Ship2\-D\-\_\-students/battleship2\-D/ui/\hyperlink{EndGame_8java}{End\-Game.\-java}\end{DoxyCompactItemize}

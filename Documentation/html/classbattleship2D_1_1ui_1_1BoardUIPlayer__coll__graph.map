@@ -1,0 +1,8 @@
+<map id="battleship2D.ui.BoardUIPlayer" name="battleship2D.ui.BoardUIPlayer">
+<area shape="rect" id="node2" href="$classbattleship2D_1_1ui_1_1BoardUI.html" title="UI associated with a BoardModel. " alt="" coords="1089,299,1250,325"/>
+<area shape="rect" id="node5" href="$classbattleship2D_1_1model_1_1BoardModel.html" title="Global board for manipulating cells. " alt="" coords="709,175,881,217"/>
+<area shape="rect" id="node6" href="$classbattleship2D_1_1model_1_1CellModel.html" title="Board model element. " alt="" coords="339,204,535,231"/>
+<area shape="rect" id="node11" href="$classbattleship2D_1_1ui_1_1CellUI.html" title="UI associated with a CellType. " alt="" coords="719,299,870,325"/>
+<area shape="rect" id="node8" href="$enumbattleship2D_1_1model_1_1CellType.html" title="Cell Types. " alt="" coords="11,129,202,156"/>
+<area shape="rect" id="node9" href="$classbattleship2D_1_1model_1_1Fleet.html" title="Fleet of Ships. " alt="" coords="354,15,521,41"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="battleship2D.ui.BoardUI" name="battleship2D.ui.BoardUI">
+<area shape="rect" id="node3" href="$classbattleship2D_1_1ui_1_1BoardUIComputer.html" title="BoardUI dedicated to computer side. " alt="" coords="5,155,224,181"/>
+<area shape="rect" id="node4" href="$classbattleship2D_1_1ui_1_1BoardUIPlayer.html" title="BoardUI dedicated to player side. " alt="" coords="249,155,447,181"/>
+</map>

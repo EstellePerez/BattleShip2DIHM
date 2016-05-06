@@ -1,0 +1,543 @@
+\hypertarget{classbattleship2D_1_1ui_1_1MainFrame}{\section{battleship2\-D.\-ui.\-Main\-Frame Class Reference}
+\label{classbattleship2D_1_1ui_1_1MainFrame}\index{battleship2\-D.\-ui.\-Main\-Frame@{battleship2\-D.\-ui.\-Main\-Frame}}
+}
+
+
+Games stages management.  
+
+
+
+
+Collaboration diagram for battleship2\-D.\-ui.\-Main\-Frame\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbattleship2D_1_1ui_1_1MainFrame__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classbattleship2D_1_1ui_1_1MainFrame_ad051e02b396e10caa4738decf20acb11}{Main\-Frame} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+void \hyperlink{classbattleship2D_1_1ui_1_1MainFrame_a70c2c2ca18c059eaee9bf6dbad0987af}{change\-State} (\hyperlink{enumbattleship2D_1_1ui_1_1GameStages}{Game\-Stages} \hyperlink{classbattleship2D_1_1ui_1_1MainFrame_a0a2301fb85fa1a17ebcb5e196d441dc0}{game\-Stage})
+\begin{DoxyCompactList}\small\item\em Updates the stage of the game. \end{DoxyCompactList}\item 
+\hyperlink{classbattleship2D_1_1ui_1_1BoardUI}{Board\-U\-I} \hyperlink{classbattleship2D_1_1ui_1_1MainFrame_a400354ef9f09404e58351089fca63b9a}{get\-Player\-Board} ()
+\item 
+\hyperlink{classbattleship2D_1_1ui_1_1BoardUI}{Board\-U\-I} \hyperlink{classbattleship2D_1_1ui_1_1MainFrame_a6f9d5aec8efee8827bf8b58f50c5ca76}{get\-Computer\-Board} ()
+\item 
+\hyperlink{enumbattleship2D_1_1ui_1_1GameStages}{Game\-Stages} \hyperlink{classbattleship2D_1_1ui_1_1MainFrame_a2b96dbc721e68ca6434e3aabeba956dd}{get\-Game\-Stage} ()
+\item 
+void \hyperlink{classbattleship2D_1_1ui_1_1MainFrame_ad362924d8ec4b1512152db9a1d5705bf}{set\-Game\-Stage} (\hyperlink{enumbattleship2D_1_1ui_1_1GameStages}{Game\-Stages} \hyperlink{classbattleship2D_1_1ui_1_1MainFrame_a0a2301fb85fa1a17ebcb5e196d441dc0}{game\-Stage})
+\item 
+Anchor\-Pane \hyperlink{classbattleship2D_1_1ui_1_1MainFrame_a5da6e45ca853f0636c6374770a6a3234}{get\-Root} ()
+\item 
+\hyperlink{classbattleship2D_1_1ui_1_1ShipInsertion}{Ship\-Insertion} \hyperlink{classbattleship2D_1_1ui_1_1MainFrame_a86f2faf5ff3cce4d210577aea00bf4a0}{get\-Ship\-Selection} ()
+\end{DoxyCompactItemize}
+\subsection*{Package Attributes}
+\begin{DoxyCompactItemize}
+\item 
+final Simple\-Double\-Property \hyperlink{classbattleship2D_1_1ui_1_1MainFrame_ac7e5b51abf3de709693d27b0dc0899e7}{missile\-Source\-Y}
+\item 
+final Simple\-Double\-Property \hyperlink{classbattleship2D_1_1ui_1_1MainFrame_adcd874489abd642b1ba53db27bb6fa13}{missile\-Dest\-X}
+\item 
+final Simple\-Double\-Property \hyperlink{classbattleship2D_1_1ui_1_1MainFrame_a5f4019ccf71bb434f200713f25307fff}{missile\-Dest\-Y}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classbattleship2D_1_1ui_1_1MainFrame_a47173801e10e9ccf95e6ed8b8aedcab0}{display\-Last\-Hit\-Info} (\hyperlink{classbattleship2D_1_1ui_1_1BoardUI}{Board\-U\-I} board\-U\-I, \hyperlink{enumbattleship2D_1_1model_1_1ShipType}{Ship\-Type} ship\-Type)
+\begin{DoxyCompactList}\small\item\em Displays information about the last ship hit by a missile. \end{DoxyCompactList}\item 
+void \hyperlink{classbattleship2D_1_1ui_1_1MainFrame_a238468ca4d6ea2b0758224b11480c5f6}{display\-Valid\-Ship\-Sites} (\hyperlink{classbattleship2D_1_1model_1_1CellModel}{Cell\-Model} cell\-Model)
+\begin{DoxyCompactList}\small\item\em Shows different locations for placing the currently selected ship type on the player board. \end{DoxyCompactList}\item 
+void \hyperlink{classbattleship2D_1_1ui_1_1MainFrame_a9b6d961b3d374e50c855aca96100b132}{init\-Computer\-Board} ()
+\begin{DoxyCompactList}\small\item\em Initializes computer board's fleet and displays it. \end{DoxyCompactList}\item 
+void \hyperlink{classbattleship2D_1_1ui_1_1MainFrame_afc9fb5f26a83ffb126e6cc7c3594ad48}{init\-End\-Game} ()
+\begin{DoxyCompactList}\small\item\em Initializes the animation played when the games ends. \end{DoxyCompactList}\item 
+void \hyperlink{classbattleship2D_1_1ui_1_1MainFrame_aeda0b8f0f1838ca5ea399a477a938031}{init\-Explosion} ()
+\begin{DoxyCompactList}\small\item\em Initializes data related to ship explosion. \end{DoxyCompactList}\item 
+void \hyperlink{classbattleship2D_1_1ui_1_1MainFrame_a1cd0c4c8ac21dfa122e2424d19e9f53f}{init\-Listener} ()
+\begin{DoxyCompactList}\small\item\em Initializes the boards listener. \end{DoxyCompactList}\item 
+void \hyperlink{classbattleship2D_1_1ui_1_1MainFrame_a906e2a3f9366ae3cec8de72aa3ee7bd4}{init\-Player\-Board} ()
+\begin{DoxyCompactList}\small\item\em Initializes player's board. \end{DoxyCompactList}\item 
+void \hyperlink{classbattleship2D_1_1ui_1_1MainFrame_aa4634a800db2491bce8f6962863a5eb8}{init\-Root} ()
+\begin{DoxyCompactList}\small\item\em Starts the construction of all elements. \end{DoxyCompactList}\item 
+void \hyperlink{classbattleship2D_1_1ui_1_1MainFrame_a3fa6a0e00dca1d1e1d540d01c01a984d}{init\-Ship\-Selection} ()
+\begin{DoxyCompactList}\small\item\em Initializes data for ship selection. \end{DoxyCompactList}\item 
+void \hyperlink{classbattleship2D_1_1ui_1_1MainFrame_a305059eafca030a1139aab34b95c308f}{launch\-Missiles} (\hyperlink{classbattleship2D_1_1ui_1_1BoardUI}{Board\-U\-I} dest\-Board\-U\-I, \hyperlink{classbattleship2D_1_1ui_1_1BoardUI}{Board\-U\-I} source\-Board\-U\-I)
+\begin{DoxyCompactList}\small\item\em Displays missile flight from a board to the other. \end{DoxyCompactList}\item 
+void \hyperlink{classbattleship2D_1_1ui_1_1MainFrame_af853c73c8abaed14cb2c64bb1f86d7e9}{manage\-Events\-Place\-Ships\-On\-Player\-Board} (Property\-Change\-Event property\-Change\-Event)
+\begin{DoxyCompactList}\small\item\em Manages an event triggered during P\-L\-A\-C\-E\-\_\-\-S\-H\-I\-P\-S\-\_\-\-O\-N\-\_\-\-P\-L\-A\-Y\-E\-R\-\_\-\-B\-O\-A\-R\-D game stage. \end{DoxyCompactList}\item 
+void \hyperlink{classbattleship2D_1_1ui_1_1MainFrame_a5ebc3f74994bb4df16418e1c992120c1}{run\-End\-Game} (Boolean player\-Wins)
+\begin{DoxyCompactList}\small\item\em Activate the end game animation. \end{DoxyCompactList}\item 
+\hyperlink{enumbattleship2D_1_1model_1_1ShipType}{Ship\-Type} \hyperlink{classbattleship2D_1_1ui_1_1MainFrame_a78551c236b4bf69570890f531173ea16}{selected\-Ship\-Type} (\hyperlink{classbattleship2D_1_1ui_1_1BoardUI}{Board\-U\-I} board\-U\-I)
+\item 
+void \hyperlink{classbattleship2D_1_1ui_1_1MainFrame_a5868b473495cb0b1f2219257649900f2}{show\-Explosion} (\hyperlink{classbattleship2D_1_1ui_1_1BoardUI}{Board\-U\-I} board\-U\-I)
+\begin{DoxyCompactList}\small\item\em Places the explosion animation over the last cell representing a ship hit by a missile and plays it. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+final H\-Box \hyperlink{classbattleship2D_1_1ui_1_1MainFrame_a88d90d33f8f7f63c47fdbb53328d48f7}{board\-Container}
+\begin{DoxyCompactList}\small\item\em Box grouping both computer and player boards. \end{DoxyCompactList}\item 
+final V\-Box \hyperlink{classbattleship2D_1_1ui_1_1MainFrame_a35a81571c37a413335a40c42b837dc23}{bottom\-V\-Box}
+\item 
+final Border\-Pane \hyperlink{classbattleship2D_1_1ui_1_1MainFrame_a3eefc62de2e2b8ae91e7c75482d6418e}{border\-Pane}
+\begin{DoxyCompactList}\small\item\em Global parent node. \end{DoxyCompactList}\item 
+final \hyperlink{classbattleship2D_1_1ui_1_1BoardUIComputer}{Board\-U\-I\-Computer} \hyperlink{classbattleship2D_1_1ui_1_1MainFrame_adc56bc1d2ef21ff86f1c87d33e3e9ff1}{computer\-Board}
+\begin{DoxyCompactList}\small\item\em Computer board game. \end{DoxyCompactList}\item 
+\hyperlink{classbattleship2D_1_1ui_1_1EndGame}{End\-Game} \hyperlink{classbattleship2D_1_1ui_1_1MainFrame_aee190b7bfc2df5a65cfd17381df5e914}{end\-Game}
+\begin{DoxyCompactList}\small\item\em End game animation. \end{DoxyCompactList}\item 
+final \hyperlink{classbattleship2D_1_1ui_1_1Explosion}{Explosion} \hyperlink{classbattleship2D_1_1ui_1_1MainFrame_ae1b6ad698cc16b8a5905dfb996dfd85b}{explosion}
+\begin{DoxyCompactList}\small\item\em \hyperlink{classbattleship2D_1_1ui_1_1Explosion}{Explosion} image and animation. \end{DoxyCompactList}\item 
+\hyperlink{enumbattleship2D_1_1ui_1_1GameStages}{Game\-Stages} \hyperlink{classbattleship2D_1_1ui_1_1MainFrame_a0a2301fb85fa1a17ebcb5e196d441dc0}{game\-Stage}
+\begin{DoxyCompactList}\small\item\em Current game stage. \end{DoxyCompactList}\item 
+final \hyperlink{classbattleship2D_1_1ui_1_1Messages}{Messages} \hyperlink{classbattleship2D_1_1ui_1_1MainFrame_abc1c8957486a32014fae369c0132e5e4}{messages}
+\begin{DoxyCompactList}\small\item\em Game notifications. \end{DoxyCompactList}\item 
+final \hyperlink{classbattleship2D_1_1ui_1_1Missile}{Missile} \hyperlink{classbattleship2D_1_1ui_1_1MainFrame_aecfa71650afad9e252e9920a52c0919d}{missile}
+\begin{DoxyCompactList}\small\item\em Missiles sent by boards. \end{DoxyCompactList}\item 
+final Simple\-Double\-Property \hyperlink{classbattleship2D_1_1ui_1_1MainFrame_afe5bf635e71814fb5386b25a226b4507}{missile\-Source\-X}
+\begin{DoxyCompactList}\small\item\em Coordinates linking the (player-\/selected or computer-\/selected) target and the missile trajectory endpoints. \end{DoxyCompactList}\item 
+final \hyperlink{classbattleship2D_1_1ui_1_1BoardUIPlayer}{Board\-U\-I\-Player} \hyperlink{classbattleship2D_1_1ui_1_1MainFrame_a622caa40f99d1bffb03cf44abf5ee6a0}{player\-Board}
+\begin{DoxyCompactList}\small\item\em Player board game. \end{DoxyCompactList}\item 
+\hyperlink{enumbattleship2D_1_1model_1_1Turn}{Turn} \hyperlink{classbattleship2D_1_1ui_1_1MainFrame_a7bd357e0fef24dee7bf1fd97cf199b81}{turn}
+\begin{DoxyCompactList}\small\item\em Opponents turns. \end{DoxyCompactList}\item 
+Property\-Change\-Listener \hyperlink{classbattleship2D_1_1ui_1_1MainFrame_ac489e5eaa547a158355bcca48e1946ca}{property\-Change\-Listener}
+\begin{DoxyCompactList}\small\item\em This class listens for each of its boards and the missile class. \end{DoxyCompactList}\item 
+final Anchor\-Pane \hyperlink{classbattleship2D_1_1ui_1_1MainFrame_aae9a45c1d1839f003199eb9ea4c08af6}{root}
+\begin{DoxyCompactList}\small\item\em Root containing all elements. \end{DoxyCompactList}\item 
+final \hyperlink{classbattleship2D_1_1ui_1_1ShipInsertion}{Ship\-Insertion} \hyperlink{classbattleship2D_1_1ui_1_1MainFrame_ae6d2708cb3afd8f74c0ee1cf09023dff}{ship\-Insertion}
+\begin{DoxyCompactList}\small\item\em Container dedicated to ship selection and insertion on the user's board. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Games stages management. 
+
+\begin{DoxyAuthor}{Author}
+xskapin 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classbattleship2D_1_1ui_1_1MainFrame_ad051e02b396e10caa4738decf20acb11}{\index{battleship2\-D\-::ui\-::\-Main\-Frame@{battleship2\-D\-::ui\-::\-Main\-Frame}!Main\-Frame@{Main\-Frame}}
+\index{Main\-Frame@{Main\-Frame}!battleship2D::ui::MainFrame@{battleship2\-D\-::ui\-::\-Main\-Frame}}
+\subsubsection[{Main\-Frame}]{\setlength{\rightskip}{0pt plus 5cm}battleship2\-D.\-ui.\-Main\-Frame.\-Main\-Frame (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classbattleship2D_1_1ui_1_1MainFrame_ad051e02b396e10caa4738decf20acb11}
+
+
+Constructor. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classbattleship2D_1_1ui_1_1MainFrame_a70c2c2ca18c059eaee9bf6dbad0987af}{\index{battleship2\-D\-::ui\-::\-Main\-Frame@{battleship2\-D\-::ui\-::\-Main\-Frame}!change\-State@{change\-State}}
+\index{change\-State@{change\-State}!battleship2D::ui::MainFrame@{battleship2\-D\-::ui\-::\-Main\-Frame}}
+\subsubsection[{change\-State}]{\setlength{\rightskip}{0pt plus 5cm}void battleship2\-D.\-ui.\-Main\-Frame.\-change\-State (
+\begin{DoxyParamCaption}
+\item[{{\bf Game\-Stages}}]{game\-Stage}
+\end{DoxyParamCaption}
+)}}\label{classbattleship2D_1_1ui_1_1MainFrame_a70c2c2ca18c059eaee9bf6dbad0987af}
+
+
+Updates the stage of the game. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game\-Stage} & new game stage \\
+\hline
+\end{DoxyParams}
+\hypertarget{classbattleship2D_1_1ui_1_1MainFrame_a47173801e10e9ccf95e6ed8b8aedcab0}{\index{battleship2\-D\-::ui\-::\-Main\-Frame@{battleship2\-D\-::ui\-::\-Main\-Frame}!display\-Last\-Hit\-Info@{display\-Last\-Hit\-Info}}
+\index{display\-Last\-Hit\-Info@{display\-Last\-Hit\-Info}!battleship2D::ui::MainFrame@{battleship2\-D\-::ui\-::\-Main\-Frame}}
+\subsubsection[{display\-Last\-Hit\-Info}]{\setlength{\rightskip}{0pt plus 5cm}void battleship2\-D.\-ui.\-Main\-Frame.\-display\-Last\-Hit\-Info (
+\begin{DoxyParamCaption}
+\item[{{\bf Board\-U\-I}}]{board\-U\-I, }
+\item[{{\bf Ship\-Type}}]{ship\-Type}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classbattleship2D_1_1ui_1_1MainFrame_a47173801e10e9ccf95e6ed8b8aedcab0}
+
+
+Displays information about the last ship hit by a missile. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em board\-U\-I} & -\/ hit board \\
+\hline
+{\em ship\-Type} & -\/ the kind of ship that was hit \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classbattleship2D_1_1ui_1_1MainFrame_a1cd0c4c8ac21dfa122e2424d19e9f53f}{init\-Listener()} 
+\end{DoxySeeAlso}
+\hypertarget{classbattleship2D_1_1ui_1_1MainFrame_a238468ca4d6ea2b0758224b11480c5f6}{\index{battleship2\-D\-::ui\-::\-Main\-Frame@{battleship2\-D\-::ui\-::\-Main\-Frame}!display\-Valid\-Ship\-Sites@{display\-Valid\-Ship\-Sites}}
+\index{display\-Valid\-Ship\-Sites@{display\-Valid\-Ship\-Sites}!battleship2D::ui::MainFrame@{battleship2\-D\-::ui\-::\-Main\-Frame}}
+\subsubsection[{display\-Valid\-Ship\-Sites}]{\setlength{\rightskip}{0pt plus 5cm}void battleship2\-D.\-ui.\-Main\-Frame.\-display\-Valid\-Ship\-Sites (
+\begin{DoxyParamCaption}
+\item[{{\bf Cell\-Model}}]{cell\-Model}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classbattleship2D_1_1ui_1_1MainFrame_a238468ca4d6ea2b0758224b11480c5f6}
+
+
+Shows different locations for placing the currently selected ship type on the player board. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cell\-Model} & -\/ first cell of the span representing the ship \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classbattleship2D_1_1ui_1_1MainFrame_a1cd0c4c8ac21dfa122e2424d19e9f53f}{init\-Listener()} 
+\end{DoxySeeAlso}
+\hypertarget{classbattleship2D_1_1ui_1_1MainFrame_a6f9d5aec8efee8827bf8b58f50c5ca76}{\index{battleship2\-D\-::ui\-::\-Main\-Frame@{battleship2\-D\-::ui\-::\-Main\-Frame}!get\-Computer\-Board@{get\-Computer\-Board}}
+\index{get\-Computer\-Board@{get\-Computer\-Board}!battleship2D::ui::MainFrame@{battleship2\-D\-::ui\-::\-Main\-Frame}}
+\subsubsection[{get\-Computer\-Board}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Board\-U\-I} battleship2\-D.\-ui.\-Main\-Frame.\-get\-Computer\-Board (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classbattleship2D_1_1ui_1_1MainFrame_a6f9d5aec8efee8827bf8b58f50c5ca76}
+\hypertarget{classbattleship2D_1_1ui_1_1MainFrame_a2b96dbc721e68ca6434e3aabeba956dd}{\index{battleship2\-D\-::ui\-::\-Main\-Frame@{battleship2\-D\-::ui\-::\-Main\-Frame}!get\-Game\-Stage@{get\-Game\-Stage}}
+\index{get\-Game\-Stage@{get\-Game\-Stage}!battleship2D::ui::MainFrame@{battleship2\-D\-::ui\-::\-Main\-Frame}}
+\subsubsection[{get\-Game\-Stage}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Game\-Stages} battleship2\-D.\-ui.\-Main\-Frame.\-get\-Game\-Stage (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classbattleship2D_1_1ui_1_1MainFrame_a2b96dbc721e68ca6434e3aabeba956dd}
+\hypertarget{classbattleship2D_1_1ui_1_1MainFrame_a400354ef9f09404e58351089fca63b9a}{\index{battleship2\-D\-::ui\-::\-Main\-Frame@{battleship2\-D\-::ui\-::\-Main\-Frame}!get\-Player\-Board@{get\-Player\-Board}}
+\index{get\-Player\-Board@{get\-Player\-Board}!battleship2D::ui::MainFrame@{battleship2\-D\-::ui\-::\-Main\-Frame}}
+\subsubsection[{get\-Player\-Board}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Board\-U\-I} battleship2\-D.\-ui.\-Main\-Frame.\-get\-Player\-Board (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classbattleship2D_1_1ui_1_1MainFrame_a400354ef9f09404e58351089fca63b9a}
+\hypertarget{classbattleship2D_1_1ui_1_1MainFrame_a5da6e45ca853f0636c6374770a6a3234}{\index{battleship2\-D\-::ui\-::\-Main\-Frame@{battleship2\-D\-::ui\-::\-Main\-Frame}!get\-Root@{get\-Root}}
+\index{get\-Root@{get\-Root}!battleship2D::ui::MainFrame@{battleship2\-D\-::ui\-::\-Main\-Frame}}
+\subsubsection[{get\-Root}]{\setlength{\rightskip}{0pt plus 5cm}Anchor\-Pane battleship2\-D.\-ui.\-Main\-Frame.\-get\-Root (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classbattleship2D_1_1ui_1_1MainFrame_a5da6e45ca853f0636c6374770a6a3234}
+\hypertarget{classbattleship2D_1_1ui_1_1MainFrame_a86f2faf5ff3cce4d210577aea00bf4a0}{\index{battleship2\-D\-::ui\-::\-Main\-Frame@{battleship2\-D\-::ui\-::\-Main\-Frame}!get\-Ship\-Selection@{get\-Ship\-Selection}}
+\index{get\-Ship\-Selection@{get\-Ship\-Selection}!battleship2D::ui::MainFrame@{battleship2\-D\-::ui\-::\-Main\-Frame}}
+\subsubsection[{get\-Ship\-Selection}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ship\-Insertion} battleship2\-D.\-ui.\-Main\-Frame.\-get\-Ship\-Selection (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classbattleship2D_1_1ui_1_1MainFrame_a86f2faf5ff3cce4d210577aea00bf4a0}
+\hypertarget{classbattleship2D_1_1ui_1_1MainFrame_a9b6d961b3d374e50c855aca96100b132}{\index{battleship2\-D\-::ui\-::\-Main\-Frame@{battleship2\-D\-::ui\-::\-Main\-Frame}!init\-Computer\-Board@{init\-Computer\-Board}}
+\index{init\-Computer\-Board@{init\-Computer\-Board}!battleship2D::ui::MainFrame@{battleship2\-D\-::ui\-::\-Main\-Frame}}
+\subsubsection[{init\-Computer\-Board}]{\setlength{\rightskip}{0pt plus 5cm}void battleship2\-D.\-ui.\-Main\-Frame.\-init\-Computer\-Board (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classbattleship2D_1_1ui_1_1MainFrame_a9b6d961b3d374e50c855aca96100b132}
+
+
+Initializes computer board's fleet and displays it. 
+
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classbattleship2D_1_1ui_1_1MainFrame_a70c2c2ca18c059eaee9bf6dbad0987af}{change\-State()} 
+\end{DoxySeeAlso}
+\hypertarget{classbattleship2D_1_1ui_1_1MainFrame_afc9fb5f26a83ffb126e6cc7c3594ad48}{\index{battleship2\-D\-::ui\-::\-Main\-Frame@{battleship2\-D\-::ui\-::\-Main\-Frame}!init\-End\-Game@{init\-End\-Game}}
+\index{init\-End\-Game@{init\-End\-Game}!battleship2D::ui::MainFrame@{battleship2\-D\-::ui\-::\-Main\-Frame}}
+\subsubsection[{init\-End\-Game}]{\setlength{\rightskip}{0pt plus 5cm}void battleship2\-D.\-ui.\-Main\-Frame.\-init\-End\-Game (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classbattleship2D_1_1ui_1_1MainFrame_afc9fb5f26a83ffb126e6cc7c3594ad48}
+
+
+Initializes the animation played when the games ends. 
+
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classbattleship2D_1_1ui_1_1MainFrame_ad051e02b396e10caa4738decf20acb11}{Main\-Frame()} 
+\end{DoxySeeAlso}
+\hypertarget{classbattleship2D_1_1ui_1_1MainFrame_aeda0b8f0f1838ca5ea399a477a938031}{\index{battleship2\-D\-::ui\-::\-Main\-Frame@{battleship2\-D\-::ui\-::\-Main\-Frame}!init\-Explosion@{init\-Explosion}}
+\index{init\-Explosion@{init\-Explosion}!battleship2D::ui::MainFrame@{battleship2\-D\-::ui\-::\-Main\-Frame}}
+\subsubsection[{init\-Explosion}]{\setlength{\rightskip}{0pt plus 5cm}void battleship2\-D.\-ui.\-Main\-Frame.\-init\-Explosion (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classbattleship2D_1_1ui_1_1MainFrame_aeda0b8f0f1838ca5ea399a477a938031}
+
+
+Initializes data related to ship explosion. 
+
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classbattleship2D_1_1ui_1_1MainFrame_ad051e02b396e10caa4738decf20acb11}{Main\-Frame()} 
+\end{DoxySeeAlso}
+\hypertarget{classbattleship2D_1_1ui_1_1MainFrame_a1cd0c4c8ac21dfa122e2424d19e9f53f}{\index{battleship2\-D\-::ui\-::\-Main\-Frame@{battleship2\-D\-::ui\-::\-Main\-Frame}!init\-Listener@{init\-Listener}}
+\index{init\-Listener@{init\-Listener}!battleship2D::ui::MainFrame@{battleship2\-D\-::ui\-::\-Main\-Frame}}
+\subsubsection[{init\-Listener}]{\setlength{\rightskip}{0pt plus 5cm}void battleship2\-D.\-ui.\-Main\-Frame.\-init\-Listener (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classbattleship2D_1_1ui_1_1MainFrame_a1cd0c4c8ac21dfa122e2424d19e9f53f}
+
+
+Initializes the boards listener. 
+
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classbattleship2D_1_1ui_1_1MainFrame_ad051e02b396e10caa4738decf20acb11}{Main\-Frame()} 
+\end{DoxySeeAlso}
+\hypertarget{classbattleship2D_1_1ui_1_1MainFrame_a906e2a3f9366ae3cec8de72aa3ee7bd4}{\index{battleship2\-D\-::ui\-::\-Main\-Frame@{battleship2\-D\-::ui\-::\-Main\-Frame}!init\-Player\-Board@{init\-Player\-Board}}
+\index{init\-Player\-Board@{init\-Player\-Board}!battleship2D::ui::MainFrame@{battleship2\-D\-::ui\-::\-Main\-Frame}}
+\subsubsection[{init\-Player\-Board}]{\setlength{\rightskip}{0pt plus 5cm}void battleship2\-D.\-ui.\-Main\-Frame.\-init\-Player\-Board (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classbattleship2D_1_1ui_1_1MainFrame_a906e2a3f9366ae3cec8de72aa3ee7bd4}
+
+
+Initializes player's board. 
+
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classbattleship2D_1_1ui_1_1MainFrame_ad051e02b396e10caa4738decf20acb11}{Main\-Frame()} 
+\end{DoxySeeAlso}
+\hypertarget{classbattleship2D_1_1ui_1_1MainFrame_aa4634a800db2491bce8f6962863a5eb8}{\index{battleship2\-D\-::ui\-::\-Main\-Frame@{battleship2\-D\-::ui\-::\-Main\-Frame}!init\-Root@{init\-Root}}
+\index{init\-Root@{init\-Root}!battleship2D::ui::MainFrame@{battleship2\-D\-::ui\-::\-Main\-Frame}}
+\subsubsection[{init\-Root}]{\setlength{\rightskip}{0pt plus 5cm}void battleship2\-D.\-ui.\-Main\-Frame.\-init\-Root (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classbattleship2D_1_1ui_1_1MainFrame_aa4634a800db2491bce8f6962863a5eb8}
+
+
+Starts the construction of all elements. 
+
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classbattleship2D_1_1ui_1_1MainFrame_ad051e02b396e10caa4738decf20acb11}{Main\-Frame()} 
+\end{DoxySeeAlso}
+\hypertarget{classbattleship2D_1_1ui_1_1MainFrame_a3fa6a0e00dca1d1e1d540d01c01a984d}{\index{battleship2\-D\-::ui\-::\-Main\-Frame@{battleship2\-D\-::ui\-::\-Main\-Frame}!init\-Ship\-Selection@{init\-Ship\-Selection}}
+\index{init\-Ship\-Selection@{init\-Ship\-Selection}!battleship2D::ui::MainFrame@{battleship2\-D\-::ui\-::\-Main\-Frame}}
+\subsubsection[{init\-Ship\-Selection}]{\setlength{\rightskip}{0pt plus 5cm}void battleship2\-D.\-ui.\-Main\-Frame.\-init\-Ship\-Selection (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classbattleship2D_1_1ui_1_1MainFrame_a3fa6a0e00dca1d1e1d540d01c01a984d}
+
+
+Initializes data for ship selection. 
+
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classbattleship2D_1_1ui_1_1MainFrame_ad051e02b396e10caa4738decf20acb11}{Main\-Frame()} 
+\end{DoxySeeAlso}
+\hypertarget{classbattleship2D_1_1ui_1_1MainFrame_a305059eafca030a1139aab34b95c308f}{\index{battleship2\-D\-::ui\-::\-Main\-Frame@{battleship2\-D\-::ui\-::\-Main\-Frame}!launch\-Missiles@{launch\-Missiles}}
+\index{launch\-Missiles@{launch\-Missiles}!battleship2D::ui::MainFrame@{battleship2\-D\-::ui\-::\-Main\-Frame}}
+\subsubsection[{launch\-Missiles}]{\setlength{\rightskip}{0pt plus 5cm}void battleship2\-D.\-ui.\-Main\-Frame.\-launch\-Missiles (
+\begin{DoxyParamCaption}
+\item[{{\bf Board\-U\-I}}]{dest\-Board\-U\-I, }
+\item[{{\bf Board\-U\-I}}]{source\-Board\-U\-I}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classbattleship2D_1_1ui_1_1MainFrame_a305059eafca030a1139aab34b95c308f}
+
+
+Displays missile flight from a board to the other. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dest\-Board\-U\-I} & -\/ Trajectory destination board \\
+\hline
+{\em source\-Board\-U\-I} & -\/ Trajectory source board \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classbattleship2D_1_1ui_1_1MainFrame_a70c2c2ca18c059eaee9bf6dbad0987af}{change\-State()} 
+\end{DoxySeeAlso}
+\hypertarget{classbattleship2D_1_1ui_1_1MainFrame_af853c73c8abaed14cb2c64bb1f86d7e9}{\index{battleship2\-D\-::ui\-::\-Main\-Frame@{battleship2\-D\-::ui\-::\-Main\-Frame}!manage\-Events\-Place\-Ships\-On\-Player\-Board@{manage\-Events\-Place\-Ships\-On\-Player\-Board}}
+\index{manage\-Events\-Place\-Ships\-On\-Player\-Board@{manage\-Events\-Place\-Ships\-On\-Player\-Board}!battleship2D::ui::MainFrame@{battleship2\-D\-::ui\-::\-Main\-Frame}}
+\subsubsection[{manage\-Events\-Place\-Ships\-On\-Player\-Board}]{\setlength{\rightskip}{0pt plus 5cm}void battleship2\-D.\-ui.\-Main\-Frame.\-manage\-Events\-Place\-Ships\-On\-Player\-Board (
+\begin{DoxyParamCaption}
+\item[{Property\-Change\-Event}]{property\-Change\-Event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classbattleship2D_1_1ui_1_1MainFrame_af853c73c8abaed14cb2c64bb1f86d7e9}
+
+
+Manages an event triggered during P\-L\-A\-C\-E\-\_\-\-S\-H\-I\-P\-S\-\_\-\-O\-N\-\_\-\-P\-L\-A\-Y\-E\-R\-\_\-\-B\-O\-A\-R\-D game stage. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em property\-Change\-Event} & -\/ the event to deal with \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classbattleship2D_1_1ui_1_1MainFrame_a1cd0c4c8ac21dfa122e2424d19e9f53f}{init\-Listener()} 
+\end{DoxySeeAlso}
+\hypertarget{classbattleship2D_1_1ui_1_1MainFrame_a5ebc3f74994bb4df16418e1c992120c1}{\index{battleship2\-D\-::ui\-::\-Main\-Frame@{battleship2\-D\-::ui\-::\-Main\-Frame}!run\-End\-Game@{run\-End\-Game}}
+\index{run\-End\-Game@{run\-End\-Game}!battleship2D::ui::MainFrame@{battleship2\-D\-::ui\-::\-Main\-Frame}}
+\subsubsection[{run\-End\-Game}]{\setlength{\rightskip}{0pt plus 5cm}void battleship2\-D.\-ui.\-Main\-Frame.\-run\-End\-Game (
+\begin{DoxyParamCaption}
+\item[{Boolean}]{player\-Wins}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classbattleship2D_1_1ui_1_1MainFrame_a5ebc3f74994bb4df16418e1c992120c1}
+
+
+Activate the end game animation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player\-Wins} & -\/ true if the player has won the game, false otherwise \\
+\hline
+\end{DoxyParams}
+\hypertarget{classbattleship2D_1_1ui_1_1MainFrame_a78551c236b4bf69570890f531173ea16}{\index{battleship2\-D\-::ui\-::\-Main\-Frame@{battleship2\-D\-::ui\-::\-Main\-Frame}!selected\-Ship\-Type@{selected\-Ship\-Type}}
+\index{selected\-Ship\-Type@{selected\-Ship\-Type}!battleship2D::ui::MainFrame@{battleship2\-D\-::ui\-::\-Main\-Frame}}
+\subsubsection[{selected\-Ship\-Type}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ship\-Type} battleship2\-D.\-ui.\-Main\-Frame.\-selected\-Ship\-Type (
+\begin{DoxyParamCaption}
+\item[{{\bf Board\-U\-I}}]{board\-U\-I}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classbattleship2D_1_1ui_1_1MainFrame_a78551c236b4bf69570890f531173ea16}
+\begin{DoxyReturn}{Returns}
+the type of the currently selected ship 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em board\-U\-I} & -\/ board upon which the ship is located \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classbattleship2D_1_1ui_1_1MainFrame_a1cd0c4c8ac21dfa122e2424d19e9f53f}{init\-Listener()} 
+\end{DoxySeeAlso}
+\hypertarget{classbattleship2D_1_1ui_1_1MainFrame_ad362924d8ec4b1512152db9a1d5705bf}{\index{battleship2\-D\-::ui\-::\-Main\-Frame@{battleship2\-D\-::ui\-::\-Main\-Frame}!set\-Game\-Stage@{set\-Game\-Stage}}
+\index{set\-Game\-Stage@{set\-Game\-Stage}!battleship2D::ui::MainFrame@{battleship2\-D\-::ui\-::\-Main\-Frame}}
+\subsubsection[{set\-Game\-Stage}]{\setlength{\rightskip}{0pt plus 5cm}void battleship2\-D.\-ui.\-Main\-Frame.\-set\-Game\-Stage (
+\begin{DoxyParamCaption}
+\item[{{\bf Game\-Stages}}]{game\-Stage}
+\end{DoxyParamCaption}
+)}}\label{classbattleship2D_1_1ui_1_1MainFrame_ad362924d8ec4b1512152db9a1d5705bf}
+\hypertarget{classbattleship2D_1_1ui_1_1MainFrame_a5868b473495cb0b1f2219257649900f2}{\index{battleship2\-D\-::ui\-::\-Main\-Frame@{battleship2\-D\-::ui\-::\-Main\-Frame}!show\-Explosion@{show\-Explosion}}
+\index{show\-Explosion@{show\-Explosion}!battleship2D::ui::MainFrame@{battleship2\-D\-::ui\-::\-Main\-Frame}}
+\subsubsection[{show\-Explosion}]{\setlength{\rightskip}{0pt plus 5cm}void battleship2\-D.\-ui.\-Main\-Frame.\-show\-Explosion (
+\begin{DoxyParamCaption}
+\item[{{\bf Board\-U\-I}}]{board\-U\-I}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classbattleship2D_1_1ui_1_1MainFrame_a5868b473495cb0b1f2219257649900f2}
+
+
+Places the explosion animation over the last cell representing a ship hit by a missile and plays it. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em board\-U\-I} & -\/ the Board containing the cell \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classbattleship2D_1_1ui_1_1MainFrame_a1cd0c4c8ac21dfa122e2424d19e9f53f}{init\-Listener()} 
+\end{DoxySeeAlso}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classbattleship2D_1_1ui_1_1MainFrame_a88d90d33f8f7f63c47fdbb53328d48f7}{\index{battleship2\-D\-::ui\-::\-Main\-Frame@{battleship2\-D\-::ui\-::\-Main\-Frame}!board\-Container@{board\-Container}}
+\index{board\-Container@{board\-Container}!battleship2D::ui::MainFrame@{battleship2\-D\-::ui\-::\-Main\-Frame}}
+\subsubsection[{board\-Container}]{\setlength{\rightskip}{0pt plus 5cm}final H\-Box battleship2\-D.\-ui.\-Main\-Frame.\-board\-Container\hspace{0.3cm}{\ttfamily [private]}}}\label{classbattleship2D_1_1ui_1_1MainFrame_a88d90d33f8f7f63c47fdbb53328d48f7}
+
+
+Box grouping both computer and player boards. 
+
+\hypertarget{classbattleship2D_1_1ui_1_1MainFrame_a3eefc62de2e2b8ae91e7c75482d6418e}{\index{battleship2\-D\-::ui\-::\-Main\-Frame@{battleship2\-D\-::ui\-::\-Main\-Frame}!border\-Pane@{border\-Pane}}
+\index{border\-Pane@{border\-Pane}!battleship2D::ui::MainFrame@{battleship2\-D\-::ui\-::\-Main\-Frame}}
+\subsubsection[{border\-Pane}]{\setlength{\rightskip}{0pt plus 5cm}final Border\-Pane battleship2\-D.\-ui.\-Main\-Frame.\-border\-Pane\hspace{0.3cm}{\ttfamily [private]}}}\label{classbattleship2D_1_1ui_1_1MainFrame_a3eefc62de2e2b8ae91e7c75482d6418e}
+
+
+Global parent node. 
+
+\hypertarget{classbattleship2D_1_1ui_1_1MainFrame_a35a81571c37a413335a40c42b837dc23}{\index{battleship2\-D\-::ui\-::\-Main\-Frame@{battleship2\-D\-::ui\-::\-Main\-Frame}!bottom\-V\-Box@{bottom\-V\-Box}}
+\index{bottom\-V\-Box@{bottom\-V\-Box}!battleship2D::ui::MainFrame@{battleship2\-D\-::ui\-::\-Main\-Frame}}
+\subsubsection[{bottom\-V\-Box}]{\setlength{\rightskip}{0pt plus 5cm}final V\-Box battleship2\-D.\-ui.\-Main\-Frame.\-bottom\-V\-Box\hspace{0.3cm}{\ttfamily [private]}}}\label{classbattleship2D_1_1ui_1_1MainFrame_a35a81571c37a413335a40c42b837dc23}
+\hypertarget{classbattleship2D_1_1ui_1_1MainFrame_adc56bc1d2ef21ff86f1c87d33e3e9ff1}{\index{battleship2\-D\-::ui\-::\-Main\-Frame@{battleship2\-D\-::ui\-::\-Main\-Frame}!computer\-Board@{computer\-Board}}
+\index{computer\-Board@{computer\-Board}!battleship2D::ui::MainFrame@{battleship2\-D\-::ui\-::\-Main\-Frame}}
+\subsubsection[{computer\-Board}]{\setlength{\rightskip}{0pt plus 5cm}final {\bf Board\-U\-I\-Computer} battleship2\-D.\-ui.\-Main\-Frame.\-computer\-Board\hspace{0.3cm}{\ttfamily [private]}}}\label{classbattleship2D_1_1ui_1_1MainFrame_adc56bc1d2ef21ff86f1c87d33e3e9ff1}
+
+
+Computer board game. 
+
+\hypertarget{classbattleship2D_1_1ui_1_1MainFrame_aee190b7bfc2df5a65cfd17381df5e914}{\index{battleship2\-D\-::ui\-::\-Main\-Frame@{battleship2\-D\-::ui\-::\-Main\-Frame}!end\-Game@{end\-Game}}
+\index{end\-Game@{end\-Game}!battleship2D::ui::MainFrame@{battleship2\-D\-::ui\-::\-Main\-Frame}}
+\subsubsection[{end\-Game}]{\setlength{\rightskip}{0pt plus 5cm}{\bf End\-Game} battleship2\-D.\-ui.\-Main\-Frame.\-end\-Game\hspace{0.3cm}{\ttfamily [private]}}}\label{classbattleship2D_1_1ui_1_1MainFrame_aee190b7bfc2df5a65cfd17381df5e914}
+
+
+End game animation. 
+
+\hypertarget{classbattleship2D_1_1ui_1_1MainFrame_ae1b6ad698cc16b8a5905dfb996dfd85b}{\index{battleship2\-D\-::ui\-::\-Main\-Frame@{battleship2\-D\-::ui\-::\-Main\-Frame}!explosion@{explosion}}
+\index{explosion@{explosion}!battleship2D::ui::MainFrame@{battleship2\-D\-::ui\-::\-Main\-Frame}}
+\subsubsection[{explosion}]{\setlength{\rightskip}{0pt plus 5cm}final {\bf Explosion} battleship2\-D.\-ui.\-Main\-Frame.\-explosion\hspace{0.3cm}{\ttfamily [private]}}}\label{classbattleship2D_1_1ui_1_1MainFrame_ae1b6ad698cc16b8a5905dfb996dfd85b}
+
+
+\hyperlink{classbattleship2D_1_1ui_1_1Explosion}{Explosion} image and animation. 
+
+\hypertarget{classbattleship2D_1_1ui_1_1MainFrame_a0a2301fb85fa1a17ebcb5e196d441dc0}{\index{battleship2\-D\-::ui\-::\-Main\-Frame@{battleship2\-D\-::ui\-::\-Main\-Frame}!game\-Stage@{game\-Stage}}
+\index{game\-Stage@{game\-Stage}!battleship2D::ui::MainFrame@{battleship2\-D\-::ui\-::\-Main\-Frame}}
+\subsubsection[{game\-Stage}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Game\-Stages} battleship2\-D.\-ui.\-Main\-Frame.\-game\-Stage\hspace{0.3cm}{\ttfamily [private]}}}\label{classbattleship2D_1_1ui_1_1MainFrame_a0a2301fb85fa1a17ebcb5e196d441dc0}
+
+
+Current game stage. 
+
+\hypertarget{classbattleship2D_1_1ui_1_1MainFrame_abc1c8957486a32014fae369c0132e5e4}{\index{battleship2\-D\-::ui\-::\-Main\-Frame@{battleship2\-D\-::ui\-::\-Main\-Frame}!messages@{messages}}
+\index{messages@{messages}!battleship2D::ui::MainFrame@{battleship2\-D\-::ui\-::\-Main\-Frame}}
+\subsubsection[{messages}]{\setlength{\rightskip}{0pt plus 5cm}final {\bf Messages} battleship2\-D.\-ui.\-Main\-Frame.\-messages\hspace{0.3cm}{\ttfamily [private]}}}\label{classbattleship2D_1_1ui_1_1MainFrame_abc1c8957486a32014fae369c0132e5e4}
+
+
+Game notifications. 
+
+\hypertarget{classbattleship2D_1_1ui_1_1MainFrame_aecfa71650afad9e252e9920a52c0919d}{\index{battleship2\-D\-::ui\-::\-Main\-Frame@{battleship2\-D\-::ui\-::\-Main\-Frame}!missile@{missile}}
+\index{missile@{missile}!battleship2D::ui::MainFrame@{battleship2\-D\-::ui\-::\-Main\-Frame}}
+\subsubsection[{missile}]{\setlength{\rightskip}{0pt plus 5cm}final {\bf Missile} battleship2\-D.\-ui.\-Main\-Frame.\-missile\hspace{0.3cm}{\ttfamily [private]}}}\label{classbattleship2D_1_1ui_1_1MainFrame_aecfa71650afad9e252e9920a52c0919d}
+
+
+Missiles sent by boards. 
+
+\hypertarget{classbattleship2D_1_1ui_1_1MainFrame_adcd874489abd642b1ba53db27bb6fa13}{\index{battleship2\-D\-::ui\-::\-Main\-Frame@{battleship2\-D\-::ui\-::\-Main\-Frame}!missile\-Dest\-X@{missile\-Dest\-X}}
+\index{missile\-Dest\-X@{missile\-Dest\-X}!battleship2D::ui::MainFrame@{battleship2\-D\-::ui\-::\-Main\-Frame}}
+\subsubsection[{missile\-Dest\-X}]{\setlength{\rightskip}{0pt plus 5cm}final Simple\-Double\-Property battleship2\-D.\-ui.\-Main\-Frame.\-missile\-Dest\-X\hspace{0.3cm}{\ttfamily [package]}}}\label{classbattleship2D_1_1ui_1_1MainFrame_adcd874489abd642b1ba53db27bb6fa13}
+\hypertarget{classbattleship2D_1_1ui_1_1MainFrame_a5f4019ccf71bb434f200713f25307fff}{\index{battleship2\-D\-::ui\-::\-Main\-Frame@{battleship2\-D\-::ui\-::\-Main\-Frame}!missile\-Dest\-Y@{missile\-Dest\-Y}}
+\index{missile\-Dest\-Y@{missile\-Dest\-Y}!battleship2D::ui::MainFrame@{battleship2\-D\-::ui\-::\-Main\-Frame}}
+\subsubsection[{missile\-Dest\-Y}]{\setlength{\rightskip}{0pt plus 5cm}final Simple\-Double\-Property battleship2\-D.\-ui.\-Main\-Frame.\-missile\-Dest\-Y\hspace{0.3cm}{\ttfamily [package]}}}\label{classbattleship2D_1_1ui_1_1MainFrame_a5f4019ccf71bb434f200713f25307fff}
+\hypertarget{classbattleship2D_1_1ui_1_1MainFrame_afe5bf635e71814fb5386b25a226b4507}{\index{battleship2\-D\-::ui\-::\-Main\-Frame@{battleship2\-D\-::ui\-::\-Main\-Frame}!missile\-Source\-X@{missile\-Source\-X}}
+\index{missile\-Source\-X@{missile\-Source\-X}!battleship2D::ui::MainFrame@{battleship2\-D\-::ui\-::\-Main\-Frame}}
+\subsubsection[{missile\-Source\-X}]{\setlength{\rightskip}{0pt plus 5cm}final Simple\-Double\-Property battleship2\-D.\-ui.\-Main\-Frame.\-missile\-Source\-X\hspace{0.3cm}{\ttfamily [private]}}}\label{classbattleship2D_1_1ui_1_1MainFrame_afe5bf635e71814fb5386b25a226b4507}
+
+
+Coordinates linking the (player-\/selected or computer-\/selected) target and the missile trajectory endpoints. 
+
+\hypertarget{classbattleship2D_1_1ui_1_1MainFrame_ac7e5b51abf3de709693d27b0dc0899e7}{\index{battleship2\-D\-::ui\-::\-Main\-Frame@{battleship2\-D\-::ui\-::\-Main\-Frame}!missile\-Source\-Y@{missile\-Source\-Y}}
+\index{missile\-Source\-Y@{missile\-Source\-Y}!battleship2D::ui::MainFrame@{battleship2\-D\-::ui\-::\-Main\-Frame}}
+\subsubsection[{missile\-Source\-Y}]{\setlength{\rightskip}{0pt plus 5cm}final Simple\-Double\-Property battleship2\-D.\-ui.\-Main\-Frame.\-missile\-Source\-Y\hspace{0.3cm}{\ttfamily [package]}}}\label{classbattleship2D_1_1ui_1_1MainFrame_ac7e5b51abf3de709693d27b0dc0899e7}
+\hypertarget{classbattleship2D_1_1ui_1_1MainFrame_a622caa40f99d1bffb03cf44abf5ee6a0}{\index{battleship2\-D\-::ui\-::\-Main\-Frame@{battleship2\-D\-::ui\-::\-Main\-Frame}!player\-Board@{player\-Board}}
+\index{player\-Board@{player\-Board}!battleship2D::ui::MainFrame@{battleship2\-D\-::ui\-::\-Main\-Frame}}
+\subsubsection[{player\-Board}]{\setlength{\rightskip}{0pt plus 5cm}final {\bf Board\-U\-I\-Player} battleship2\-D.\-ui.\-Main\-Frame.\-player\-Board\hspace{0.3cm}{\ttfamily [private]}}}\label{classbattleship2D_1_1ui_1_1MainFrame_a622caa40f99d1bffb03cf44abf5ee6a0}
+
+
+Player board game. 
+
+\hypertarget{classbattleship2D_1_1ui_1_1MainFrame_ac489e5eaa547a158355bcca48e1946ca}{\index{battleship2\-D\-::ui\-::\-Main\-Frame@{battleship2\-D\-::ui\-::\-Main\-Frame}!property\-Change\-Listener@{property\-Change\-Listener}}
+\index{property\-Change\-Listener@{property\-Change\-Listener}!battleship2D::ui::MainFrame@{battleship2\-D\-::ui\-::\-Main\-Frame}}
+\subsubsection[{property\-Change\-Listener}]{\setlength{\rightskip}{0pt plus 5cm}Property\-Change\-Listener battleship2\-D.\-ui.\-Main\-Frame.\-property\-Change\-Listener\hspace{0.3cm}{\ttfamily [private]}}}\label{classbattleship2D_1_1ui_1_1MainFrame_ac489e5eaa547a158355bcca48e1946ca}
+
+
+This class listens for each of its boards and the missile class. 
+
+\hypertarget{classbattleship2D_1_1ui_1_1MainFrame_aae9a45c1d1839f003199eb9ea4c08af6}{\index{battleship2\-D\-::ui\-::\-Main\-Frame@{battleship2\-D\-::ui\-::\-Main\-Frame}!root@{root}}
+\index{root@{root}!battleship2D::ui::MainFrame@{battleship2\-D\-::ui\-::\-Main\-Frame}}
+\subsubsection[{root}]{\setlength{\rightskip}{0pt plus 5cm}final Anchor\-Pane battleship2\-D.\-ui.\-Main\-Frame.\-root\hspace{0.3cm}{\ttfamily [private]}}}\label{classbattleship2D_1_1ui_1_1MainFrame_aae9a45c1d1839f003199eb9ea4c08af6}
+
+
+Root containing all elements. 
+
+\hypertarget{classbattleship2D_1_1ui_1_1MainFrame_ae6d2708cb3afd8f74c0ee1cf09023dff}{\index{battleship2\-D\-::ui\-::\-Main\-Frame@{battleship2\-D\-::ui\-::\-Main\-Frame}!ship\-Insertion@{ship\-Insertion}}
+\index{ship\-Insertion@{ship\-Insertion}!battleship2D::ui::MainFrame@{battleship2\-D\-::ui\-::\-Main\-Frame}}
+\subsubsection[{ship\-Insertion}]{\setlength{\rightskip}{0pt plus 5cm}final {\bf Ship\-Insertion} battleship2\-D.\-ui.\-Main\-Frame.\-ship\-Insertion\hspace{0.3cm}{\ttfamily [private]}}}\label{classbattleship2D_1_1ui_1_1MainFrame_ae6d2708cb3afd8f74c0ee1cf09023dff}
+
+
+Container dedicated to ship selection and insertion on the user's board. 
+
+\hypertarget{classbattleship2D_1_1ui_1_1MainFrame_a7bd357e0fef24dee7bf1fd97cf199b81}{\index{battleship2\-D\-::ui\-::\-Main\-Frame@{battleship2\-D\-::ui\-::\-Main\-Frame}!turn@{turn}}
+\index{turn@{turn}!battleship2D::ui::MainFrame@{battleship2\-D\-::ui\-::\-Main\-Frame}}
+\subsubsection[{turn}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Turn} battleship2\-D.\-ui.\-Main\-Frame.\-turn\hspace{0.3cm}{\ttfamily [private]}}}\label{classbattleship2D_1_1ui_1_1MainFrame_a7bd357e0fef24dee7bf1fd97cf199b81}
+
+
+Opponents turns. 
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/home/xaviator/\-Enseignements/2015-\/2016/\-S\-F\-A/\-M1-\/\-Info/\-I\-H\-M/\-Battle\-Ship2\-D\-\_\-students/battleship2\-D/ui/\hyperlink{MainFrame_8java}{Main\-Frame.\-java}\end{DoxyCompactItemize}

@@ -1,0 +1,5 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node2" href="$classbattleship2D_1_1ui_1_1BoardUI.html" title="UI associated with a BoardModel. " alt="" coords="131,31,293,57"/>
+<area shape="rect" id="node3" href="$classbattleship2D_1_1ui_1_1BoardUIComputer.html" title="BoardUI dedicated to computer side. " alt="" coords="341,5,560,32"/>
+<area shape="rect" id="node4" href="$classbattleship2D_1_1ui_1_1BoardUIPlayer.html" title="BoardUI dedicated to player side. " alt="" coords="351,56,550,83"/>
+</map>

@@ -1,0 +1,263 @@
+\hypertarget{classbattleship2D_1_1ui_1_1Missile}{\section{battleship2\-D.\-ui.\-Missile Class Reference}
+\label{classbattleship2D_1_1ui_1_1Missile}\index{battleship2\-D.\-ui.\-Missile@{battleship2\-D.\-ui.\-Missile}}
+}
+
+
+\hyperlink{classbattleship2D_1_1ui_1_1Missile}{Missile} flight between boards.  
+
+
+
+
+Collaboration diagram for battleship2\-D.\-ui.\-Missile\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbattleship2D_1_1ui_1_1Missile__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classbattleship2D_1_1ui_1_1Missile_a80363f27f61ea044ba42fbaf482f75eb}{Missile} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+void \hyperlink{classbattleship2D_1_1ui_1_1Missile_a78fee53882ef8470b43bbea98e80d9fa}{play} ()
+\begin{DoxyCompactList}\small\item\em Runs the animation. \end{DoxyCompactList}\item 
+void \hyperlink{classbattleship2D_1_1ui_1_1Missile_aae01b0649ae2b290f7fa8a638d945ce5}{unhide\-All} ()
+\begin{DoxyCompactList}\small\item\em Unhides all elements. \end{DoxyCompactList}\item 
+void \hyperlink{classbattleship2D_1_1ui_1_1Missile_a6764a666a4261ed004ea6f055f421e7f}{add\-Property\-Change\-Listener} (Property\-Change\-Listener property\-Change\-Listener)
+\item 
+void \hyperlink{classbattleship2D_1_1ui_1_1Missile_aafbe9d0e93733b548cf10ce3552159b9}{remove\-Property\-Change\-Listener} (Property\-Change\-Listener property\-Change\-Listener)
+\item 
+Translate\-Transition \hyperlink{classbattleship2D_1_1ui_1_1Missile_adea76c3a0aee1efe1f1b69c552ab5f58}{get\-Translate\-Transition} ()
+\item 
+Group \hyperlink{classbattleship2D_1_1ui_1_1Missile_a484050811c16c63bd9e1ad323ddbf367}{get\-Root} ()
+\end{DoxyCompactItemize}
+\subsection*{Package Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Translate\-Transition \hyperlink{classbattleship2D_1_1ui_1_1Missile_ac23e9803151112d2284c60bf83f4d389}{translate\-Transition}
+\begin{DoxyCompactList}\small\item\em \hyperlink{classbattleship2D_1_1ui_1_1Missile}{Missile} trajectory, depending on cell bords. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classbattleship2D_1_1ui_1_1Missile_a51c3f1a3cb6456b18aa3e523b9673641}{hide\-All} ()
+\begin{DoxyCompactList}\small\item\em Hides all elements. \end{DoxyCompactList}\item 
+void \hyperlink{classbattleship2D_1_1ui_1_1Missile_a3a765df81bc09c4aaf927b4c879c8a0d}{init} ()
+\begin{DoxyCompactList}\small\item\em Initializes private members. \end{DoxyCompactList}\item 
+void \hyperlink{classbattleship2D_1_1ui_1_1Missile_a5082e229045aa10ef880d4729d06ff49}{init\-Parallel\-Transition} ()
+\begin{DoxyCompactList}\small\item\em Initialize the Parallel\-Transition applied to the missile during its flight. \end{DoxyCompactList}\item 
+void \hyperlink{classbattleship2D_1_1ui_1_1Missile_adae455ab7df1206f605bfab4470c9e34}{init\-Scale\-Transition} (Scale\-Transition scale\-Transition)
+\begin{DoxyCompactList}\small\item\em Initialize the Scale\-Transition applied to the missile during its flight. \end{DoxyCompactList}\item 
+void \hyperlink{classbattleship2D_1_1ui_1_1Missile_aa0eb0a715333ce468f9d80c6f9d7da50}{init\-Sphere} (Sphere sphere)
+\begin{DoxyCompactList}\small\item\em Initialize the sphere representing the missile. \end{DoxyCompactList}\item 
+void \hyperlink{classbattleship2D_1_1ui_1_1Missile_adbffa08aa2496ef3bf38e66eaf2c6331}{init\-Translate\-Transition} ()
+\begin{DoxyCompactList}\small\item\em Initialize the Translate\-Transition applied to the missile during its flight. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Parallel\-Transition \hyperlink{classbattleship2D_1_1ui_1_1Missile_aa7b5faf175e8760cd5cd7dfea44106cb}{parallel\-Transition}
+\begin{DoxyCompactList}\small\item\em The missile movement is a combination of transitions. \end{DoxyCompactList}\item 
+final Property\-Change\-Support \hyperlink{classbattleship2D_1_1ui_1_1Missile_a2c2bbbfecfd52723b7ae22cc10fd0321}{pcs\-Listeners} = new Property\-Change\-Support(this)
+\begin{DoxyCompactList}\small\item\em Listeners management. \end{DoxyCompactList}\item 
+Group \hyperlink{classbattleship2D_1_1ui_1_1Missile_a1629c11210c785af29f5c744425bece5}{root}
+\begin{DoxyCompactList}\small\item\em Global root for data to display. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classbattleship2D_1_1ui_1_1Missile}{Missile} flight between boards. 
+
+\begin{DoxyAuthor}{Author}
+xaviator 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classbattleship2D_1_1ui_1_1Missile_a80363f27f61ea044ba42fbaf482f75eb}{\index{battleship2\-D\-::ui\-::\-Missile@{battleship2\-D\-::ui\-::\-Missile}!Missile@{Missile}}
+\index{Missile@{Missile}!battleship2D::ui::Missile@{battleship2\-D\-::ui\-::\-Missile}}
+\subsubsection[{Missile}]{\setlength{\rightskip}{0pt plus 5cm}battleship2\-D.\-ui.\-Missile.\-Missile (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classbattleship2D_1_1ui_1_1Missile_a80363f27f61ea044ba42fbaf482f75eb}
+
+
+Constructor. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classbattleship2D_1_1ui_1_1Missile_a6764a666a4261ed004ea6f055f421e7f}{\index{battleship2\-D\-::ui\-::\-Missile@{battleship2\-D\-::ui\-::\-Missile}!add\-Property\-Change\-Listener@{add\-Property\-Change\-Listener}}
+\index{add\-Property\-Change\-Listener@{add\-Property\-Change\-Listener}!battleship2D::ui::Missile@{battleship2\-D\-::ui\-::\-Missile}}
+\subsubsection[{add\-Property\-Change\-Listener}]{\setlength{\rightskip}{0pt plus 5cm}void battleship2\-D.\-ui.\-Missile.\-add\-Property\-Change\-Listener (
+\begin{DoxyParamCaption}
+\item[{Property\-Change\-Listener}]{property\-Change\-Listener}
+\end{DoxyParamCaption}
+)}}\label{classbattleship2D_1_1ui_1_1Missile_a6764a666a4261ed004ea6f055f421e7f}
+\hypertarget{classbattleship2D_1_1ui_1_1Missile_a484050811c16c63bd9e1ad323ddbf367}{\index{battleship2\-D\-::ui\-::\-Missile@{battleship2\-D\-::ui\-::\-Missile}!get\-Root@{get\-Root}}
+\index{get\-Root@{get\-Root}!battleship2D::ui::Missile@{battleship2\-D\-::ui\-::\-Missile}}
+\subsubsection[{get\-Root}]{\setlength{\rightskip}{0pt plus 5cm}Group battleship2\-D.\-ui.\-Missile.\-get\-Root (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classbattleship2D_1_1ui_1_1Missile_a484050811c16c63bd9e1ad323ddbf367}
+\hypertarget{classbattleship2D_1_1ui_1_1Missile_adea76c3a0aee1efe1f1b69c552ab5f58}{\index{battleship2\-D\-::ui\-::\-Missile@{battleship2\-D\-::ui\-::\-Missile}!get\-Translate\-Transition@{get\-Translate\-Transition}}
+\index{get\-Translate\-Transition@{get\-Translate\-Transition}!battleship2D::ui::Missile@{battleship2\-D\-::ui\-::\-Missile}}
+\subsubsection[{get\-Translate\-Transition}]{\setlength{\rightskip}{0pt plus 5cm}Translate\-Transition battleship2\-D.\-ui.\-Missile.\-get\-Translate\-Transition (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classbattleship2D_1_1ui_1_1Missile_adea76c3a0aee1efe1f1b69c552ab5f58}
+\hypertarget{classbattleship2D_1_1ui_1_1Missile_a51c3f1a3cb6456b18aa3e523b9673641}{\index{battleship2\-D\-::ui\-::\-Missile@{battleship2\-D\-::ui\-::\-Missile}!hide\-All@{hide\-All}}
+\index{hide\-All@{hide\-All}!battleship2D::ui::Missile@{battleship2\-D\-::ui\-::\-Missile}}
+\subsubsection[{hide\-All}]{\setlength{\rightskip}{0pt plus 5cm}void battleship2\-D.\-ui.\-Missile.\-hide\-All (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classbattleship2D_1_1ui_1_1Missile_a51c3f1a3cb6456b18aa3e523b9673641}
+
+
+Hides all elements. 
+
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classbattleship2D_1_1ui_1_1Missile_a3a765df81bc09c4aaf927b4c879c8a0d}{init()} 
+\end{DoxySeeAlso}
+\hypertarget{classbattleship2D_1_1ui_1_1Missile_a3a765df81bc09c4aaf927b4c879c8a0d}{\index{battleship2\-D\-::ui\-::\-Missile@{battleship2\-D\-::ui\-::\-Missile}!init@{init}}
+\index{init@{init}!battleship2D::ui::Missile@{battleship2\-D\-::ui\-::\-Missile}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}void battleship2\-D.\-ui.\-Missile.\-init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classbattleship2D_1_1ui_1_1Missile_a3a765df81bc09c4aaf927b4c879c8a0d}
+
+
+Initializes private members. 
+
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classbattleship2D_1_1ui_1_1Missile_a80363f27f61ea044ba42fbaf482f75eb}{Missile()} 
+\end{DoxySeeAlso}
+\hypertarget{classbattleship2D_1_1ui_1_1Missile_a5082e229045aa10ef880d4729d06ff49}{\index{battleship2\-D\-::ui\-::\-Missile@{battleship2\-D\-::ui\-::\-Missile}!init\-Parallel\-Transition@{init\-Parallel\-Transition}}
+\index{init\-Parallel\-Transition@{init\-Parallel\-Transition}!battleship2D::ui::Missile@{battleship2\-D\-::ui\-::\-Missile}}
+\subsubsection[{init\-Parallel\-Transition}]{\setlength{\rightskip}{0pt plus 5cm}void battleship2\-D.\-ui.\-Missile.\-init\-Parallel\-Transition (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classbattleship2D_1_1ui_1_1Missile_a5082e229045aa10ef880d4729d06ff49}
+
+
+Initialize the Parallel\-Transition applied to the missile during its flight. 
+
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classbattleship2D_1_1ui_1_1Missile_a3a765df81bc09c4aaf927b4c879c8a0d}{init()} 
+\end{DoxySeeAlso}
+\hypertarget{classbattleship2D_1_1ui_1_1Missile_adae455ab7df1206f605bfab4470c9e34}{\index{battleship2\-D\-::ui\-::\-Missile@{battleship2\-D\-::ui\-::\-Missile}!init\-Scale\-Transition@{init\-Scale\-Transition}}
+\index{init\-Scale\-Transition@{init\-Scale\-Transition}!battleship2D::ui::Missile@{battleship2\-D\-::ui\-::\-Missile}}
+\subsubsection[{init\-Scale\-Transition}]{\setlength{\rightskip}{0pt plus 5cm}void battleship2\-D.\-ui.\-Missile.\-init\-Scale\-Transition (
+\begin{DoxyParamCaption}
+\item[{Scale\-Transition}]{scale\-Transition}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classbattleship2D_1_1ui_1_1Missile_adae455ab7df1206f605bfab4470c9e34}
+
+
+Initialize the Scale\-Transition applied to the missile during its flight. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em scale\-Transition} & -\/ transition to deal with \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classbattleship2D_1_1ui_1_1Missile_a3a765df81bc09c4aaf927b4c879c8a0d}{init()} 
+\end{DoxySeeAlso}
+\hypertarget{classbattleship2D_1_1ui_1_1Missile_aa0eb0a715333ce468f9d80c6f9d7da50}{\index{battleship2\-D\-::ui\-::\-Missile@{battleship2\-D\-::ui\-::\-Missile}!init\-Sphere@{init\-Sphere}}
+\index{init\-Sphere@{init\-Sphere}!battleship2D::ui::Missile@{battleship2\-D\-::ui\-::\-Missile}}
+\subsubsection[{init\-Sphere}]{\setlength{\rightskip}{0pt plus 5cm}void battleship2\-D.\-ui.\-Missile.\-init\-Sphere (
+\begin{DoxyParamCaption}
+\item[{Sphere}]{sphere}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classbattleship2D_1_1ui_1_1Missile_aa0eb0a715333ce468f9d80c6f9d7da50}
+
+
+Initialize the sphere representing the missile. 
+
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classbattleship2D_1_1ui_1_1Missile_a3a765df81bc09c4aaf927b4c879c8a0d}{init()} 
+\end{DoxySeeAlso}
+\hypertarget{classbattleship2D_1_1ui_1_1Missile_adbffa08aa2496ef3bf38e66eaf2c6331}{\index{battleship2\-D\-::ui\-::\-Missile@{battleship2\-D\-::ui\-::\-Missile}!init\-Translate\-Transition@{init\-Translate\-Transition}}
+\index{init\-Translate\-Transition@{init\-Translate\-Transition}!battleship2D::ui::Missile@{battleship2\-D\-::ui\-::\-Missile}}
+\subsubsection[{init\-Translate\-Transition}]{\setlength{\rightskip}{0pt plus 5cm}void battleship2\-D.\-ui.\-Missile.\-init\-Translate\-Transition (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classbattleship2D_1_1ui_1_1Missile_adbffa08aa2496ef3bf38e66eaf2c6331}
+
+
+Initialize the Translate\-Transition applied to the missile during its flight. 
+
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classbattleship2D_1_1ui_1_1Missile_a3a765df81bc09c4aaf927b4c879c8a0d}{init()} 
+\end{DoxySeeAlso}
+\hypertarget{classbattleship2D_1_1ui_1_1Missile_a78fee53882ef8470b43bbea98e80d9fa}{\index{battleship2\-D\-::ui\-::\-Missile@{battleship2\-D\-::ui\-::\-Missile}!play@{play}}
+\index{play@{play}!battleship2D::ui::Missile@{battleship2\-D\-::ui\-::\-Missile}}
+\subsubsection[{play}]{\setlength{\rightskip}{0pt plus 5cm}void battleship2\-D.\-ui.\-Missile.\-play (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classbattleship2D_1_1ui_1_1Missile_a78fee53882ef8470b43bbea98e80d9fa}
+
+
+Runs the animation. 
+
+\hypertarget{classbattleship2D_1_1ui_1_1Missile_aafbe9d0e93733b548cf10ce3552159b9}{\index{battleship2\-D\-::ui\-::\-Missile@{battleship2\-D\-::ui\-::\-Missile}!remove\-Property\-Change\-Listener@{remove\-Property\-Change\-Listener}}
+\index{remove\-Property\-Change\-Listener@{remove\-Property\-Change\-Listener}!battleship2D::ui::Missile@{battleship2\-D\-::ui\-::\-Missile}}
+\subsubsection[{remove\-Property\-Change\-Listener}]{\setlength{\rightskip}{0pt plus 5cm}void battleship2\-D.\-ui.\-Missile.\-remove\-Property\-Change\-Listener (
+\begin{DoxyParamCaption}
+\item[{Property\-Change\-Listener}]{property\-Change\-Listener}
+\end{DoxyParamCaption}
+)}}\label{classbattleship2D_1_1ui_1_1Missile_aafbe9d0e93733b548cf10ce3552159b9}
+\hypertarget{classbattleship2D_1_1ui_1_1Missile_aae01b0649ae2b290f7fa8a638d945ce5}{\index{battleship2\-D\-::ui\-::\-Missile@{battleship2\-D\-::ui\-::\-Missile}!unhide\-All@{unhide\-All}}
+\index{unhide\-All@{unhide\-All}!battleship2D::ui::Missile@{battleship2\-D\-::ui\-::\-Missile}}
+\subsubsection[{unhide\-All}]{\setlength{\rightskip}{0pt plus 5cm}void battleship2\-D.\-ui.\-Missile.\-unhide\-All (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classbattleship2D_1_1ui_1_1Missile_aae01b0649ae2b290f7fa8a638d945ce5}
+
+
+Unhides all elements. 
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classbattleship2D_1_1ui_1_1Missile_aa7b5faf175e8760cd5cd7dfea44106cb}{\index{battleship2\-D\-::ui\-::\-Missile@{battleship2\-D\-::ui\-::\-Missile}!parallel\-Transition@{parallel\-Transition}}
+\index{parallel\-Transition@{parallel\-Transition}!battleship2D::ui::Missile@{battleship2\-D\-::ui\-::\-Missile}}
+\subsubsection[{parallel\-Transition}]{\setlength{\rightskip}{0pt plus 5cm}Parallel\-Transition battleship2\-D.\-ui.\-Missile.\-parallel\-Transition\hspace{0.3cm}{\ttfamily [private]}}}\label{classbattleship2D_1_1ui_1_1Missile_aa7b5faf175e8760cd5cd7dfea44106cb}
+
+
+The missile movement is a combination of transitions. 
+
+\hypertarget{classbattleship2D_1_1ui_1_1Missile_a2c2bbbfecfd52723b7ae22cc10fd0321}{\index{battleship2\-D\-::ui\-::\-Missile@{battleship2\-D\-::ui\-::\-Missile}!pcs\-Listeners@{pcs\-Listeners}}
+\index{pcs\-Listeners@{pcs\-Listeners}!battleship2D::ui::Missile@{battleship2\-D\-::ui\-::\-Missile}}
+\subsubsection[{pcs\-Listeners}]{\setlength{\rightskip}{0pt plus 5cm}final Property\-Change\-Support battleship2\-D.\-ui.\-Missile.\-pcs\-Listeners = new Property\-Change\-Support(this)\hspace{0.3cm}{\ttfamily [private]}}}\label{classbattleship2D_1_1ui_1_1Missile_a2c2bbbfecfd52723b7ae22cc10fd0321}
+
+
+Listeners management. 
+
+\hypertarget{classbattleship2D_1_1ui_1_1Missile_a1629c11210c785af29f5c744425bece5}{\index{battleship2\-D\-::ui\-::\-Missile@{battleship2\-D\-::ui\-::\-Missile}!root@{root}}
+\index{root@{root}!battleship2D::ui::Missile@{battleship2\-D\-::ui\-::\-Missile}}
+\subsubsection[{root}]{\setlength{\rightskip}{0pt plus 5cm}Group battleship2\-D.\-ui.\-Missile.\-root\hspace{0.3cm}{\ttfamily [private]}}}\label{classbattleship2D_1_1ui_1_1Missile_a1629c11210c785af29f5c744425bece5}
+
+
+Global root for data to display. 
+
+\hypertarget{classbattleship2D_1_1ui_1_1Missile_ac23e9803151112d2284c60bf83f4d389}{\index{battleship2\-D\-::ui\-::\-Missile@{battleship2\-D\-::ui\-::\-Missile}!translate\-Transition@{translate\-Transition}}
+\index{translate\-Transition@{translate\-Transition}!battleship2D::ui::Missile@{battleship2\-D\-::ui\-::\-Missile}}
+\subsubsection[{translate\-Transition}]{\setlength{\rightskip}{0pt plus 5cm}Translate\-Transition battleship2\-D.\-ui.\-Missile.\-translate\-Transition\hspace{0.3cm}{\ttfamily [package]}}}\label{classbattleship2D_1_1ui_1_1Missile_ac23e9803151112d2284c60bf83f4d389}
+
+
+\hyperlink{classbattleship2D_1_1ui_1_1Missile}{Missile} trajectory, depending on cell bords. 
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/home/xaviator/\-Enseignements/2015-\/2016/\-S\-F\-A/\-M1-\/\-Info/\-I\-H\-M/\-Battle\-Ship2\-D\-\_\-students/battleship2\-D/ui/\hyperlink{Missile_8java}{Missile.\-java}\end{DoxyCompactItemize}

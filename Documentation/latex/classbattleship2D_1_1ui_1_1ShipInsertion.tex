@@ -1,0 +1,222 @@
+\hypertarget{classbattleship2D_1_1ui_1_1ShipInsertion}{\section{battleship2\-D.\-ui.\-Ship\-Insertion Class Reference}
+\label{classbattleship2D_1_1ui_1_1ShipInsertion}\index{battleship2\-D.\-ui.\-Ship\-Insertion@{battleship2\-D.\-ui.\-Ship\-Insertion}}
+}
+
+
+User-\/selected ship in a fleet.  
+
+
+
+
+Collaboration diagram for battleship2\-D.\-ui.\-Ship\-Insertion\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbattleship2D_1_1ui_1_1ShipInsertion__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classbattleship2D_1_1ui_1_1ShipInsertion_a834d63089b081bcbf9f1952e7d6de4eb}{Ship\-Insertion} (\hyperlink{classbattleship2D_1_1model_1_1Fleet}{Fleet} fleet)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+void \hyperlink{classbattleship2D_1_1ui_1_1ShipInsertion_a50ceb5ee8c60826eeb3bbb581e692f6e}{hide} ()
+\begin{DoxyCompactList}\small\item\em Hides all contents. \end{DoxyCompactList}\item 
+int \hyperlink{classbattleship2D_1_1ui_1_1ShipInsertion_a7c9aefda6fac391cdaf8838e42dd9bbd}{selected\-Ship\-Index} ()
+\item 
+void \hyperlink{classbattleship2D_1_1ui_1_1ShipInsertion_a8148d99472f54b7f349ee72633907182}{add\-Property\-Change\-Listener} (Property\-Change\-Listener property\-Change\-Listener)
+\item 
+void \hyperlink{classbattleship2D_1_1ui_1_1ShipInsertion_a3f5e0b51699d658b0bbd70655ab885de}{remove\-Property\-Change\-Listener} (Property\-Change\-Listener property\-Change\-Listener)
+\item 
+H\-Box \hyperlink{classbattleship2D_1_1ui_1_1ShipInsertion_a60e021e03220641d5dd1cf596af70c08}{get\-Ship\-Setting\-Box} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Node \hyperlink{classbattleship2D_1_1ui_1_1ShipInsertion_ad651fa33c63ab20273c3f8d3e66d59a7}{done\-Button} ()
+\begin{DoxyCompactList}\small\item\em Button to validate the settings of all ships. \end{DoxyCompactList}\item 
+V\-Box \hyperlink{classbattleship2D_1_1ui_1_1ShipInsertion_af2d112826592452a82f98b16d3c2a530}{init\-Buttons\-Box} ()
+\begin{DoxyCompactList}\small\item\em Builds the V\-Box containing buttons for ships settings. \end{DoxyCompactList}\item 
+void \hyperlink{classbattleship2D_1_1ui_1_1ShipInsertion_a9657ee43a97a364d27b6aa9c822382f9}{init\-Setting\-Box} (\hyperlink{classbattleship2D_1_1model_1_1Fleet}{Fleet} fleet)
+\begin{DoxyCompactList}\small\item\em Initializes the global setting box. \end{DoxyCompactList}\item 
+V\-Box \hyperlink{classbattleship2D_1_1ui_1_1ShipInsertion_a8f67e90a26d748f9190782c4009f6bba}{init\-Ship\-Choice\-Box} (\hyperlink{classbattleship2D_1_1model_1_1Fleet}{Fleet} fleet)
+\begin{DoxyCompactList}\small\item\em Fills a Choice\-Bow with a ship fleet. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Choice\-Box$<$ String $>$ \hyperlink{classbattleship2D_1_1ui_1_1ShipInsertion_a90e5f0cc4613db2e51e1ac07d4aa1aa8}{choice\-Box}
+\begin{DoxyCompactList}\small\item\em Description of ships to select. \end{DoxyCompactList}\item 
+final H\-Box \hyperlink{classbattleship2D_1_1ui_1_1ShipInsertion_ad7cafe4044e542ba6aad76742d72e291}{ship\-Setting\-Box}
+\begin{DoxyCompactList}\small\item\em Ship settings global box. \end{DoxyCompactList}\item 
+final Property\-Change\-Support \hyperlink{classbattleship2D_1_1ui_1_1ShipInsertion_ac2a07a0542bd8d167ed00928ca46f0bc}{pcs\-Listeners} = new Property\-Change\-Support(this)
+\begin{DoxyCompactList}\small\item\em Listeners management. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+User-\/selected ship in a fleet. 
+
+\begin{DoxyAuthor}{Author}
+xaviator 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classbattleship2D_1_1ui_1_1ShipInsertion_a834d63089b081bcbf9f1952e7d6de4eb}{\index{battleship2\-D\-::ui\-::\-Ship\-Insertion@{battleship2\-D\-::ui\-::\-Ship\-Insertion}!Ship\-Insertion@{Ship\-Insertion}}
+\index{Ship\-Insertion@{Ship\-Insertion}!battleship2D::ui::ShipInsertion@{battleship2\-D\-::ui\-::\-Ship\-Insertion}}
+\subsubsection[{Ship\-Insertion}]{\setlength{\rightskip}{0pt plus 5cm}battleship2\-D.\-ui.\-Ship\-Insertion.\-Ship\-Insertion (
+\begin{DoxyParamCaption}
+\item[{{\bf Fleet}}]{fleet}
+\end{DoxyParamCaption}
+)}}\label{classbattleship2D_1_1ui_1_1ShipInsertion_a834d63089b081bcbf9f1952e7d6de4eb}
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fleet} & -\/ set of ships among which the user makes a selection \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classbattleship2D_1_1ui_1_1ShipInsertion_a8148d99472f54b7f349ee72633907182}{\index{battleship2\-D\-::ui\-::\-Ship\-Insertion@{battleship2\-D\-::ui\-::\-Ship\-Insertion}!add\-Property\-Change\-Listener@{add\-Property\-Change\-Listener}}
+\index{add\-Property\-Change\-Listener@{add\-Property\-Change\-Listener}!battleship2D::ui::ShipInsertion@{battleship2\-D\-::ui\-::\-Ship\-Insertion}}
+\subsubsection[{add\-Property\-Change\-Listener}]{\setlength{\rightskip}{0pt plus 5cm}void battleship2\-D.\-ui.\-Ship\-Insertion.\-add\-Property\-Change\-Listener (
+\begin{DoxyParamCaption}
+\item[{Property\-Change\-Listener}]{property\-Change\-Listener}
+\end{DoxyParamCaption}
+)}}\label{classbattleship2D_1_1ui_1_1ShipInsertion_a8148d99472f54b7f349ee72633907182}
+\hypertarget{classbattleship2D_1_1ui_1_1ShipInsertion_ad651fa33c63ab20273c3f8d3e66d59a7}{\index{battleship2\-D\-::ui\-::\-Ship\-Insertion@{battleship2\-D\-::ui\-::\-Ship\-Insertion}!done\-Button@{done\-Button}}
+\index{done\-Button@{done\-Button}!battleship2D::ui::ShipInsertion@{battleship2\-D\-::ui\-::\-Ship\-Insertion}}
+\subsubsection[{done\-Button}]{\setlength{\rightskip}{0pt plus 5cm}Node battleship2\-D.\-ui.\-Ship\-Insertion.\-done\-Button (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classbattleship2D_1_1ui_1_1ShipInsertion_ad651fa33c63ab20273c3f8d3e66d59a7}
+
+
+Button to validate the settings of all ships. 
+
+\begin{DoxyReturn}{Returns}
+the Done button 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classbattleship2D_1_1ui_1_1ShipInsertion_af2d112826592452a82f98b16d3c2a530}{init\-Buttons\-Box()} 
+\end{DoxySeeAlso}
+\hypertarget{classbattleship2D_1_1ui_1_1ShipInsertion_a60e021e03220641d5dd1cf596af70c08}{\index{battleship2\-D\-::ui\-::\-Ship\-Insertion@{battleship2\-D\-::ui\-::\-Ship\-Insertion}!get\-Ship\-Setting\-Box@{get\-Ship\-Setting\-Box}}
+\index{get\-Ship\-Setting\-Box@{get\-Ship\-Setting\-Box}!battleship2D::ui::ShipInsertion@{battleship2\-D\-::ui\-::\-Ship\-Insertion}}
+\subsubsection[{get\-Ship\-Setting\-Box}]{\setlength{\rightskip}{0pt plus 5cm}H\-Box battleship2\-D.\-ui.\-Ship\-Insertion.\-get\-Ship\-Setting\-Box (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classbattleship2D_1_1ui_1_1ShipInsertion_a60e021e03220641d5dd1cf596af70c08}
+\hypertarget{classbattleship2D_1_1ui_1_1ShipInsertion_a50ceb5ee8c60826eeb3bbb581e692f6e}{\index{battleship2\-D\-::ui\-::\-Ship\-Insertion@{battleship2\-D\-::ui\-::\-Ship\-Insertion}!hide@{hide}}
+\index{hide@{hide}!battleship2D::ui::ShipInsertion@{battleship2\-D\-::ui\-::\-Ship\-Insertion}}
+\subsubsection[{hide}]{\setlength{\rightskip}{0pt plus 5cm}void battleship2\-D.\-ui.\-Ship\-Insertion.\-hide (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classbattleship2D_1_1ui_1_1ShipInsertion_a50ceb5ee8c60826eeb3bbb581e692f6e}
+
+
+Hides all contents. 
+
+\hypertarget{classbattleship2D_1_1ui_1_1ShipInsertion_af2d112826592452a82f98b16d3c2a530}{\index{battleship2\-D\-::ui\-::\-Ship\-Insertion@{battleship2\-D\-::ui\-::\-Ship\-Insertion}!init\-Buttons\-Box@{init\-Buttons\-Box}}
+\index{init\-Buttons\-Box@{init\-Buttons\-Box}!battleship2D::ui::ShipInsertion@{battleship2\-D\-::ui\-::\-Ship\-Insertion}}
+\subsubsection[{init\-Buttons\-Box}]{\setlength{\rightskip}{0pt plus 5cm}V\-Box battleship2\-D.\-ui.\-Ship\-Insertion.\-init\-Buttons\-Box (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classbattleship2D_1_1ui_1_1ShipInsertion_af2d112826592452a82f98b16d3c2a530}
+
+
+Builds the V\-Box containing buttons for ships settings. 
+
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classbattleship2D_1_1ui_1_1ShipInsertion_a9657ee43a97a364d27b6aa9c822382f9}{init\-Setting\-Box()} 
+\end{DoxySeeAlso}
+\hypertarget{classbattleship2D_1_1ui_1_1ShipInsertion_a9657ee43a97a364d27b6aa9c822382f9}{\index{battleship2\-D\-::ui\-::\-Ship\-Insertion@{battleship2\-D\-::ui\-::\-Ship\-Insertion}!init\-Setting\-Box@{init\-Setting\-Box}}
+\index{init\-Setting\-Box@{init\-Setting\-Box}!battleship2D::ui::ShipInsertion@{battleship2\-D\-::ui\-::\-Ship\-Insertion}}
+\subsubsection[{init\-Setting\-Box}]{\setlength{\rightskip}{0pt plus 5cm}void battleship2\-D.\-ui.\-Ship\-Insertion.\-init\-Setting\-Box (
+\begin{DoxyParamCaption}
+\item[{{\bf Fleet}}]{fleet}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classbattleship2D_1_1ui_1_1ShipInsertion_a9657ee43a97a364d27b6aa9c822382f9}
+
+
+Initializes the global setting box. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fleet} & -\/ set of ships for to be user-\/chosen \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See Also}
+Ship\-Selection() 
+\end{DoxySeeAlso}
+\hypertarget{classbattleship2D_1_1ui_1_1ShipInsertion_a8f67e90a26d748f9190782c4009f6bba}{\index{battleship2\-D\-::ui\-::\-Ship\-Insertion@{battleship2\-D\-::ui\-::\-Ship\-Insertion}!init\-Ship\-Choice\-Box@{init\-Ship\-Choice\-Box}}
+\index{init\-Ship\-Choice\-Box@{init\-Ship\-Choice\-Box}!battleship2D::ui::ShipInsertion@{battleship2\-D\-::ui\-::\-Ship\-Insertion}}
+\subsubsection[{init\-Ship\-Choice\-Box}]{\setlength{\rightskip}{0pt plus 5cm}V\-Box battleship2\-D.\-ui.\-Ship\-Insertion.\-init\-Ship\-Choice\-Box (
+\begin{DoxyParamCaption}
+\item[{{\bf Fleet}}]{fleet}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classbattleship2D_1_1ui_1_1ShipInsertion_a8f67e90a26d748f9190782c4009f6bba}
+
+
+Fills a Choice\-Bow with a ship fleet. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fleet} & -\/ set of ships \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See Also}
+Ship\-Selection() 
+\end{DoxySeeAlso}
+\hypertarget{classbattleship2D_1_1ui_1_1ShipInsertion_a3f5e0b51699d658b0bbd70655ab885de}{\index{battleship2\-D\-::ui\-::\-Ship\-Insertion@{battleship2\-D\-::ui\-::\-Ship\-Insertion}!remove\-Property\-Change\-Listener@{remove\-Property\-Change\-Listener}}
+\index{remove\-Property\-Change\-Listener@{remove\-Property\-Change\-Listener}!battleship2D::ui::ShipInsertion@{battleship2\-D\-::ui\-::\-Ship\-Insertion}}
+\subsubsection[{remove\-Property\-Change\-Listener}]{\setlength{\rightskip}{0pt plus 5cm}void battleship2\-D.\-ui.\-Ship\-Insertion.\-remove\-Property\-Change\-Listener (
+\begin{DoxyParamCaption}
+\item[{Property\-Change\-Listener}]{property\-Change\-Listener}
+\end{DoxyParamCaption}
+)}}\label{classbattleship2D_1_1ui_1_1ShipInsertion_a3f5e0b51699d658b0bbd70655ab885de}
+\hypertarget{classbattleship2D_1_1ui_1_1ShipInsertion_a7c9aefda6fac391cdaf8838e42dd9bbd}{\index{battleship2\-D\-::ui\-::\-Ship\-Insertion@{battleship2\-D\-::ui\-::\-Ship\-Insertion}!selected\-Ship\-Index@{selected\-Ship\-Index}}
+\index{selected\-Ship\-Index@{selected\-Ship\-Index}!battleship2D::ui::ShipInsertion@{battleship2\-D\-::ui\-::\-Ship\-Insertion}}
+\subsubsection[{selected\-Ship\-Index}]{\setlength{\rightskip}{0pt plus 5cm}int battleship2\-D.\-ui.\-Ship\-Insertion.\-selected\-Ship\-Index (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classbattleship2D_1_1ui_1_1ShipInsertion_a7c9aefda6fac391cdaf8838e42dd9bbd}
+\begin{DoxyReturn}{Returns}
+the user-\/selected ship 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classbattleship2D_1_1ui_1_1ShipInsertion_a90e5f0cc4613db2e51e1ac07d4aa1aa8}{\index{battleship2\-D\-::ui\-::\-Ship\-Insertion@{battleship2\-D\-::ui\-::\-Ship\-Insertion}!choice\-Box@{choice\-Box}}
+\index{choice\-Box@{choice\-Box}!battleship2D::ui::ShipInsertion@{battleship2\-D\-::ui\-::\-Ship\-Insertion}}
+\subsubsection[{choice\-Box}]{\setlength{\rightskip}{0pt plus 5cm}Choice\-Box$<$String$>$ battleship2\-D.\-ui.\-Ship\-Insertion.\-choice\-Box\hspace{0.3cm}{\ttfamily [private]}}}\label{classbattleship2D_1_1ui_1_1ShipInsertion_a90e5f0cc4613db2e51e1ac07d4aa1aa8}
+
+
+Description of ships to select. 
+
+\hypertarget{classbattleship2D_1_1ui_1_1ShipInsertion_ac2a07a0542bd8d167ed00928ca46f0bc}{\index{battleship2\-D\-::ui\-::\-Ship\-Insertion@{battleship2\-D\-::ui\-::\-Ship\-Insertion}!pcs\-Listeners@{pcs\-Listeners}}
+\index{pcs\-Listeners@{pcs\-Listeners}!battleship2D::ui::ShipInsertion@{battleship2\-D\-::ui\-::\-Ship\-Insertion}}
+\subsubsection[{pcs\-Listeners}]{\setlength{\rightskip}{0pt plus 5cm}final Property\-Change\-Support battleship2\-D.\-ui.\-Ship\-Insertion.\-pcs\-Listeners = new Property\-Change\-Support(this)\hspace{0.3cm}{\ttfamily [private]}}}\label{classbattleship2D_1_1ui_1_1ShipInsertion_ac2a07a0542bd8d167ed00928ca46f0bc}
+
+
+Listeners management. 
+
+\hypertarget{classbattleship2D_1_1ui_1_1ShipInsertion_ad7cafe4044e542ba6aad76742d72e291}{\index{battleship2\-D\-::ui\-::\-Ship\-Insertion@{battleship2\-D\-::ui\-::\-Ship\-Insertion}!ship\-Setting\-Box@{ship\-Setting\-Box}}
+\index{ship\-Setting\-Box@{ship\-Setting\-Box}!battleship2D::ui::ShipInsertion@{battleship2\-D\-::ui\-::\-Ship\-Insertion}}
+\subsubsection[{ship\-Setting\-Box}]{\setlength{\rightskip}{0pt plus 5cm}final H\-Box battleship2\-D.\-ui.\-Ship\-Insertion.\-ship\-Setting\-Box\hspace{0.3cm}{\ttfamily [private]}}}\label{classbattleship2D_1_1ui_1_1ShipInsertion_ad7cafe4044e542ba6aad76742d72e291}
+
+
+Ship settings global box. 
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/home/xaviator/\-Enseignements/2015-\/2016/\-S\-F\-A/\-M1-\/\-Info/\-I\-H\-M/\-Battle\-Ship2\-D\-\_\-students/battleship2\-D/ui/\hyperlink{ShipInsertion_8java}{Ship\-Insertion.\-java}\end{DoxyCompactItemize}
